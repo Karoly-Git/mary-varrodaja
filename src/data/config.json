@@ -1,0 +1,10 @@
+{
+    "settings": {
+        "isLocalServer": true,
+        "isMaintenance": false
+    },
+    "urls": {
+        "local": "http://localhost:8000/data",
+        "heroku": "https://mary-varrodaja-17fc45017885.herokuapp.com/data"
+    }
+}
