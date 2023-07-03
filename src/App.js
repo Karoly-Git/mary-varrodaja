@@ -2,22 +2,22 @@ import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import config from './data/config.json'
-import { category_images } from '../src/data/data'
+import { termekek, szolgaltatasok } from './data/data'
 import '../src/css/App.css'
 
 import ErrorMessage from './components/ErrorMessage'
 
 import Kezdolap from './components/pages/Kezdolap'
-import Szolgaltatasok from './components/pages/Szolgaltatasok'
-import Termekek from './components/pages/Termekek'
+import ServicesAndProducts from './components/pages/ServicesAndProducts'
 import Rolam from './components/pages/Rolam'
 import Kapcsolat from './components/pages/Kapcsolat'
 import Gyik from './components/pages/Gyik'
 
-import MainNavigation from './components/MainNavigation'
+import SubPageServAndProd from './components/pages/sub-pages/SubPageServAndProd'
 
-import SubPageSzolg from './components/pages/sub-pages/SubPageSzolg'
 import TopNavigation from './components/TopNavigation'
+import MainNavigation from './components/MainNavigation'
+import BottomNavigation from './components/BottomNavigation'
 
 export default function App() {
 
@@ -53,19 +53,35 @@ export default function App() {
   return (
     <div className='App'>
       <Router>
-        <TopNavigation />
-        <MainNavigation />
-        <Routes>
-          <Route path='/' element={<Kezdolap />}></Route>
-          <Route path='/szolgaltatasok' element={<Szolgaltatasok />}></Route>
-          <Route path='/szolgaltatasok/noi-felsoruha-keszites' element={<SubPageSzolg szolgTitle="Női felsőruha készítés" />}></Route>
-          <Route path='/szolgaltatasok/ruha-javitas-es-atalakitas' element={<SubPageSzolg szolgTitle="Ruha javítás és átalakítás" />}></Route>
-          <Route path='/szolgaltatasok/gyermekruha-keszites' element={<SubPageSzolg szolgTitle="Gyermekruha készítés" />}></Route>
-          <Route path='/termekek' element={<Termekek data={data} category_images={category_images} />}></Route>
-          <Route path='/rolam' element={<Rolam />}></Route>
-          <Route path='/kapcsolat' element={<Kapcsolat />}></Route>
-          <Route path='/gyik' element={<Gyik />}></Route>
-        </Routes>
+        <header>
+          <TopNavigation />
+          <MainNavigation />
+        </header>
+        <main>
+          <Routes>
+            <Route path='*' element={<h1>Oldal nem található</h1>}></Route>
+            <Route path='/' element={<Kezdolap />}></Route>
+
+            <Route path='/szolgaltatasok' element={<ServicesAndProducts list={szolgaltatasok} />}></Route>
+            <Route path='/szolgaltatasok/noi-felsoruha-keszites' element={<SubPageServAndProd data={szolgaltatasok} szolgTitle="Női felsőruha készítés" />}></Route>
+            <Route path='/szolgaltatasok/ruha-javitas-es-atalakitas' element={<SubPageServAndProd data={szolgaltatasok} szolgTitle="Ruha javítás és átalakítás" />}></Route>
+            <Route path='/szolgaltatasok/gyermekruha-keszites' element={<SubPageServAndProd data={szolgaltatasok} szolgTitle="Gyermekruha készítés" />}></Route>
+
+            <Route path='/termekek' element={<ServicesAndProducts list={termekek} />}></Route>
+            <Route path='/termekek/taskak' element={<SubPageServAndProd data={termekek} szolgTitle="Táskák" />}></Route>
+            <Route path='/termekek/maszkok' element={<SubPageServAndProd data={termekek} szolgTitle="Maszkok" />}></Route>
+            <Route path='/termekek/fehernemuk' element={<SubPageServAndProd data={termekek} szolgTitle="Fehérneműk" />}></Route>
+            <Route path='/termekek/oko-termekek' element={<SubPageServAndProd data={termekek} szolgTitle="Öko termékek" />}></Route>
+            <Route path='/termekek/gyermekruhak' element={<SubPageServAndProd data={termekek} szolgTitle="Gyermekruhák" />}></Route>
+
+            <Route path='/rolam' element={<Rolam />}></Route>
+            <Route path='/kapcsolat' element={<Kapcsolat />}></Route>
+            <Route path='/gyik' element={<Gyik />}></Route>
+          </Routes>
+        </main>
+        <footer>
+          <BottomNavigation />
+        </footer>
       </Router>
       {!isLoading && !data &&
         <ErrorMessage errMessage={error.message} errName={error.name} />
@@ -73,4 +89,3 @@ export default function App() {
     </div>
   )
 }
-

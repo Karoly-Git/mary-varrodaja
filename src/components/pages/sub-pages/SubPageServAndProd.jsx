@@ -1,15 +1,12 @@
 import React from 'react'
-import { szolgaltatasok } from '../../../data/data'
-
 
 export default function SubPageSzolg(props) {
 
-    const data = szolgaltatasok.find(element => element.title === props.szolgTitle);
+    const data = props.data.find(element => element.title === props.szolgTitle);
 
     return (
         <div className='sub-page'>
-            <h1>{data.title}
-            </h1>
+            <h1>{data.title}</h1>
             {data.details
                 .map((detail, detailIndex) => (
                     <section key={detailIndex}>

@@ -44,4 +44,23 @@
 }
 .top-navigation ul li:not(li:last-child) {
   margin-right: 1rem;
+}
+
+.bottom-navigation {
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.bottom-navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+}
+.bottom-navigation ul li a .icon {
+  font-size: 1.5rem;
+}
+.bottom-navigation ul li:not(li:last-child) {
+  margin-right: 1rem;
 }/*# sourceMappingURL=navigation.css.map */

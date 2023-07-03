@@ -1,87 +1,18 @@
+// Images of Termékek
 import fehernemuk_img from '../img/categories/fehernemuk.jpg';
 import gyermekruhak_img from '../img/categories/gyermekruhak.jpg';
 import maszkok_img from '../img/categories/maszkok.jpg';
 import oko_termekek_img from '../img/categories/oko_termekek.jpg';
 import taskak_img from '../img/categories/taskak.jpg';
 
+// Images of Szolgáltatások
 import gyermekruha_keszites_img from '../img/szolgaltatasok/gyermekruha-keszites.jpg'
 import noi_felsoruha_keszites_img from '../img/szolgaltatasok/noi-felsoruha-keszites.jpg'
 import ruha_javitas_es_atalakitas_img from '../img/szolgaltatasok/ruha-javitas-es-atalakitas.jpg'
 
-export const category_images = {
-    "Fehérneműk": fehernemuk_img,
-    "Gyermekruhák": gyermekruhak_img,
-    "Maszkok": maszkok_img,
-    "Öko termékek": oko_termekek_img,
-    "Táskák": taskak_img,
-};
-
 //const importAll = (requireContext) => requireContext.keys().map(requireContext);
 //const images = importAll(require.context('../src/img/categories', false, /\.(png|jpe?g|svg)$/));
 //console.log(images);
-
-export const gyik = [
-    {
-        gyik_id: 1,
-        question: "Tudok bankkártyával fizetni?",
-        answer: "Igen. Mind kártyás, készpénzes és átutalásos fizetésre is van lehetőség.",
-        link: "",
-    },
-    {
-        gyik_id: 2,
-        question: "Mi a nyitvatartási idő?",
-        answer: "Nincs kimondott nyitvatartás. Hétköznap jellemzően 9 és 16 óra között bármikor tudlak fogadni, de a biztonság kedvéért legyél szíves előzetesen telefonon vagy üzenetben érdeklődni, hogy biztosan otthon legyek amikor jössz.Sürgős esetben hétvégén is tudlak fogadni, kérlek előzetesen telefonon vagy üzenetben egyeztessünk.",
-        link: "",
-    },
-    {
-        gyik_id: 3,
-        question: "Gyermekruhákat milyen korosztálynak keszíted?",
-        answer: "Leginkább 0 és 6 éves kor közötti gyermekeknek, de ha idősebb, az sem probléma.",
-        link: "",
-    },
-    {
-        gyik_id: 4,
-        question: "Páromnak van néhány nadrágja, ami túl hosszú, elhozhatom felvarratni?",
-        answer: "Természetesen. Ne tévesszen meg, hogy nőiruha keszítés a fő profilom. Javításokat és átalakításokat minden ruhafélére vállalok függetlenül attól, hogy férfi, női vagy gyermekruha.",
-        link: "",
-    },
-    {
-        gyik_id: 5,
-        question: "Van boltod ahol meg tudom vásárolni a termékeidet?",
-        answer: "Webshopom van, valamint a Szentendrei Piacon megtalálsz szombatonként, illetve ha eljössz hozzám, itt is tudsz vásárolni.",
-        link: "",
-    },
-    {
-        gyik_id: 6,
-        question: "Van online webshop, ahol tudok vásárolni a termékeidből?",
-        answer: "Igen, a linkre kattintva tudod megnyini.",
-        link: "",
-    },
-    {
-        gyik_id: 7,
-        question: "Kisfiam bolodul a vonatokért, tudnál vonatos nadrágot keszíteni neki?",
-        answer: "Igen. Egyedi minta és figura nem probléma. Akadály akkor képzelhető el, ha olyan figurát szeretnél, ami le van védve, ilyenek például a Disney figurák többsége, de biztos vagyok benne, hogy találunk olyan figurát amit tudunk használni.",
-        link: "",
-    },
-];
-
-export const rolam = [
-    {
-        rolam_id: 1,
-        title: "Baltringer Mária vagyok, nőiruha készítő.",
-        description: "Nagyon szerencsésnek mondhaton magam, hiszen több mint 40 éve minden nap a hobbimnak élhetek, a munkám egyben a hobbim is. Teljes meggyőződéssel mondhatom, hogy erre születtem. Azt modják, hogy az elhivatottság és maximalizmus köszön vissza az elkészített ruháim minőségében.",
-    },
-    {
-        rolam_id: 2,
-        title: "Több mint munka, ez hivatás.",
-        description: "Fő profilom az egyedi női és gyermek ruhák készítés, de javításokat és átalakításokat férfiruházat esetén is vállalok. Készítek táskákat, újra használatható öko termékeket, fehérneműket és maszkokat is.",
-    },
-    {
-        rolam_id: 3,
-        title: "Kicsiknek és nagyoknak is örömmel dolgozok.",
-        description: "Büszke vagyok rá, hogy magánszemélyken túl beszállítója lehetek olyan nagynevű vállalkozásoknak és szervezeteknek mint a Thermal Hotel Visegrád, a Renaissance Étterem Visegrád és a Szent György Lovagrend.",
-    },
-];
 
 export const szolgaltatasok = [
     {
@@ -176,6 +107,172 @@ export const szolgaltatasok = [
                 ],
             },
         ],
+    },
+];
+
+export const termekek = [
+    {
+        termek_id: 1,
+        isActive: true,
+        title: "Táskák",
+        url: "/termekek/taskak",
+        img: taskak_img,
+        alt: "",
+        description: "Kézi, háti és oldal táskák egyed kivitelben egyedi színben és dizájnnal.",
+        details: [
+            {
+                detail_id: 1,
+                title: "Alcím Táskák",
+                img: "",
+                pharagraps: [
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                ],
+            },
+        ],
+    },
+    {
+        termek_id: 2,
+        isActive: true,
+        title: "Maszkok",
+        url: "/termekek/maszkok",
+        img: maszkok_img,
+        alt: "",
+        description: "Női, férfi és gyermek maszkok különféle méretben, színben és kivitelben.",
+        details: [
+            {
+                detail_id: 1,
+                title: "Alcím Maszkok",
+                img: "",
+                pharagraps: [
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                ],
+            },
+        ],
+    },
+    {
+        termek_id: 3,
+        isActive: true,
+        title: "Fehérneműk",
+        url: "/termekek/fehernemuk",
+        img: fehernemuk_img,
+        alt: "",
+        description: "Női fehérneműk nem csak fehér színben, akár egyedi mintával és hímzéssel.",
+        details: [
+            {
+                detail_id: 1,
+                title: "Alcím Fehérneműk",
+                img: "",
+                pharagraps: [
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                ],
+            },
+        ],
+    },
+    {
+        termek_id: 4,
+        isActive: true,
+        title: "Öko termékek",
+        url: "/termekek/oko-termekek",
+        img: oko_termekek_img,
+        alt: "",
+        description: "Eldobható termékek újragondolva. Váltsd le a műanyagot mosható textílre és ezzel óvd a környezetet.",
+        details: [
+            {
+                detail_id: 1,
+                title: "Alcím Öko termékek",
+                img: "",
+                pharagraps: [
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                ],
+            },
+        ],
+    },
+    {
+        termek_id: 5,
+        isActive: true,
+        title: "Gyermekruhák",
+        url: "/termekek/gyermekruhak",
+        img: gyermekruhak_img,
+        alt: "",
+        description: "Pizsamák, hálózsákok, polók, nadrágok és megannyi más.",
+        details: [
+            {
+                detail_id: 1,
+                title: "Alcím Gyermekruhák",
+                img: "",
+                pharagraps: [
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                ],
+            },
+        ],
+    },
+];
+
+export const rolam = [
+    {
+        rolam_id: 1,
+        title: "Baltringer Mária vagyok, nőiruha készítő.",
+        description: "Nagyon szerencsésnek mondhaton magam, hiszen több mint 40 éve minden nap a hobbimnak élhetek, a munkám egyben a hobbim is. Teljes meggyőződéssel mondhatom, hogy erre születtem. Azt modják, hogy az elhivatottság és maximalizmus köszön vissza az elkészített ruháim minőségében.",
+    },
+    {
+        rolam_id: 2,
+        title: "Több mint munka, ez hivatás.",
+        description: "Fő profilom az egyedi női és gyermek ruhák készítés, de javításokat és átalakításokat férfiruházat esetén is vállalok. Készítek táskákat, újra használatható öko termékeket, fehérneműket és maszkokat is.",
+    },
+    {
+        rolam_id: 3,
+        title: "Kicsiknek és nagyoknak is örömmel dolgozok.",
+        description: "Büszke vagyok rá, hogy magánszemélyken túl beszállítója lehetek olyan nagynevű vállalkozásoknak és szervezeteknek mint a Thermal Hotel Visegrád, a Renaissance Étterem Visegrád és a Szent György Lovagrend.",
+    },
+];
+
+export const gyik = [
+    {
+        gyik_id: 1,
+        question: "Tudok bankkártyával fizetni?",
+        answer: "Igen. Mind kártyás, készpénzes és átutalásos fizetésre is van lehetőség.",
+        link: "",
+    },
+    {
+        gyik_id: 2,
+        question: "Mi a nyitvatartási idő?",
+        answer: "Nincs kimondott nyitvatartás. Hétköznap jellemzően 9 és 16 óra között bármikor tudlak fogadni, de a biztonság kedvéért legyél szíves előzetesen telefonon vagy üzenetben érdeklődni, hogy biztosan otthon legyek amikor jössz.Sürgős esetben hétvégén is tudlak fogadni, kérlek előzetesen telefonon vagy üzenetben egyeztessünk.",
+        link: "",
+    },
+    {
+        gyik_id: 3,
+        question: "Gyermekruhákat milyen korosztálynak keszíted?",
+        answer: "Leginkább 0 és 6 éves kor közötti gyermekeknek, de ha idősebb, az sem probléma.",
+        link: "",
+    },
+    {
+        gyik_id: 4,
+        question: "Páromnak van néhány nadrágja, ami túl hosszú, elhozhatom felvarratni?",
+        answer: "Természetesen. Ne tévesszen meg, hogy nőiruha keszítés a fő profilom. Javításokat és átalakításokat minden ruhafélére vállalok függetlenül attól, hogy férfi, női vagy gyermekruha.",
+        link: "",
+    },
+    {
+        gyik_id: 5,
+        question: "Van boltod ahol meg tudom vásárolni a termékeidet?",
+        answer: "Webshopom van, valamint a Szentendrei Piacon megtalálsz szombatonként, illetve ha eljössz hozzám, itt is tudsz vásárolni.",
+        link: "",
+    },
+    {
+        gyik_id: 6,
+        question: "Van online webshop, ahol tudok vásárolni a termékeidből?",
+        answer: "Igen, a linkre kattintva tudod megnyini.",
+        link: "",
+    },
+    {
+        gyik_id: 7,
+        question: "Kisfiam bolodul a vonatokért, tudnál vonatos nadrágot keszíteni neki?",
+        answer: "Igen. Egyedi minta és figura nem probléma. Akadály akkor képzelhető el, ha olyan figurát szeretnél, ami le van védve, ilyenek például a Disney figurák többsége, de biztos vagyok benne, hogy találunk olyan figurát amit tudunk használni.",
+        link: "",
     },
 ];
 
