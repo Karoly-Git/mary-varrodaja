@@ -4,6 +4,8 @@ import gyermekruhak_img from '../img/categories/gyermekruhak.jpg';
 import maszkok_img from '../img/categories/maszkok.jpg';
 import oko_termekek_img from '../img/categories/oko_termekek.jpg';
 import taskak_img from '../img/categories/taskak.jpg';
+import konyhai_textilek_img from '../img/categories/konyhai-textilek.jpg';
+import textil_jatekok_img from '../img/categories/textil-jatekok.jpg';
 
 // Images of Szolgáltatások
 import gyermekruha_keszites_img from '../img/szolgaltatasok/gyermekruha-keszites.jpg'
@@ -17,6 +19,7 @@ import ruha_javitas_es_atalakitas_img from '../img/szolgaltatasok/ruha-javitas-e
 export const szolgaltatasok = [
     {
         szolgaltatas_id: 1,
+        isActive: true,
         title: "Női felsőruha készítés",
         url: "/szolgaltatasok/noi-felsoruha-keszites",
         img: noi_felsoruha_keszites_img,
@@ -38,6 +41,7 @@ export const szolgaltatasok = [
     },
     {
         szolgaltatas_id: 2,
+        isActive: true,
         title: "Ruha javítás és átalakítás",
         url: "/szolgaltatasok/ruha-javitas-es-atalakitas",
         img: ruha_javitas_es_atalakitas_img,
@@ -80,6 +84,7 @@ export const szolgaltatasok = [
     },
     {
         szolgaltatas_id: 3,
+        isActive: true,
         title: "Gyermekruha készítés",
         url: "/szolgaltatasok/gyermekruha-keszites",
         img: gyermekruha_keszites_img,
@@ -133,7 +138,7 @@ export const termekek = [
     },
     {
         termek_id: 2,
-        isActive: true,
+        isActive: false,
         title: "Maszkok",
         url: "/termekek/maszkok",
         img: maszkok_img,
@@ -211,6 +216,46 @@ export const termekek = [
             },
         ],
     },
+    {
+        termek_id: 6,
+        isActive: true,
+        title: "Konyhai textilek",
+        url: "/termekek/konyhai-textilek",
+        img: konyhai_textilek_img,
+        alt: "",
+        description: "Konyharuhák, tárolo szákok, stb...",
+        details: [
+            {
+                detail_id: 1,
+                title: "Alcím Konyhai textilek",
+                img: "",
+                pharagraps: [
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                ],
+            },
+        ],
+    },
+    {
+        termek_id: 7,
+        isActive: true,
+        title: "Textil játékok",
+        url: "/termekek/textil-jatekok",
+        img: textil_jatekok_img,
+        alt: "",
+        description: "Textil állatkák, stb...",
+        details: [
+            {
+                detail_id: 1,
+                title: "Alcím Textil játékok",
+                img: "",
+                pharagraps: [
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+                ],
+            },
+        ],
+    },
 ];
 
 export const rolam = [
@@ -273,6 +318,30 @@ export const gyik = [
         question: "Kisfiam bolodul a vonatokért, tudnál vonatos nadrágot keszíteni neki?",
         answer: "Igen. Egyedi minta és figura nem probléma. Akadály akkor képzelhető el, ha olyan figurát szeretnél, ami le van védve, ilyenek például a Disney figurák többsége, de biztos vagyok benne, hogy találunk olyan figurát amit tudunk használni.",
         link: "",
+    },
+];
+
+export const reviews = [
+    {
+        reviewId: 1,
+        name: "Joanna",
+        rating: 4.5,
+        comment: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        timestamp: "2023-07-04T09:30:00Z"
+    },
+    {
+        reviewId: 2,
+        name: "Matilda",
+        rating: 4.5,
+        comment: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        timestamp: "2023-07-04T09:30:00Z"
+    },
+    {
+        reviewId: 3,
+        name: "Judit",
+        rating: 4.5,
+        comment: "Pénteken vettem meg a manó ás tengerész babákat, anyukámnak is nagy ōrōmet szereztünk vele. Kōszōnet érte! Figyelni fogom, ás számítok továbbra is száp munkáira. Sok erőt és ihletet kívánok!",
+        timestamp: "2023-07-04T09:30:00Z"
     },
 ];
 

@@ -1,0 +1,86 @@
+.info {
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .box {
+        margin-right: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: rgb(200, 200, 200);
+
+        .box-title {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+        }
+
+        .devider {
+            height: 3px;
+            width: 45px;
+            background-color: rgb(200, 200, 200);
+            margin: 1rem 0;
+        }
+    }
+
+    .contact {
+        ul {
+            list-style: none;
+
+            li {
+                display: flex;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(241, 241, 241);
+                    display: flex;
+                    align-items: flex-start;
+
+                    .icon {
+                        color: wheat;
+                        margin-right: 1rem;
+                        font-size: 1.25rem;
+                    }
+                }
+
+                a:hover {
+                    color: black;
+                }
+            }
+
+            li:not(li:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .instance {
+        ul {
+            list-style: none;
+
+            li {
+                h4 {
+                    margin-bottom: 0.5rem;
+                    color: rgb(241, 241, 241);
+                }
+
+                .date {
+                    margin-top: 0.25rem;
+                    text-align: right;
+                }
+            }
+
+            li:not(li:last-child) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .reviews {
+        p {
+            font-style: italic;
+        }
+    }
+
+}

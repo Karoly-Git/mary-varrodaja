@@ -50,7 +50,7 @@ export default function TopNavigation() {
                     </a>
                 </li>
                 <li id="moon">
-                    <i class="fa-regular fa-moon"></i>
+                    <i className="fa-regular fa-moon"></i>
                     <Moon className='icon' />
                 </li>
                 <li id="facebook">

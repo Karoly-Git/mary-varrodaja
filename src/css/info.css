@@ -1,0 +1,63 @@
+.info {
+  background-color: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.info .box {
+  margin-right: 1rem;
+  width: 100%;
+  padding: 1rem;
+  color: rgb(200, 200, 200);
+}
+.info .box .box-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.info .box .devider {
+  height: 3px;
+  width: 45px;
+  background-color: rgb(200, 200, 200);
+  margin: 1rem 0;
+}
+.info .contact ul {
+  list-style: none;
+}
+.info .contact ul li {
+  display: flex;
+}
+.info .contact ul li a {
+  text-decoration: none;
+  color: rgb(241, 241, 241);
+  display: flex;
+  align-items: flex-start;
+}
+.info .contact ul li a .icon {
+  color: wheat;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+.info .contact ul li a:hover {
+  color: black;
+}
+.info .contact ul li:not(li:last-child) {
+  margin-bottom: 1rem;
+}
+.info .instance ul {
+  list-style: none;
+}
+.info .instance ul li h4 {
+  margin-bottom: 0.5rem;
+  color: rgb(241, 241, 241);
+}
+.info .instance ul li .date {
+  margin-top: 0.25rem;
+  text-align: right;
+}
+.info .instance ul li:not(li:last-child) {
+  margin-bottom: 1.5rem;
+}
+.info .reviews p {
+  font-style: italic;
+}/*# sourceMappingURL=info.css.map */

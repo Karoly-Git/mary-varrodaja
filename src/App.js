@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react'
-import Axios from 'axios'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+import Axios from 'axios'
 import config from './data/config.json'
+
 import { termekek, szolgaltatasok } from './data/data'
-import '../src/css/App.css'
-
 import ErrorMessage from './components/ErrorMessage'
-
 import Kezdolap from './components/pages/Kezdolap'
 import ServicesAndProducts from './components/pages/ServicesAndProducts'
 import Rolam from './components/pages/Rolam'
 import Kapcsolat from './components/pages/Kapcsolat'
 import Gyik from './components/pages/Gyik'
-
 import SubPageServAndProd from './components/pages/sub-pages/SubPageServAndProd'
-
 import TopNavigation from './components/TopNavigation'
 import MainNavigation from './components/MainNavigation'
 import BottomNavigation from './components/BottomNavigation'
+
+import '../src/css/App.css'
+import Info from './components/Info'
 
 export default function App() {
 
@@ -73,6 +73,8 @@ export default function App() {
             <Route path='/termekek/fehernemuk' element={<SubPageServAndProd data={termekek} szolgTitle="Fehérneműk" />}></Route>
             <Route path='/termekek/oko-termekek' element={<SubPageServAndProd data={termekek} szolgTitle="Öko termékek" />}></Route>
             <Route path='/termekek/gyermekruhak' element={<SubPageServAndProd data={termekek} szolgTitle="Gyermekruhák" />}></Route>
+            <Route path='/termekek/konyhai-textilek' element={<SubPageServAndProd data={termekek} szolgTitle="Konyhai textilek" />}></Route>
+            <Route path='/termekek/textil-jatekok' element={<SubPageServAndProd data={termekek} szolgTitle="Textil játékok" />}></Route>
 
             <Route path='/rolam' element={<Rolam />}></Route>
             <Route path='/kapcsolat' element={<Kapcsolat />}></Route>
@@ -81,6 +83,7 @@ export default function App() {
         </main>
         <footer>
           <BottomNavigation />
+          <Info />
         </footer>
       </Router>
       {!isLoading && !data &&

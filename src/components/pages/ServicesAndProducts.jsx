@@ -8,11 +8,13 @@ export default function ServicesAndProducts(props) {
                 <Link
                     key={'services-and-products' + index}
                     to={element.url}>
-                    <section>
-                        <h3>{element.title}</h3>
-                        <img style={{ width: '150px' }} src={element.img} alt={element.alt} ></img>
-                        <p>{element.description}</p>
-                    </section>
+                    {element.isActive &&
+                        <section>
+                            <h3>{element.title}</h3>
+                            <img src={element.img} alt={element.alt} ></img>
+                            <p>{element.description}</p>
+                        </section>
+                    }
                 </Link>
             )}
         </div>

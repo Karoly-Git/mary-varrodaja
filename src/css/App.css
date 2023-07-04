@@ -1,4 +1,5 @@
 @import './navigation.css';
+@import './info.css';
 * {
   margin: 0;
   padding: 0;
@@ -12,4 +13,13 @@ html {
 
 .App {
   flex-direction: column;
+}
+.App header {
+  background-color: red;
+}
+.App main {
+  background-color: brown;
+}
+.App footer {
+  background-color: rgb(119, 119, 119);
 }/*# sourceMappingURL=App.css.map */
