@@ -1,5 +1,8 @@
 @import './navigation.css';
 @import './info.css';
+@import './rolam.css';
+@import './kezdolap.css';
+@import './serv_and_prod.css';
 * {
   margin: 0;
   padding: 0;
@@ -15,10 +18,10 @@ html {
   flex-direction: column;
 }
 .App header {
-  background-color: red;
+  background-color: transparent;
 }
 .App main {
-  background-color: brown;
+  background-color: transparent;
 }
 .App footer {
   background-color: rgb(119, 119, 119);

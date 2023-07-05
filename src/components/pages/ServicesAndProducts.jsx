@@ -4,19 +4,18 @@ import { Link } from 'react-router-dom'
 export default function ServicesAndProducts(props) {
     return (
         <div className='services-and-products'>
-            {props.list.map((element, index) =>
-                <Link
-                    key={'services-and-products' + index}
-                    to={element.url}>
-                    {element.isActive &&
-                        <section>
-                            <h3>{element.title}</h3>
-                            <img src={element.img} alt={element.alt} ></img>
-                            <p>{element.description}</p>
-                        </section>
-                    }
-                </Link>
-            )}
+            {false && <h1>{props.h1}</h1>}
+            <section>
+                {props.list.map((element, index) =>
+                    element.isActive && <Link
+                        key={'services-and-products' + index}
+                        to={element.url}>
+                        <h2>{element.title}</h2>
+                        <img src={element.img} alt={element.alt} ></img>
+                        <p>{element.description}</p>
+                    </Link>
+                )}
+            </section>
         </div>
     )
 }

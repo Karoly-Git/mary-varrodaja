@@ -54,20 +54,20 @@ export default function App() {
     <div className='App'>
       <Router>
         <header>
-          <TopNavigation />
           <MainNavigation />
+          <TopNavigation />
         </header>
         <main>
           <Routes>
             <Route path='*' element={<h1>Oldal nem található</h1>}></Route>
             <Route path='/' element={<Kezdolap />}></Route>
 
-            <Route path='/szolgaltatasok' element={<ServicesAndProducts list={szolgaltatasok} />}></Route>
+            <Route path='/szolgaltatasok' element={<ServicesAndProducts list={szolgaltatasok} h1={'Szolgáltatásaim'} />}></Route>
             <Route path='/szolgaltatasok/noi-felsoruha-keszites' element={<SubPageServAndProd data={szolgaltatasok} szolgTitle="Női felsőruha készítés" />}></Route>
             <Route path='/szolgaltatasok/ruha-javitas-es-atalakitas' element={<SubPageServAndProd data={szolgaltatasok} szolgTitle="Ruha javítás és átalakítás" />}></Route>
             <Route path='/szolgaltatasok/gyermekruha-keszites' element={<SubPageServAndProd data={szolgaltatasok} szolgTitle="Gyermekruha készítés" />}></Route>
 
-            <Route path='/termekek' element={<ServicesAndProducts list={termekek} />}></Route>
+            <Route path='/termekek' element={<ServicesAndProducts list={termekek} h1={'Termékeim'} />}></Route>
             <Route path='/termekek/taskak' element={<SubPageServAndProd data={termekek} szolgTitle="Táskák" />}></Route>
             <Route path='/termekek/maszkok' element={<SubPageServAndProd data={termekek} szolgTitle="Maszkok" />}></Route>
             <Route path='/termekek/fehernemuk' element={<SubPageServAndProd data={termekek} szolgTitle="Fehérneműk" />}></Route>

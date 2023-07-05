@@ -3,9 +3,8 @@ import React from 'react'
 import { BsTelephone as Phone } from 'react-icons/bs';
 import { BsPhone as Mobile } from 'react-icons/bs';
 import { ImWhatsapp as Whatsapp } from 'react-icons/im';
-import { CiLocationOn as Location } from 'react-icons/ci';
+import { SlLocationPin as Location } from 'react-icons/sl';
 import { AiOutlineMail as Email } from 'react-icons/ai';
-import { BsMoon as Moon } from 'react-icons/bs';
 import { FiFacebook as Facebook } from 'react-icons/fi';
 
 export default function TopNavigation() {
@@ -48,10 +47,6 @@ export default function TopNavigation() {
                         rel="noopener noreferrer">
                         <Email className='icon' />
                     </a>
-                </li>
-                <li id="moon">
-                    <i className="fa-regular fa-moon"></i>
-                    <Moon className='icon' />
                 </li>
                 <li id="facebook">
                     <a

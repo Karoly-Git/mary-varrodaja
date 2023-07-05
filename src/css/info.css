@@ -32,6 +32,7 @@
   color: rgb(241, 241, 241);
   display: flex;
   align-items: flex-start;
+  transition: all 150ms ease-in-out;
 }
 .info .contact ul li a .icon {
   color: wheat;
@@ -39,7 +40,7 @@
   font-size: 1.25rem;
 }
 .info .contact ul li a:hover {
-  color: black;
+  scale: 1.075;
 }
 .info .contact ul li:not(li:last-child) {
   margin-bottom: 1rem;

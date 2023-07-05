@@ -14,12 +14,11 @@ html {
   flex-direction: column;
 
   header {
-    background-color: red;
-
+    background-color: transparent;
   }
 
   main {
-    background-color: brown
+    background-color: transparent
   }
 
   footer {
@@ -29,3 +28,6 @@ html {
 
 @import './navigation.css';
 @import './info.css';
+@import './rolam.css';
+@import './kezdolap.css';
+@import './serv_and_prod.css';

@@ -1,13 +1,11 @@
 .main-navigation {
     display: flex;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
 
     a {
         padding: 0.5rem;
 
         .logo {
-            background-color: gray;
             width: 200px;
         }
     }
@@ -23,13 +21,13 @@
             a {
                 color: rgb(100, 100, 100);
                 text-decoration: none;
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 transition: all 150ms ease-in-out;
             }
 
             a:hover {
                 background-color: rgb(223, 208, 181);
-                color: white;
+                color: rgba(50, 50, 50);
             }
         }
 
@@ -41,6 +39,8 @@
 
 .top-navigation {
     display: flex;
+    justify-content: center;
+    padding: 1rem;
 
     ul {
         display: flex;
@@ -51,12 +51,20 @@
             a {
                 .icon {
                     font-size: 1.5rem;
+                    color: rgb(191, 161, 107);
+                    font-weight: 100;
+                    transition: all 150ms ease-in-out;
                 }
+            }
+
+            a:hover .icon {
+                color: black;
+                scale: 1.1;
             }
         }
 
         li:not(li:last-child) {
-            margin-right: 1rem;
+            margin-right: 2rem;
         }
     }
 }
@@ -64,7 +72,7 @@
 .bottom-navigation {
     display: flex;
     background-color: white;
-    padding: 1rem;
+    padding: 2rem 1rem;
 
     ul {
         display: flex;

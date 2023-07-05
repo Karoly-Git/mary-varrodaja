@@ -36,6 +36,7 @@
                     color: rgb(241, 241, 241);
                     display: flex;
                     align-items: flex-start;
+                    transition: all 150ms ease-in-out;
 
                     .icon {
                         color: wheat;
@@ -45,7 +46,7 @@
                 }
 
                 a:hover {
-                    color: black;
+                    scale: 1.075;
                 }
             }
 

@@ -138,7 +138,7 @@ export const termekek = [
     },
     {
         termek_id: 2,
-        isActive: false,
+        isActive: !true,
         title: "Maszkok",
         url: "/termekek/maszkok",
         img: maszkok_img,
@@ -261,17 +261,17 @@ export const termekek = [
 export const rolam = [
     {
         rolam_id: 1,
-        title: "Baltringer Mária vagyok, nőiruha készítő.",
+        title: "A minőség titka",
         description: "Nagyon szerencsésnek mondhaton magam, hiszen több mint 40 éve minden nap a hobbimnak élhetek, a munkám egyben a hobbim is. Teljes meggyőződéssel mondhatom, hogy erre születtem. Azt modják, hogy az elhivatottság és maximalizmus köszön vissza az elkészített ruháim minőségében.",
     },
     {
         rolam_id: 2,
-        title: "Több mint munka, ez hivatás.",
+        title: "Több mint munka, ez hivatás",
         description: "Fő profilom az egyedi női és gyermek ruhák készítés, de javításokat és átalakításokat férfiruházat esetén is vállalok. Készítek táskákat, újra használatható öko termékeket, fehérneműket és maszkokat is.",
     },
     {
         rolam_id: 3,
-        title: "Kicsiknek és nagyoknak is örömmel dolgozok.",
+        title: "Kicsiknek és nagyoknak is örömmel dolgozok",
         description: "Büszke vagyok rá, hogy magánszemélyken túl beszállítója lehetek olyan nagynevű vállalkozásoknak és szervezeteknek mint a Thermal Hotel Visegrád, a Renaissance Étterem Visegrád és a Szent György Lovagrend.",
     },
 ];
