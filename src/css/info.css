@@ -59,6 +59,12 @@
 .info .instance ul li:not(li:last-child) {
   margin-bottom: 1.5rem;
 }
-.info .reviews p {
+.info .reviews ul li h4 {
+  text-align: center;
+}
+.info .reviews ul li p {
   font-style: italic;
+}
+.info .reviews ul li .date {
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=info.css.map */

@@ -25,6 +25,7 @@ export const szolgaltatasok = [
         img: noi_felsoruha_keszites_img,
         alt: "Valaki egy ruhánt készít, aki éppen megtűz egy ruha szélt, valamint egy sárga szabócenti is van a kép jobb szélén.",
         description: "Személyre szabott ruhák, blúzok, szoknyák, nadrágok és sokminden más.",
+        short_description: "Személyre szabott ruhák, blúzok, szoknyák, nadrágok és sokminden más.",
         details: [
             {
                 detail_id: 1,
@@ -47,6 +48,7 @@ export const szolgaltatasok = [
         img: ruha_javitas_es_atalakitas_img,
         alt: "Ruha javítás és átalakítás kép. Egy szakadt farmernadrág, egy olló, négy különböző színű cérnaspulni, egy varrógyűszű, és egy szabócenti látható.",
         description: "Ha túl hosszú, túl bő, szakadt vagy ha bővíteni kell. Tönkrement a cipzár a kedvenc darabon? Minden ami alakítás, javítás.",
+        short_description: "Ha túl hosszú, túl bő, szakadt vagy ha bővíteni kell. Minden ami alakítás, javítás.",
         details: [
             {
                 detail_id: 1,
@@ -90,6 +92,7 @@ export const szolgaltatasok = [
         img: gyermekruha_keszites_img,
         alt: "Egy kisfiú és egy kislány látható a képen. A fiú bal oldalon, a lány jobb oldalon van. A fiún zöld kabát és kék farmernadrág, a lányon rózsaszín kabát és fekete nadrág van.",
         description: "Bébi és gyermekruha készítés. Egyedi dizájn a megrendelő igényei szerint.",
+        short_description: "Bébi és gyermekruha készítés. Egyedi dizájn a megrendelő igényei szerint.",
         details: [
             {
                 detail_id: 1,
@@ -223,7 +226,7 @@ export const termekek = [
         url: "/termekek/konyhai-textilek",
         img: konyhai_textilek_img,
         alt: "",
-        description: "Konyharuhák, tárolo szákok, stb...",
+        description: "Konyharuhák, tárolo zsákok, konyharuhák, tárolo zsákok, stb...",
         details: [
             {
                 detail_id: 1,
@@ -243,7 +246,7 @@ export const termekek = [
         url: "/termekek/textil-jatekok",
         img: textil_jatekok_img,
         alt: "",
-        description: "Textil állatkák, stb...",
+        description: "Textil állatkák, textil állatkák, textil állatkák, textil állatkák, stb...",
         details: [
             {
                 detail_id: 1,

@@ -87,7 +87,7 @@ export default function Info() {
             </div>
 
             <div className='instance box gyik'>
-                <h3 className='box-title'>Kérdések és válaszok</h3>
+                <h3 className='box-title'>Gyakori kérdések</h3>
                 <div className='devider'></div>
                 <ul>
                     {indexes(2, gyik).map((element, index) =>

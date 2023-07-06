@@ -15,9 +15,9 @@ import SubPageServAndProd from './components/pages/sub-pages/SubPageServAndProd'
 import TopNavigation from './components/TopNavigation'
 import MainNavigation from './components/MainNavigation'
 import BottomNavigation from './components/BottomNavigation'
+import Info from './components/Info'
 
 import '../src/css/App.css'
-import Info from './components/Info'
 
 export default function App() {
 

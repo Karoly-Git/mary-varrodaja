@@ -79,8 +79,20 @@
     }
 
     .reviews {
-        p {
-            font-style: italic;
+        ul {
+            li {
+                h4 {
+                    text-align: center;
+                }
+
+                p {
+                    font-style: italic;
+                }
+
+                .date {
+                    margin-top: 0.5rem;
+                }
+            }
         }
     }
 
