@@ -6,6 +6,7 @@ import { GiLargeDress as Dress } from 'react-icons/gi';
 import { ImScissors as Scissors } from 'react-icons/im';
 import { BiChild as Children } from 'react-icons/bi';
 import Product_slider from '../Product_slider';
+import Review_slider from '../Review_slider';
 
 const icons = [<Dress className='icon dress' />, <Scissors className='icon scissors' />, <Children className='icon children' />];
 
@@ -33,7 +34,7 @@ export default function Kezdolap() {
                     )}
                 </Link>
             </div>
-
+            <Review_slider />
             <Product_slider />
         </div >
     )

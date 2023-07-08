@@ -327,24 +327,34 @@ export const gyik = [
 export const reviews = [
     {
         reviewId: 1,
-        name: "Joanna",
+        name: 'Eszter',
         rating: 4.5,
-        comment: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        timestamp: "2023-07-04T09:30:00Z"
+        comment: 'A Mary Varrodaja kivételes weboldal, amely széles választékban kínál magas minőségű termékeket. Nemrégiben vásároltam egy gyönyörű kézzel készített nyakláncot a kollekciójukból, és nagyon elégedett vagyok a vásárlásommal. A weboldal könnyen kezelhető, és az online fizetési folyamat gördülékenyen ment. A termék gyorsan megérkezett, és gyönyörűen volt becsomagolva. Határozottan ajánlom a Mary Varrodaját mindazoknak, akik egyedi és elegáns ékszereket keresnek.',
+        timestamp: '2023-07-04T09:30:00Z',
+        short_comment: 'A Mary Varrodaja kivételes weboldal, amely széles választékban kínál magas minőségű termékeket. Nemrégiben vásároltam egy gyönyörű kézzel készített nyakláncot a kollekciójukból, és nagyon elégedett vagyok a...'
     },
     {
         reviewId: 2,
-        name: "Matilda",
-        rating: 4.5,
-        comment: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-        timestamp: "2023-07-04T09:30:00Z"
+        name: 'Anna',
+        rating: 4.8,
+        comment: 'A Mary Varrodajára akadtam, amikor különleges ajándékot kerestem a nővérem születésnapjára. Lenyűgözött a kitűnő kézműves munka és a részletek iránti figyelem, amelyek az áruikban megmutatkoznak. A weboldal gyönyörű kollekciót mutat be kézzel készített ékszerekből, amelyek igazán kiemelkedőek. A vevőszolgálat kiváló volt, és mindent megtettek, hogy a nővérem időben megkapja az ajándékát. Hálás vagyok a Mary Varrodajának, hogy ennyire kellemessé tették a vásárlási élményt.',
+        timestamp: '2023-07-05T14:45:00Z',
+        short_comment: 'A Mary Varrodajára akadtam, amikor különleges ajándékot kerestem a nővérem születésnapjára. Lenyűgözött a kitűnő kézműves munka és a részletek iránti figyelem, amelyek az áruikban megmutatkoznak...'
     },
     {
         reviewId: 3,
-        name: "Judit",
-        rating: 4.5,
-        comment: "Pénteken vettem meg a manó ás tengerész babákat, anyukámnak is nagy ōrōmet szereztünk vele. Kōszōnet érte! Figyelni fogom, ás számítok továbbra is száp munkáira. Sok erőt és ihletet kívánok!",
-        timestamp: "2023-07-04T09:30:00Z"
+        name: 'Zsófia',
+        rating: 4.2,
+        comment: 'A Mary Varrodaja lett az új kedvenc online áruházam, amikor ékszerekről van szó. Weboldaluk egy olyan gyöngyszemeket tartalmazó kincsesláda, amelyek gyönyörűen tervezettek, és különböző ízléshez és stílushoz illeszkednek. Ami igazán kiemelkedővé teszi őket, az az a szenvedély és kreativitás, amely minden egyes darabban megmutatkozik. Legyen szó feltűnő nyakláncról vagy finom fülbevalóról, a Mary Varrodajánál biztosan találsz valami igazán egyedit. A weboldaluk könnyen kezelhető, és az ügyfélszolgálatuk gyors és segítőkész. Határozottan ajánlom őket!',
+        timestamp: '2023-07-05T19:12:00Z',
+        short_comment: 'A Mary Varrodaja lett az új kedvenc online áruházam, amikor ékszerekről van szó. Weboldaluk egy olyan gyöngyszemeket tartalmazó kincsesláda, amelyek gyönyörűen tervezettek, és különböző ízléshez és stílushoz illeszkednek...'
     },
-];
-
+    {
+        reviewId: 4,
+        name: 'Katalin',
+        rating: 4.7,
+        comment: 'Nemrégiben fedeztem fel a Mary Varrodaját, és kellemes meglepetés volt. A weboldaluk lenyűgöző választékkal rendelkezik kézzel készített ékszerekből, amelyek eleganciát és egyediséget sugároznak. Rendeltem egy karkötőt magamnak, és lenyűgözött a minőség és a részletek iránti gondosság. A termék gondosan be volt csomagolva, és nagyra értékeltem a személyes üzenetet tartalmazó kézzel írt üdvözlőlapot is. A Mary Varrodaja valóban egy rejtett kincs az online ékszerboltok világában.',
+        timestamp: '2023-07-06T10:20:00Z',
+        short_comment: 'Nemrégiben fedeztem fel a Mary Varrodaját, és kellemes meglepetés volt. A weboldaluk lenyűgöző választ...'
+    }
+]

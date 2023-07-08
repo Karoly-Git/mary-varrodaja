@@ -1,7 +1,7 @@
 .product-slider {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 4rem 2rem;
   align-items: center;
 }
 .product-slider .title-box {
@@ -21,13 +21,37 @@
   font-weight: 100;
   color: rgb(80, 80, 80);
 }
-.product-slider .slider-box {
+.product-slider .slider-container {
   display: flex;
-  width: 70rem;
-  overflow: hidden;
   margin-top: 4rem;
 }
-.product-slider .slider-box a {
+.product-slider .slider-container .btn-box {
+  display: flex;
+  align-items: center;
+}
+.product-slider .slider-container .btn-box .icon {
+  font-size: 2.5rem;
+  border: 2px solid rgb(180, 180, 180);
+  border-radius: 50%;
+  color: rgb(120, 120, 120);
+  cursor: pointer;
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+.product-slider .slider-container .btn-box .left {
+  transform: rotate(180deg);
+}
+.product-slider .slider-container .btn-box .icon:hover {
+  background-color: rgb(120, 120, 120);
+  color: white;
+}
+.product-slider .slider-container .slider-box {
+  display: flex;
+  align-items: center;
+  width: 70rem;
+  overflow: hidden;
+}
+.product-slider .slider-container .slider-box a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,11 +59,16 @@
   left: 0;
   height: 16rem;
   text-decoration: none;
+  transition: all 350ms ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-.product-slider .slider-box a img {
+.product-slider .slider-container .slider-box a img {
   width: 16rem;
 }
-.product-slider .slider-box a h3 {
+.product-slider .slider-container .slider-box a h3 {
   width: 100%;
   text-align: center;
   margin-top: -4rem;
@@ -50,10 +79,19 @@
   color: white;
   transition: all 150ms ease-in-out;
 }
-.product-slider .slider-box a:hover h3 {
+.product-slider .slider-container .slider-box a:hover h3 {
   background-color: rgb(223, 208, 181);
   color: black;
 }
-.product-slider .slider-box .img-box:not(img:last-child) {
+.product-slider .slider-container .slider-box .img-box:not(img:last-child) {
   margin-right: 2rem;
+}
+.product-slider .slider-container:hover .icon {
+  margin-left: 1rem;
+  opacity: 1;
+}
+.product-slider .slider-container:hover .left {
+  margin-left: 0;
+  margin-right: 1rem;
+  transform: rotate(180deg);
 }/*# sourceMappingURL=product-slider.css.map */

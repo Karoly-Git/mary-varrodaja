@@ -103,10 +103,10 @@ export default function Info() {
                 <h3 className='box-title'>Vélemények</h3>
                 <div className='devider'></div>
                 <ul>
-                    {indexes(3, reviews).map((element, index) =>
+                    {indexes(2, reviews).map((element, index) =>
                         <li key={'reviews' + index}>
                             <h4>{reviews[element].name}</h4>
-                            <p>{reviews[element].comment}</p>
+                            <p>{reviews[element].short_comment}</p>
                             <p className='date'>{reviews[element].timestamp.split('T')[0]}</p>
                         </li>
                     )}

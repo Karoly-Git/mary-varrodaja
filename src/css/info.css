@@ -64,6 +64,7 @@
 }
 .info .reviews ul li p {
   font-style: italic;
+  text-align: center;
 }
 .info .reviews ul li .date {
   margin-top: 0.5rem;

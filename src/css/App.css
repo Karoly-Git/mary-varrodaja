@@ -5,6 +5,7 @@
 @import './serv_and_prod.css';
 @import './display.css';
 @import './product-slider.css';
+@import './review-slider.css';
 * {
   margin: 0;
   padding: 0;
