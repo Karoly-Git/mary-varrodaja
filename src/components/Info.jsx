@@ -6,6 +6,10 @@ import { BsPhone as Mobile } from 'react-icons/bs';
 import { ImWhatsapp as Whatsapp } from 'react-icons/im';
 import { FiMapPin as Location } from 'react-icons/fi';
 import { AiOutlineMail as Email } from 'react-icons/ai';
+import { AiOutlineInfoCircle as InfoIcon } from 'react-icons/ai';
+import { GoQuestion as QuestionIcon } from 'react-icons/go';
+import { HiOutlineOfficeBuilding as ContactIcon } from 'react-icons/hi';
+import { FaRegCommentDots as CommentIcon } from 'react-icons/fa';
 
 export default function Info() {
 
@@ -23,7 +27,8 @@ export default function Info() {
 
     return (
         <div className='info'>
-            <div className='contact box'>
+            <div className='instance box contact'>
+                <ContactIcon className='icon' />
                 <h3 className='box-title'>Elérhetőségek</h3>
                 <div className='devider'></div>
                 <ul>
@@ -73,7 +78,8 @@ export default function Info() {
                 </ul>
             </div>
 
-            <div className='instance box gyik'>
+            <div className='instance box'>
+                <InfoIcon className='icon' />
                 <h3 className='box-title'>Hírek</h3>
                 <div className='devider'></div>
                 <ul>
@@ -86,7 +92,8 @@ export default function Info() {
                 </ul>
             </div>
 
-            <div className='instance box gyik'>
+            <div className='instance box'>
+                <QuestionIcon className='icon' />
                 <h3 className='box-title'>Gyakori kérdések</h3>
                 <div className='devider'></div>
                 <ul>
@@ -100,6 +107,7 @@ export default function Info() {
             </div>
 
             <div className='instance box reviews'>
+                <CommentIcon className='icon' />
                 <h3 className='box-title'>Vélemények</h3>
                 <div className='devider'></div>
                 <ul>
@@ -107,7 +115,7 @@ export default function Info() {
                         <li key={'reviews' + index}>
                             <h4>{reviews[element].name}</h4>
                             <p>{reviews[element].short_comment}</p>
-                            <p className='date'>{reviews[element].timestamp.split('T')[0]}</p>
+                            {false && <p className='date'>{reviews[element].timestamp.split('T')[0]}</p>}
                         </li>
                     )}
                 </ul>

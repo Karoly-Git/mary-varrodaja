@@ -1,16 +1,16 @@
 // Images of Termékek
-import fehernemuk_img from '../img/categories/fehernemuk.jpg';
-import gyermekruhak_img from '../img/categories/gyermekruhak.jpg';
-import maszkok_img from '../img/categories/maszkok.jpg';
-import oko_termekek_img from '../img/categories/oko_termekek.jpg';
-import taskak_img from '../img/categories/taskak.jpg';
-import konyhai_textilek_img from '../img/categories/konyhai-textilek.jpg';
-import textil_jatekok_img from '../img/categories/textil-jatekok.jpg';
+import fehernemuk_img from '../img/categories/thumbnails/fehernemuk.jpg';
+import gyermekruhak_img from '../img/categories/thumbnails/gyermekruhak.jpg';
+import maszkok_img from '../img/categories/thumbnails/maszkok.jpg';
+import oko_termekek_img from '../img/categories/thumbnails/oko_termekek.jpg';
+import taskak_img from '../img/categories/thumbnails/taskak.jpg';
+import konyhai_textilek_img from '../img/categories/thumbnails/konyhai-textilek.jpg';
+import textil_jatekok_img from '../img/categories/thumbnails/textil-jatekok.jpg';
 
 // Images of Szolgáltatások
-import gyermekruha_keszites_img from '../img/szolgaltatasok/gyermekruha-keszites.jpg'
-import noi_felsoruha_keszites_img from '../img/szolgaltatasok/noi-felsoruha-keszites.jpg'
-import ruha_javitas_es_atalakitas_img from '../img/szolgaltatasok/ruha-javitas-es-atalakitas.jpg'
+import gyermekruha_keszites_img from '../img/szolgaltatasok/thumbnails/gyermekruha-keszites.jpg'
+import noi_felsoruha_keszites_img from '../img/szolgaltatasok/thumbnails/noi-felsoruha-keszites.jpg'
+import ruha_javitas_es_atalakitas_img from '../img/szolgaltatasok/thumbnails/ruha-javitas-es-atalakitas.jpg'
 
 //const importAll = (requireContext) => requireContext.keys().map(requireContext);
 //const images = importAll(require.context('../src/img/categories', false, /\.(png|jpe?g|svg)$/));
@@ -21,6 +21,7 @@ export const szolgaltatasok = [
         szolgaltatas_id: 1,
         isActive: true,
         title: "Női felsőruha készítés",
+        sub_title: "Női felsőruha készítés egyedi igények szerint",
         url: "/szolgaltatasok/noi-felsoruha-keszites",
         img: noi_felsoruha_keszites_img,
         alt: "Valaki egy ruhánt készít, aki éppen megtűz egy ruha szélt, valamint egy sárga szabócenti is van a kép jobb szélén.",
@@ -44,6 +45,7 @@ export const szolgaltatasok = [
         szolgaltatas_id: 2,
         isActive: true,
         title: "Ruha javítás és átalakítás",
+        sub_title: "Ruha javítás és átalakítás",
         url: "/szolgaltatasok/ruha-javitas-es-atalakitas",
         img: ruha_javitas_es_atalakitas_img,
         alt: "Ruha javítás és átalakítás kép. Egy szakadt farmernadrág, egy olló, négy különböző színű cérnaspulni, egy varrógyűszű, és egy szabócenti látható.",
@@ -88,6 +90,7 @@ export const szolgaltatasok = [
         szolgaltatas_id: 3,
         isActive: true,
         title: "Gyermekruha készítés",
+        sub_title: "Gyermekruha készítés 0-tól 6 éves korig",
         url: "/szolgaltatasok/gyermekruha-keszites",
         img: gyermekruha_keszites_img,
         alt: "Egy kisfiú és egy kislány látható a képen. A fiú bal oldalon, a lány jobb oldalon van. A fiún zöld kabát és kék farmernadrág, a lányon rózsaszín kabát és fekete nadrág van.",

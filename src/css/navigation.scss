@@ -1,5 +1,6 @@
 .main-navigation {
     display: flex;
+    margin: 0 4rem;
     border-bottom: 1px solid rgba(100, 100, 100, 0.3);
 
     a {
@@ -10,6 +11,11 @@
         }
     }
 
+    .menu-btn {
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
     ul {
         display: flex;
         list-style: none;
@@ -18,16 +24,27 @@
         align-items: center;
 
         li {
-            a {
+            .menu-btn {
+                display: flex;
+                align-items: center;
                 color: rgb(100, 100, 100);
                 text-decoration: none;
                 font-size: 1.5rem;
                 transition: all 150ms ease-in-out;
+
+                .icon {
+                    margin-right: 0.5rem;
+                    font-size: 1.2rem;
+                }
+
+                .phone-icon {
+                    font-size: 1rem;
+                }
             }
 
-            a:hover {
+            .menu-btn:hover {
                 background-color: rgb(223, 208, 181);
-                color: rgba(50, 50, 50);
+                color: rgba(50, 50, 50, 1);
             }
         }
 

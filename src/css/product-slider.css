@@ -8,18 +8,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 70rem;
   width: 100%;
 }
 .product-slider .title-box .devider {
   width: 100%;
   height: 3px;
   background-color: rgba(80, 80, 80, 0.1);
-  margin: 0 1rem;
 }
 .product-slider .title-box h2 {
   text-transform: uppercase;
   font-weight: 100;
   color: rgb(80, 80, 80);
+  padding: 0 1rem;
 }
 .product-slider .slider-container {
   display: flex;
@@ -35,11 +36,13 @@
   border-radius: 50%;
   color: rgb(120, 120, 120);
   cursor: pointer;
-  opacity: 0;
   transition: all 250ms ease-in-out;
+  margin-left: 1rem;
 }
 .product-slider .slider-container .btn-box .left {
   transform: rotate(180deg);
+  margin-left: unset;
+  margin-right: 1rem;
 }
 .product-slider .slider-container .btn-box .icon:hover {
   background-color: rgb(120, 120, 120);
@@ -57,7 +60,6 @@
   align-items: center;
   position: relative;
   left: 0;
-  height: 16rem;
   text-decoration: none;
   transition: all 350ms ease-in-out;
   -webkit-user-select: none;
@@ -71,8 +73,7 @@
 .product-slider .slider-container .slider-box a h3 {
   width: 100%;
   text-align: center;
-  margin-top: -4rem;
-  background-color: rgba(50, 50, 50, 0.75);
+  background-color: rgba(50, 50, 50, 0.5);
   padding: 0.5rem 0;
   text-transform: uppercase;
   font-weight: 100;
@@ -85,13 +86,4 @@
 }
 .product-slider .slider-container .slider-box .img-box:not(img:last-child) {
   margin-right: 2rem;
-}
-.product-slider .slider-container:hover .icon {
-  margin-left: 1rem;
-  opacity: 1;
-}
-.product-slider .slider-container:hover .left {
-  margin-left: 0;
-  margin-right: 1rem;
-  transform: rotate(180deg);
 }/*# sourceMappingURL=product-slider.css.map */

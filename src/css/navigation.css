@@ -1,5 +1,6 @@
 .main-navigation {
   display: flex;
+  margin: 0 4rem;
   border-bottom: 1px solid rgba(100, 100, 100, 0.3);
 }
 .main-navigation a {
@@ -8,6 +9,10 @@
 .main-navigation a .logo {
   width: 250px;
 }
+.main-navigation .menu-btn {
+  padding: 0.5rem;
+  cursor: pointer;
+}
 .main-navigation ul {
   display: flex;
   list-style: none;
@@ -15,13 +20,22 @@
   justify-content: center;
   align-items: center;
 }
-.main-navigation ul li a {
+.main-navigation ul li .menu-btn {
+  display: flex;
+  align-items: center;
   color: rgb(100, 100, 100);
   text-decoration: none;
   font-size: 1.5rem;
   transition: all 150ms ease-in-out;
 }
-.main-navigation ul li a:hover {
+.main-navigation ul li .menu-btn .icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+.main-navigation ul li .menu-btn .phone-icon {
+  font-size: 1rem;
+}
+.main-navigation ul li .menu-btn:hover {
   background-color: rgb(223, 208, 181);
   color: rgb(50, 50, 50);
 }

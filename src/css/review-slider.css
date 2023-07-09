@@ -1,3 +1,6 @@
+.review-slider {
+  margin: 2rem 0;
+}
 .review-slider .slider-container {
   display: flex;
   justify-content: space-between;
@@ -39,6 +42,7 @@
 .review-slider .slider-container .slider-box .slide .stars .icon {
   font-size: 1.35rem;
   color: white;
+  color: rgb(233, 88, 39);
 }
 .review-slider .slider-container .slider-box .slide .stars .icon:not(.icon:last-child) {
   margin-right: 0.25rem;

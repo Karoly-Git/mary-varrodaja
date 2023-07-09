@@ -1,4 +1,5 @@
 .review-slider {
+    margin: 2rem 0;
 
     .slider-container {
         display: flex;
@@ -41,6 +42,7 @@
                     .icon {
                         font-size: 1.35rem;
                         color: white;
+                        color: rgb(233, 88, 39)
                     }
 
                     .icon:not(.icon:last-child) {

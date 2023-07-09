@@ -18,7 +18,7 @@
 .info .box .devider {
   height: 3px;
   width: 45px;
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(223, 208, 181);
   margin: 1rem 0;
 }
 .info .contact ul {
@@ -44,6 +44,11 @@
 }
 .info .contact ul li:not(li:last-child) {
   margin-bottom: 1rem;
+}
+.info .instance .icon {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
 }
 .info .instance ul {
   list-style: none;

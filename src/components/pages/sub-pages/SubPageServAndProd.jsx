@@ -6,7 +6,7 @@ export default function SubPageSzolg(props) {
 
     return (
         <div className='sub-page'>
-            <h1>{data.title}</h1>
+            <h1>{data.sub_title}</h1>
             {data.details
                 .map((detail, detailIndex) => (
                     <section key={detailIndex}>

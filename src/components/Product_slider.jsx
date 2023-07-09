@@ -4,25 +4,25 @@ import { Link } from 'react-router-dom'
 import { termekek } from '../data/data'
 import { MdOutlineNavigateNext as NavArrow } from 'react-icons/md';
 
-export default function Product_slider() {
+export default function ProductSlider(props) {
 
     const [marginLeft, setMarginLeft] = useState(0);
 
     const clickOnRight = () => {
         if (marginLeft > -3 * 18) {
             setMarginLeft(marginLeft - 18);
-            console.log(marginLeft - 18);
+            //console.log(marginLeft - 18);
         }
     };
     const clickOnLeft = () => {
         if (marginLeft < 0) {
             setMarginLeft(marginLeft + 18);
-            console.log(marginLeft + 18);
+            //console.log(marginLeft + 18);
         }
     };
 
     return (
-        <div className='product-slider'>
+        <div className='product-slider' ref={props.scrollRefProducts}>
             <div className='title-box'>
                 <div className='devider'></div>
                 <h2>Termékeim</h2>

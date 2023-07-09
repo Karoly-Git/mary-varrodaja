@@ -5,12 +5,12 @@ import { MdOutlineNavigateNext as Arrow } from 'react-icons/md'
 import { AiFillStar as Star } from 'react-icons/ai'
 import { RiDoubleQuotesL as Quotes } from 'react-icons/ri'
 
-export default function Review_slider() {
+export default function ReviewSlider() {
     const [marginLeft, setMarginLeft] = useState(0);
 
     const moveToRight = () => {
         if (marginLeft > -1 * (reviews.length - 1) * 100) {
-            console.log(marginLeft - 100);
+            //console.log(marginLeft - 100);
             setMarginLeft(marginLeft - 100);
         } else {
             setMarginLeft(0);
@@ -18,7 +18,7 @@ export default function Review_slider() {
     };
     const moveToLeft = () => {
         if (marginLeft < 0) {
-            console.log(marginLeft + 100);
+            //console.log(marginLeft + 100);
             setMarginLeft(marginLeft + 100);
         } else {
             setMarginLeft(-1 * (reviews.length - 1) * 100);

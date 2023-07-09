@@ -1,0 +1,23 @@
+.sub-page h1 {
+  color: rgb(70, 70, 70);
+  text-align: center;
+  padding: 2rem 0;
+  font-weight: 100;
+}
+.sub-page section {
+  padding: 0 2rem;
+}
+.sub-page section h2 {
+  color: rgb(70, 70, 70);
+  margin-bottom: 1rem;
+  font-weight: 100;
+}
+.sub-page section p {
+  max-width: 800px;
+}
+.sub-page section p:not(p:last-child) {
+  margin-bottom: 1rem;
+}
+.sub-page section:not(section:last-child) {
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=sub-page.css.map */
