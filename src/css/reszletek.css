@@ -1,0 +1,61 @@
+.termek-reszletek {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.termek-reszletek h1 {
+  color: rgb(70, 70, 70);
+  text-align: center;
+  padding: 2rem 0;
+  font-weight: 100;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+.termek-reszletek article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0 8rem;
+}
+.termek-reszletek article .container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.termek-reszletek article .container section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.termek-reszletek article .container section h3 {
+  color: rgb(70, 70, 70);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.termek-reszletek article .container section .text-box {
+  display: flex;
+  flex-direction: column;
+}
+.termek-reszletek article .container section .text-box p {
+  max-width: 600px;
+  line-height: 1.75rem;
+  text-align: center;
+  color: rgb(100, 100, 100);
+}
+.termek-reszletek article .container section .text-box p:not(p:last-child) {
+  margin-bottom: 1rem;
+}
+.termek-reszletek article .container section:not(section:last-child) {
+  margin-bottom: 2rem;
+}
+.termek-reszletek article img {
+  width: 350px;
+  padding: 1rem;
+}
+.termek-reszletek article:nth-child(2n) {
+  flex-direction: row-reverse;
+}/*# sourceMappingURL=reszletek.css.map */

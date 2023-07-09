@@ -4,24 +4,6 @@
   padding: 4rem 2rem;
   align-items: center;
 }
-.product-slider .title-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 70rem;
-  width: 100%;
-}
-.product-slider .title-box .devider {
-  width: 100%;
-  height: 3px;
-  background-color: rgba(80, 80, 80, 0.1);
-}
-.product-slider .title-box h2 {
-  text-transform: uppercase;
-  font-weight: 100;
-  color: rgb(80, 80, 80);
-  padding: 0 1rem;
-}
 .product-slider .slider-container {
   display: flex;
   margin-top: 4rem;

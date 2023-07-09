@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { termekek } from '../data/data'
 import { MdOutlineNavigateNext as NavArrow } from 'react-icons/md';
+import SectionDevider from './SectionDevider';
 
 export default function ProductSlider(props) {
 
@@ -23,11 +24,9 @@ export default function ProductSlider(props) {
 
     return (
         <div className='product-slider' ref={props.scrollRefProducts}>
-            <div className='title-box'>
-                <div className='devider'></div>
-                <h2>Termékeim</h2>
-                <div className='devider'></div>
-            </div>
+
+            <SectionDevider h2={'Termékeim'} />
+
             <div className="slider-container">
                 <div className='btn-box'><NavArrow className='icon left' onClick={clickOnLeft} style={marginLeft === 0 ? { pointerEvents: 'none', opacity: '0' } : {}} /></div>
                 <div className="slider-box">
@@ -40,6 +39,7 @@ export default function ProductSlider(props) {
                 </div>
                 <div className='btn-box'><NavArrow className='icon' onClick={clickOnRight} style={marginLeft === -3 * 18 ? { pointerEvents: 'none', opacity: '0' } : {}} /></div>
             </div>
+
         </div>
     )
 }

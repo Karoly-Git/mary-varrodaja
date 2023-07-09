@@ -1,0 +1,82 @@
+.termek-reszletek {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //background-color: red;
+
+    h1 {
+        //color: red;
+        color: rgb(70, 70, 70);
+        //background-color: red;
+        text-align: center;
+        padding: 2rem 0;
+        font-weight: 100;
+        margin-bottom: 4rem;
+        //padding-left: 8rem;
+        width: 100%;
+        //background-color: blue;
+    }
+
+    article {
+        display: flex;
+        align-items: center;
+        //flex-direction: column;
+        //width: 100%;
+        //background-color: green;
+        margin-bottom: 1rem;
+        padding: 0 8rem;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 3rem;
+
+                h3 {
+                    color: rgb(70, 70, 70);
+                    margin-bottom: 2rem;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+
+                .text-box {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        max-width: 600px;
+                        line-height: 1.75rem;
+                        text-align: center;
+                        color: rgb(100, 100, 100);
+
+                    }
+
+                    p:not(p:last-child) {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            section:not(section:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        img {
+            width: 350px;
+            //height: 350px;
+            padding: 1rem;
+        }
+    }
+
+    article:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+}

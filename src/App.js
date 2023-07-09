@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Axios from 'axios'
@@ -7,15 +7,16 @@ import config from './data/config.json'
 import { termekek, szolgaltatasok } from './data/data'
 import ErrorMessage from './components/ErrorMessage'
 import Kezdolap from './components/pages/Kezdolap'
-import ServicesAndProducts from './components/pages/ServicesAndProducts'
+import SzolgEsTerm from './components/pages/SzolgEsTerm'
 import Rolam from './components/pages/Rolam'
 import Kapcsolat from './components/pages/Kapcsolat'
 import Gyik from './components/pages/Gyik'
-import SubPageServAndProd from './components/pages/sub-pages/SubPageServAndProd'
 import TopNavigation from './components/TopNavigation'
 import MainNavigation from './components/MainNavigation'
 import BottomNavigation from './components/BottomNavigation'
 import Info from './components/Info'
+import SzolgaltatasReszletek from './components/pages/sub-pages/SzolgaltatasReszletek'
+import Reszletek from './components/pages/sub-pages/Reszletek'
 
 import '../src/css/App.css'
 
@@ -62,19 +63,11 @@ export default function App() {
             <Route path='*' element={<h1>Oldal nem található</h1>}></Route>
             <Route path='/' element={<Kezdolap />}></Route>
 
-            <Route path='/szolgaltatasok' element={<ServicesAndProducts list={szolgaltatasok} h1={'Szolgáltatásaim'} />}></Route>
-            <Route path='/szolgaltatasok/noi-felsoruha-keszites' element={<SubPageServAndProd data={szolgaltatasok} szolgTitle="Női felsőruha készítés" />}></Route>
-            <Route path='/szolgaltatasok/ruha-javitas-es-atalakitas' element={<SubPageServAndProd data={szolgaltatasok} szolgTitle="Ruha javítás és átalakítás" />}></Route>
-            <Route path='/szolgaltatasok/gyermekruha-keszites' element={<SubPageServAndProd data={szolgaltatasok} szolgTitle="Gyermekruha készítés" />}></Route>
+            <Route path='/szolgaltatasok' element={<SzolgEsTerm list={szolgaltatasok} h1={'Szolgáltatások'} />}></Route>
+            <Route path='/szolgaltatasok/reszletek' element={<Reszletek data={szolgaltatasok} h1={'A varróműhelyben'} />}></Route>
 
-            <Route path='/termekek' element={<ServicesAndProducts list={termekek} h1={'Termékeim'} />}></Route>
-            <Route path='/termekek/taskak' element={<SubPageServAndProd data={termekek} szolgTitle="Táskák" />}></Route>
-            <Route path='/termekek/maszkok' element={<SubPageServAndProd data={termekek} szolgTitle="Maszkok" />}></Route>
-            <Route path='/termekek/fehernemuk' element={<SubPageServAndProd data={termekek} szolgTitle="Fehérneműk" />}></Route>
-            <Route path='/termekek/oko-termekek' element={<SubPageServAndProd data={termekek} szolgTitle="Öko termékek" />}></Route>
-            <Route path='/termekek/gyermekruhak' element={<SubPageServAndProd data={termekek} szolgTitle="Gyermekruhák" />}></Route>
-            <Route path='/termekek/konyhai-textilek' element={<SubPageServAndProd data={termekek} szolgTitle="Konyhai textilek" />}></Route>
-            <Route path='/termekek/textil-jatekok' element={<SubPageServAndProd data={termekek} szolgTitle="Textil játékok" />}></Route>
+            <Route path='/termekek' element={<SzolgEsTerm list={termekek} h1={'Termékek'} />}></Route>
+            <Route path='/termekek/reszletek' element={<Reszletek data={termekek} h1={'Kézzel kézsített egyedi termékek egyedi dizájnnal'} />}></Route>
 
             <Route path='/rolam' element={<Rolam />}></Route>
             <Route path='/kapcsolat' element={<Kapcsolat />}></Route>
@@ -86,9 +79,7 @@ export default function App() {
           <Info />
         </footer>
       </Router>
-      {!isLoading && !data &&
-        <ErrorMessage errMessage={error.message} errName={error.name} />
-      }
+      {!isLoading && !data && <ErrorMessage errMessage={error.message} errName={error.name} />}
     </div>
   )
 }
