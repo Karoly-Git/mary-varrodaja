@@ -10,6 +10,25 @@
   padding: 1rem;
   color: rgb(200, 200, 200);
 }
+.info .box .icon {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.info .box ul {
+  list-style: none;
+}
+.info .box ul li h4 {
+  margin-bottom: 0.5rem;
+  color: rgb(241, 241, 241);
+}
+.info .box ul li .date {
+  margin-top: 0.25rem;
+  text-align: right;
+}
+.info .box ul li:not(li:last-child) {
+  margin-bottom: 1.5rem;
+}
 .info .box .box-title {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -21,48 +40,11 @@
   background-color: rgb(223, 208, 181);
   margin: 1rem 0;
 }
-.info .contact ul {
-  list-style: none;
-}
-.info .contact ul li {
-  display: flex;
-}
-.info .contact ul li a {
-  text-decoration: none;
+.info .contacts li a {
   color: rgb(241, 241, 241);
-  display: flex;
-  align-items: flex-start;
-  transition: all 150ms ease-in-out;
 }
-.info .contact ul li a .icon {
+.info .contacts li a .icon {
   color: wheat;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-}
-.info .contact ul li a:hover {
-  scale: 1.075;
-}
-.info .contact ul li:not(li:last-child) {
-  margin-bottom: 1rem;
-}
-.info .instance .icon {
-  font-size: 1.5rem;
-  color: white;
-  margin-bottom: 0.5rem;
-}
-.info .instance ul {
-  list-style: none;
-}
-.info .instance ul li h4 {
-  margin-bottom: 0.5rem;
-  color: rgb(241, 241, 241);
-}
-.info .instance ul li .date {
-  margin-top: 0.25rem;
-  text-align: right;
-}
-.info .instance ul li:not(li:last-child) {
-  margin-bottom: 1.5rem;
 }
 .info .reviews ul li h4 {
   text-align: center;

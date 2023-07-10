@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React, { useState, useEffect } from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-import Axios from 'axios'
-import config from './data/config.json'
+import Axios from "axios"
+import config from "./data/config.json"
 
-import { termekek, szolgaltatasok } from './data/data'
-import ErrorMessage from './components/ErrorMessage'
-import Kezdolap from './components/pages/Kezdolap'
-import SzolgEsTerm from './components/pages/SzolgEsTerm'
-import Rolam from './components/pages/Rolam'
-import Kapcsolat from './components/pages/Kapcsolat'
-import Gyik from './components/pages/Gyik'
-import TopNavigation from './components/TopNavigation'
-import MainNavigation from './components/MainNavigation'
-import BottomNavigation from './components/BottomNavigation'
-import Info from './components/Info'
-import SzolgaltatasReszletek from './components/pages/sub-pages/SzolgaltatasReszletek'
-import Reszletek from './components/pages/sub-pages/Reszletek'
+import { termekek, szolgaltatasok } from "./data/data"
+import ErrorMessage from "./components/ErrorMessage"
+import Kezdolap from "./components/pages/Kezdolap"
+import SzolgEsTerm from "./components/pages/SzolgEsTerm"
+import Rolam from "./components/pages/Rolam"
+import Kapcsolat from "./components/pages/Kapcsolat"
+import Gyik from "./components/pages/Gyik"
+import TopNavigation from "./components/TopNavigation"
+import MainNavigation from "./components/MainNavigation"
+import BottomNavigation from "./components/BottomNavigation"
+import Info from "./components/Info"
+import Reszletek from "./components/pages/sub-pages/Reszletek"
 
-import '../src/css/App.css'
+import "../src/css/App.css"
 
 export default function App() {
 
@@ -37,7 +36,7 @@ export default function App() {
     catch (err) {
       console.log(err);
       if (config.settings.isLocalServer && err) {
-        console.log('You might have forgotten to run local server.');
+        console.log("You might have forgotten to run local server.");
       };
       setError(err);
     }
@@ -52,7 +51,7 @@ export default function App() {
   }, [])
 
   return (
-    <div className='App'>
+    <div className="App">
       <Router>
         <header>
           <MainNavigation />
@@ -60,18 +59,18 @@ export default function App() {
         </header>
         <main>
           <Routes>
-            <Route path='*' element={<h1>Oldal nem található</h1>}></Route>
-            <Route path='/' element={<Kezdolap />}></Route>
+            <Route path="*" element={<h1>Oldal nem található</h1>}></Route>
+            <Route path="/" element={<Kezdolap />}></Route>
 
-            <Route path='/szolgaltatasok' element={<SzolgEsTerm list={szolgaltatasok} h1={'Szolgáltatások'} />}></Route>
-            <Route path='/szolgaltatasok/reszletek' element={<Reszletek data={szolgaltatasok} h1={'A varróműhelyben'} />}></Route>
+            <Route path="/szolgaltatasok" element={<SzolgEsTerm list={szolgaltatasok} h1={"Szolgáltatások"} />}></Route>
+            <Route path="/szolgaltatasok/reszletek" element={<Reszletek data={szolgaltatasok} h1={"Üdvözöllek a varróműhelyemben!"} />}></Route>
 
-            <Route path='/termekek' element={<SzolgEsTerm list={termekek} h1={'Termékek'} />}></Route>
-            <Route path='/termekek/reszletek' element={<Reszletek data={termekek} h1={'Kézzel kézsített egyedi termékek egyedi dizájnnal'} />}></Route>
+            <Route path="/termekek" element={<SzolgEsTerm list={termekek} h1={"Termékek"} />}></Route>
+            <Route path="/termekek/reszletek" element={<Reszletek data={termekek} h1={"Kézzel kézsített egyedi termékek egyedi dizájnnal"} />}></Route>
 
-            <Route path='/rolam' element={<Rolam />}></Route>
-            <Route path='/kapcsolat' element={<Kapcsolat />}></Route>
-            <Route path='/gyik' element={<Gyik />}></Route>
+            <Route path="/rolam" element={<Rolam />}></Route>
+            <Route path="/kapcsolat" element={<Kapcsolat />}></Route>
+            <Route path="/gyik" element={<Gyik />}></Route>
           </Routes>
         </main>
         <footer>

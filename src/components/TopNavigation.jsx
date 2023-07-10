@@ -32,20 +32,20 @@ export default function TopNavigation() {
                         <Whatsapp className='icon' />
                     </a>
                 </li>
-                <li id="location">
-                    <a
-                        target="_blank"
-                        href="https://www.google.hu/maps/place/Dunabogd%C3%A1ny,+Kossuth+Lajos+%C3%BAt+312,+2023+Magyarorsz%C3%A1g/@47.80205,19.0102433,17z/data=!3m1!4b1!4m5!3m4!1s0x476a80db29326d7f:0xf816991ef8d843a5!8m2!3d47.80205!4d19.012432"
-                        rel="noopener noreferrer">
-                        <Location className='icon' />
-                    </a>
-                </li>
                 <li id="email">
                     <a
                         title="maryvarrodaja@gmail.com"
                         href="mailto:maryvarrodaja@gmail.com"
                         rel="noopener noreferrer">
                         <Email className='icon' />
+                    </a>
+                </li>
+                <li id="location">
+                    <a
+                        target="_blank"
+                        href="https://www.google.hu/maps/place/Dunabogd%C3%A1ny,+Kossuth+Lajos+%C3%BAt+312,+2023+Magyarorsz%C3%A1g/@47.80205,19.0102433,17z/data=!3m1!4b1!4m5!3m4!1s0x476a80db29326d7f:0xf816991ef8d843a5!8m2!3d47.80205!4d19.012432"
+                        rel="noopener noreferrer">
+                        <Location className='icon' />
                     </a>
                 </li>
                 <li id="facebook">

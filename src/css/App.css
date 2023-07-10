@@ -1,5 +1,6 @@
 @import './navigation.css';
 @import './display.css';
+@import './contacts.css';
 @import './info.css';
 @import './review-slider.css';
 @import './product-slider.css';
@@ -8,6 +9,7 @@
 @import './kezdolap.css';
 @import './servs_and_prod.css';
 @import './rolam.css';
+@import './kapcsolat.css';
 @import './gyik.css';
 * {
   margin: 0;

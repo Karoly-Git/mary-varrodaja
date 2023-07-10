@@ -1,0 +1,93 @@
+.kapcsolat {
+    display: flex;
+    margin: 4rem;
+    justify-content: center;
+
+    h1,
+    h2 {
+        font-size: 2.15rem;
+        color: rgb(191, 161, 107);
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+    }
+
+    .email-form-box {
+        display: flex;
+        flex-direction: column;
+        max-width: 45rem;
+
+        p {
+            margin-bottom: 2rem;
+            color: rgb(50, 50, 50);
+        }
+
+        form {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            input,
+            textarea {
+                border: 1px solid gray;
+                font-size: 1.25rem;
+                //border-radius: 0.2rem;
+                padding: 0.5rem 1rem;
+                margin-bottom: 1rem;
+            }
+
+            input {
+                width: calc(50% - 0.5rem);
+                height: 3rem;
+            }
+
+            textarea {
+                width: 100%;
+                height: 8rem;
+                min-height: 3rem;
+                resize: vertical;
+            }
+
+            .send-btn {
+                margin-top: 1rem;
+                text-decoration: none;
+                font-size: 1.25rem;
+                color: azure;
+                background-color: rgb(50, 50, 50);
+                //border-radius: 0.2rem;
+                border: none;
+                padding: 0.5rem 2rem;
+                transition: all 150ms ease-in-out;
+                user-select: none;
+                width: 8rem;
+                //margin-left: auto;
+                //margin-right: auto;
+                cursor: pointer;
+            }
+
+            .send-btn:hover {
+                background: rgba(191, 161, 107, 0.5);
+                color: black;
+            }
+        }
+    }
+
+
+    .contact-list-box {
+        display: flex;
+        flex-direction: column;
+        padding-left: 8rem;
+
+        .contacts {
+            li {
+                a {
+                    color: rgb(50, 50, 50);
+
+                    .icon {
+                        color: rgb(50, 50, 50);
+                    }
+                }
+            }
+        }
+    }
+}

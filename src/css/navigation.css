@@ -1,10 +1,10 @@
 .main-navigation {
   display: flex;
-  margin: 0 4rem;
-  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
 }
 .main-navigation a {
   padding: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 .main-navigation a .logo {
   width: 250px;
@@ -13,14 +13,22 @@
   padding: 0.5rem;
   cursor: pointer;
 }
-.main-navigation ul {
+.main-navigation .container {
   display: flex;
-  list-style: none;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 2rem;
 }
-.main-navigation ul li .menu-btn {
+.main-navigation .container .box .primary-menu,
+.main-navigation .container .box .secondary-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  width: 100%;
+}
+.main-navigation .container .box .primary-menu li .menu-btn,
+.main-navigation .container .box .secondary-menu li .menu-btn {
   display: flex;
   align-items: center;
   color: rgb(100, 100, 100);
@@ -28,29 +36,60 @@
   font-size: 1.5rem;
   transition: all 150ms ease-in-out;
 }
-.main-navigation ul li .menu-btn .icon {
+.main-navigation .container .box .primary-menu li .menu-btn .icon,
+.main-navigation .container .box .secondary-menu li .menu-btn .icon {
   margin-right: 0.5rem;
   font-size: 1.2rem;
 }
-.main-navigation ul li .menu-btn .phone-icon {
+.main-navigation .container .box .primary-menu li .menu-btn .phone-icon,
+.main-navigation .container .box .secondary-menu li .menu-btn .phone-icon {
   font-size: 1rem;
 }
-.main-navigation ul li .menu-btn:hover {
+.main-navigation .container .box .primary-menu li .menu-btn:hover:not(.secondary-menu .menu-btn),
+.main-navigation .container .box .secondary-menu li .menu-btn:hover:not(.secondary-menu .menu-btn) {
   background-color: rgb(223, 208, 181);
   color: rgb(50, 50, 50);
 }
-.main-navigation ul li:not(li:last-child) {
+.main-navigation .container .box .primary-menu li:not(li:last-child),
+.main-navigation .container .box .secondary-menu li:not(li:last-child) {
   margin-right: 1.5rem;
+}
+.main-navigation .container .box .secondary-menu {
+  justify-content: space-between;
+  margin-top: 0rem;
+}
+.main-navigation .container .box .secondary-menu li .menu-btn {
+  font-size: 1rem;
+}
+.main-navigation .container .box .secondary-menu li .menu-btn .icon {
+  font-size: 1.2rem;
+}
+.main-navigation .container .box .secondary-menu li:last-child {
+  display: flex;
+}
+.main-navigation .container .box .secondary-menu li:last-child input {
+  padding: 0 0.5rem;
+  width: 15rem;
+}
+.main-navigation .container .box .secondary-menu li:last-child .shop-btn {
+  margin-left: 0.5rem;
+}
+.main-navigation .container .box .secondary-menu li:last-child .shop-btn .icon {
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .top-navigation {
   display: flex;
   justify-content: center;
-  padding: 1rem;
 }
 .top-navigation ul {
+  width: 100%;
+  border-top: 1px solid rgba(100, 100, 100, 0.3);
+  padding: 1rem 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   list-style: none;
 }
 .top-navigation ul li a .icon {

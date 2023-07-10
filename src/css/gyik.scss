@@ -1,12 +1,17 @@
 .gyik {
-    padding: 4rem;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     section {
         max-width: 50rem;
+        width: 100%;
 
         h3 {
             margin-bottom: 0.5rem;
             color: rgb(70, 70, 70);
+            max-width: 50rem;
         }
 
         p {

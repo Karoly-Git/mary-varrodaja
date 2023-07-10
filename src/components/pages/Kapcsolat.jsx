@@ -1,9 +1,10 @@
 import React from 'react'
+import Contacts from '../Contacts';
 
 export default function Kapcsolat() {
     return (
         <div className='kapcsolat'>
-            <div id="email-form-box">
+            <div className="email-form-box">
                 <h1>Miben tudok segíteni?</h1>
                 <p>
                     Szolgáltatásokkal és termékekkel kapcsolatos bármilyen kérdésed esetén állok szíves rendelkezésedre a
@@ -19,40 +20,12 @@ export default function Kapcsolat() {
                 </form>
             </div>
 
-            <div id="contact-list-box">
-                <h1>Elérhetőségeim:</h1>
+            <div className="contact-list-box">
+                <h2>Elérhetőségeim:</h2>
 
-                <ul id="contact-list">
-                    <li>
-                        <a href="tel:+3626390111">
-                            <i className="fa-solid fa-phone"></i>
-                            +36 26 390 111
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:+36205112319">
-                            <i className="fa-solid fa-mobile-screen-button"></i>
-                            +36 20 511 2319
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/+36205112319">
-                            <i className="fa-brands fa-whatsapp"></i>
-                            Mary Varrodája
-                        </a>
-                    </li>
-                    <li>
-                        <a id="address" target="_blank" rel="noopener noreferrer" href="https://www.google.hu/maps/place/Dunabogd%C3%A1ny,+Kossuth+Lajos+%C3%BAt+312,+2023+Magyarorsz%C3%A1g/@47.80205,19.0102433,17z/data=!3m1!4b1!4m5!3m4!1s0x476a80db29326d7f:0xf816991ef8d843a5!8m2!3d47.80205!4d19.012432">
-                            <i className="fa-solid fa-location-dot"></i>
-                            <div>
-                                <div>&nbsp;Dunabogdány</div>
-                                <div>&nbsp;Kossuth Lajos út 312.</div>
-                                <div>&nbsp;2023</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                <Contacts />
+
             </div>
-        </div>
+        </div >
     );
 }

@@ -1,10 +1,11 @@
 .main-navigation {
     display: flex;
-    margin: 0 4rem;
-    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+    //border-bottom: 1px solid rgba(100, 100, 100, 0.3);
 
     a {
         padding: 0.5rem;
+        display: flex;
+        align-items: center;
 
         .logo {
             width: 250px;
@@ -16,40 +17,90 @@
         cursor: pointer;
     }
 
-    ul {
+    .container {
         display: flex;
-        list-style: none;
-        width: 100%;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        padding: 2rem;
 
-        li {
-            .menu-btn {
+        .box {
+
+            //width: 100%;
+            .primary-menu,
+            .secondary-menu {
                 display: flex;
+                list-style: none;
+                //justify-content: center;
                 align-items: center;
-                color: rgb(100, 100, 100);
-                text-decoration: none;
-                font-size: 1.5rem;
-                transition: all 150ms ease-in-out;
+                width: 100%;
+                //background-color: blue;
+                //padding-left: 8rem;
 
-                .icon {
-                    margin-right: 0.5rem;
-                    font-size: 1.2rem;
+                li {
+                    .menu-btn {
+                        display: flex;
+                        align-items: center;
+                        color: rgb(100, 100, 100);
+                        text-decoration: none;
+                        font-size: 1.5rem;
+                        transition: all 150ms ease-in-out;
+
+                        .icon {
+                            margin-right: 0.5rem;
+                            font-size: 1.2rem;
+                        }
+
+                        .phone-icon {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .menu-btn:hover:not(.secondary-menu .menu-btn) {
+                        background-color: rgb(223, 208, 181);
+                        color: rgba(50, 50, 50, 1);
+                    }
                 }
 
-                .phone-icon {
-                    font-size: 1rem;
+                li:not(li:last-child) {
+                    margin-right: 1.5rem;
                 }
             }
 
-            .menu-btn:hover {
-                background-color: rgb(223, 208, 181);
-                color: rgba(50, 50, 50, 1);
-            }
-        }
+            .secondary-menu {
+                justify-content: space-between;
+                margin-top: 0rem;
 
-        li:not(li:last-child) {
-            margin-right: 1.5rem;
+                li {
+                    .menu-btn {
+                        //color: rgb(100, 100, 100);
+                        font-size: 1rem;
+
+                        .icon {
+                            //margin-right: 0.5rem;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                li:last-child {
+                    display: flex;
+
+                    input {
+                        padding: 0 0.5rem;
+                        width: 15rem;
+                    }
+
+                    .shop-btn {
+                        margin-left: 0.5rem;
+
+                        .icon {
+                            font-size: 1.5rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -57,11 +108,14 @@
 .top-navigation {
     display: flex;
     justify-content: center;
-    padding: 1rem;
 
     ul {
+        width: 100%;
+        border-top: 1px solid rgba(100, 100, 100, 0.3);
+        padding: 1rem 0;
         display: flex;
         align-items: center;
+        justify-content: center;
         list-style: none;
 
         li {
