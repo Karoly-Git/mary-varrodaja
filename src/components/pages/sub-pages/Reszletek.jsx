@@ -1,9 +1,8 @@
 import React from 'react';
-import SectionDevider from '../../SectionDevider';
 
 export default function Reszletek(props) {
     return (
-        <div className='termek-reszletek'>
+        <div className='reszletek'>
             <h1>{props.h1}</h1>
             {props.data.map((element, index) => (
                 <article id={element.html_id} key={'article' + index}>

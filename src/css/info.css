@@ -8,11 +8,10 @@
   margin-right: 1rem;
   width: 100%;
   padding: 1rem;
-  color: rgb(200, 200, 200);
 }
 .info .box .icon {
-  font-size: 1.5rem;
   color: white;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 .info .box ul {
@@ -20,11 +19,10 @@
 }
 .info .box ul li h4 {
   margin-bottom: 0.5rem;
-  color: rgb(241, 241, 241);
+  color: rgb(240, 240, 240);
 }
-.info .box ul li .date {
-  margin-top: 0.25rem;
-  text-align: right;
+.info .box ul li p {
+  color: rgb(200, 200, 200);
 }
 .info .box ul li:not(li:last-child) {
   margin-bottom: 1.5rem;
@@ -33,6 +31,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
+  color: rgb(200, 200, 200);
 }
 .info .box .devider {
   height: 3px;
@@ -41,10 +40,13 @@
   margin: 1rem 0;
 }
 .info .contacts li a {
-  color: rgb(241, 241, 241);
+  color: rgb(240, 240, 240);
 }
 .info .contacts li a .icon {
   color: wheat;
+}
+.info .contacts li a:hover {
+  background-color: unset;
 }
 .info .reviews ul li h4 {
   text-align: center;

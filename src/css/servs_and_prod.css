@@ -3,7 +3,6 @@
   flex-direction: column;
 }
 .services-and-products h1 {
-  color: rgb(70, 70, 70);
   font-weight: 100;
   text-align: center;
   margin: 2rem 0 0;
@@ -27,7 +26,6 @@
   transition: all 150ms ease-in-out;
 }
 .services-and-products section a h2 {
-  color: rgb(70, 70, 70);
   font-weight: 100;
   margin-bottom: 1rem;
 }
@@ -35,9 +33,7 @@
   width: 100%;
   margin-bottom: 1rem;
 }
-.services-and-products section a p {
-  color: rgb(70, 70, 70);
-}
 .services-and-products section a:hover {
   scale: 1.075;
+  background-color: unset;
 }/*# sourceMappingURL=servs_and_prod.css.map */

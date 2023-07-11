@@ -18,7 +18,6 @@
 }
 .kapcsolat .email-form-box p {
   margin-bottom: 2rem;
-  color: rgb(50, 50, 50);
 }
 .kapcsolat .email-form-box form {
   display: flex;
@@ -46,7 +45,7 @@
   margin-top: 1rem;
   text-decoration: none;
   font-size: 1.25rem;
-  color: azure;
+  color: white;
   background-color: rgb(50, 50, 50);
   border: none;
   padding: 0.5rem 2rem;
@@ -66,10 +65,4 @@
   display: flex;
   flex-direction: column;
   padding-left: 8rem;
-}
-.kapcsolat .contact-list-box .contacts li a {
-  color: rgb(50, 50, 50);
-}
-.kapcsolat .contact-list-box .contacts li a .icon {
-  color: rgb(50, 50, 50);
 }/*# sourceMappingURL=kapcsolat.css.map */

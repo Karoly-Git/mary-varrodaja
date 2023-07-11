@@ -3,14 +3,12 @@
     flex-direction: column;
 
     h1 {
-        color: rgb(70, 70, 70);
         font-weight: 100;
         text-align: center;
         margin: 2rem 0 0;
     }
 
     section {
-        //background-color: red;
         display: flex;
         justify-content: center;
         padding: 1rem;
@@ -29,7 +27,6 @@
             transition: all 150ms ease-in-out;
 
             h2 {
-                color: rgb(70, 70, 70);
                 font-weight: 100;
                 margin-bottom: 1rem;
             }
@@ -38,14 +35,11 @@
                 width: 100%;
                 margin-bottom: 1rem;
             }
-
-            p {
-                color: rgb(70, 70, 70);
-            }
         }
 
         a:hover {
             scale: 1.075;
+            background-color: unset;
         }
     }
 }

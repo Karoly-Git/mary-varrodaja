@@ -16,7 +16,6 @@
   font-size: 2.5rem;
   border: 2px solid rgb(180, 180, 180);
   border-radius: 50%;
-  color: rgb(120, 120, 120);
   cursor: pointer;
   transition: all 250ms ease-in-out;
   margin-left: 1rem;
@@ -63,8 +62,8 @@
   transition: all 150ms ease-in-out;
 }
 .product-slider .slider-container .slider-box a:hover h3 {
-  background-color: rgb(223, 208, 181);
-  color: black;
+  background-color: rgba(191, 161, 107, 0.5);
+  color: rgb(50, 50, 50);
 }
 .product-slider .slider-container .slider-box .img-box:not(img:last-child) {
   margin-right: 2rem;

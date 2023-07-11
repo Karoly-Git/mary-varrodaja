@@ -5,6 +5,8 @@ import Axios from "axios"
 import config from "./data/config.json"
 
 import { termekek, szolgaltatasok } from "./data/data"
+
+// Website imports
 import ErrorMessage from "./components/ErrorMessage"
 import Kezdolap from "./components/pages/Kezdolap"
 import SzolgEsTerm from "./components/pages/SzolgEsTerm"
@@ -17,6 +19,10 @@ import BottomNavigation from "./components/BottomNavigation"
 import Info from "./components/Info"
 import Reszletek from "./components/pages/sub-pages/Reszletek"
 
+// Webshop imports
+import Webshop from "./components/webshop/Webshop"
+
+// Style import
 import "../src/css/App.css"
 
 export default function App() {
@@ -66,11 +72,13 @@ export default function App() {
             <Route path="/szolgaltatasok/reszletek" element={<Reszletek data={szolgaltatasok} h1={"Üdvözöllek a varróműhelyemben!"} />}></Route>
 
             <Route path="/termekek" element={<SzolgEsTerm list={termekek} h1={"Termékek"} />}></Route>
-            <Route path="/termekek/reszletek" element={<Reszletek data={termekek} h1={"Kézzel kézsített egyedi termékek egyedi dizájnnal"} />}></Route>
+            <Route path="/termekek/reszletek" element={<Reszletek data={termekek} h1={"Kézzel készített egyedi termékek egyedi dizájnnal"} />}></Route>
 
             <Route path="/rolam" element={<Rolam />}></Route>
             <Route path="/kapcsolat" element={<Kapcsolat />}></Route>
             <Route path="/gyik" element={<Gyik />}></Route>
+
+            <Route path="/webshop" element={<Webshop />}></Route>
           </Routes>
         </main>
         <footer>

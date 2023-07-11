@@ -31,6 +31,7 @@ export default function ProductSlider(props) {
                 <div className='btn-box'><NavArrow className='icon left' onClick={clickOnLeft} style={marginLeft === 0 ? { pointerEvents: 'none', opacity: '0' } : {}} /></div>
                 <div className="slider-box">
                     {termekek.map((element, index) =>
+                        element.isActive &&
                         <Link key={'product' + index} to={element.url} className='img-box' style={index === 0 ? { marginLeft: `${marginLeft}rem` } : {}}>
                             <img src={element.img} alt={element.alt} />
                             <h3>{element.title}</h3>

@@ -1,0 +1,202 @@
+.webshop {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .shop {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+
+        .title-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+
+            .box h1 {
+                margin-bottom: 1rem;
+            }
+
+            .result-filter {
+                display: flex;
+                align-items: center;
+
+                p {
+                    margin-right: 1rem;
+                }
+
+                form {
+                    select {
+                        padding: 0.5rem;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+
+        .container {
+            display: flex;
+
+            .filter-box {
+                height: 100%;
+                padding: 0 1rem;
+                min-width: 300px;
+
+                section {
+                    margin-bottom: 1rem;
+
+                    h3 {
+                        text-transform: uppercase;
+                    }
+
+                    .devider {
+                        width: 2rem;
+                        height: 3px;
+                        background-color: rgb(223, 208, 181);
+                        margin: 0.5rem 0;
+                    }
+
+                    .product-categories {
+                        list-style: none;
+
+                        li {
+                            display: flex;
+                            padding: 0.5rem 0;
+
+                            a {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-end;
+                                text-decoration: none;
+                                font-size: 1.1rem;
+                                width: 100%;
+
+                                .count {
+                                    margin-left: auto;
+                                    margin-right: 0.5rem;
+                                    font-size: 0.75rem;
+                                }
+
+                                .icon {
+                                    transform: rotate(90deg);
+                                }
+                            }
+
+                            a:hover {
+                                background-color: unset;
+                            }
+                        }
+
+                        li:not(li:last-child) {
+                            border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+                        }
+                    }
+                }
+
+                .search-section {
+
+                    .search-box {
+                        display: flex;
+
+                        input {
+                            width: 100%;
+                            padding: 0.5rem;
+                            font-size: 1.1rem;
+                            height: 3rem;
+                        }
+
+                        .icon {
+                            padding: 0.5rem;
+                            height: 3rem;
+                            width: 3rem;
+                            background-color: rgba(0, 128, 0, 0.8);
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .grid {
+                display: grid;
+                width: 100%;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                grid-gap: 1rem;
+                margin-left: 1rem;
+
+                .link {
+                    width: 100%;
+                    padding-top: calc((1800 / 1280) * 100%);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    //border: 1px solid black;
+                    text-decoration: none;
+
+                    .box {
+                        background-color: rgba(0, 128, 0, 0.8);
+                        text-align: center;
+                        margin-top: -6rem;
+                        padding: 0.5rem;
+
+                        * {
+                            color: white;
+                        }
+
+                        h3 {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+
+                .link:nth-child(1) {
+                    background-image: url('../img/categories/thumbnails/taskak2.jpg');
+                }
+
+                .link:nth-child(2) {
+                    background-image: url('../img/categories/thumbnails/maszkok2.jpg');
+                }
+
+                .link:nth-child(3) {
+                    background-image: url('../img/categories/thumbnails/fehernemuk2.jpg');
+                }
+
+                .link:nth-child(4) {
+                    background-image: url('../img/categories/thumbnails/oko_termekek2.jpg');
+                }
+
+                .link:nth-child(5) {
+                    background-image: url('../img/categories/thumbnails/gyermekruhak2.jpg');
+                }
+
+                .link:nth-child(6) {
+                    background-image: url('../img/categories/thumbnails/konyhai-textilek2.jpg');
+                }
+
+                .link:nth-child(7) {
+                    background-image: url('../img/categories/thumbnails/textil-jatekok2.jpg');
+                }
+            }
+        }
+
+        .pagination {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 1.5rem;
+                height: 1.5rem;
+                padding: 1rem;
+                margin: 0 0.25rem;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        }
+    }
+}

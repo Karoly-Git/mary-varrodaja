@@ -19,7 +19,6 @@
 
         p {
             margin-bottom: 2rem;
-            color: rgb(50, 50, 50);
         }
 
         form {
@@ -52,16 +51,13 @@
                 margin-top: 1rem;
                 text-decoration: none;
                 font-size: 1.25rem;
-                color: azure;
+                color: white;
                 background-color: rgb(50, 50, 50);
-                //border-radius: 0.2rem;
                 border: none;
                 padding: 0.5rem 2rem;
                 transition: all 150ms ease-in-out;
                 user-select: none;
                 width: 8rem;
-                //margin-left: auto;
-                //margin-right: auto;
                 cursor: pointer;
             }
 
@@ -72,22 +68,9 @@
         }
     }
 
-
     .contact-list-box {
         display: flex;
         flex-direction: column;
         padding-left: 8rem;
-
-        .contacts {
-            li {
-                a {
-                    color: rgb(50, 50, 50);
-
-                    .icon {
-                        color: rgb(50, 50, 50);
-                    }
-                }
-            }
-        }
     }
 }

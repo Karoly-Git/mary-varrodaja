@@ -16,7 +16,8 @@
 }
 .contacts li a:hover {
   scale: 1.075;
+  background-color: unset;
 }
 .contacts li:not(li:last-child) {
   margin-bottom: 1rem;
-}/*# sourceMappingURL=Contacts.css.map */
+}/*# sourceMappingURL=contacts.css.map */

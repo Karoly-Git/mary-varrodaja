@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import './navigation.css';
 @import './display.css';
 @import './contacts.css';
@@ -11,11 +12,35 @@
 @import './rolam.css';
 @import './kapcsolat.css';
 @import './gyik.css';
+@import './webshop.css';
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
+}
+* h1 {
+  color: rgb(70, 70, 70);
+}
+* h2 {
+  color: rgb(80, 80, 80);
+}
+* h3 {
+  color: rgb(90, 90, 90);
+}
+* p {
+  color: rgb(100, 100, 100);
+}
+* a {
+  color: rgb(100, 100, 100);
+  transition: all 150ms ease-in-out;
+}
+* a:hover {
+  color: rgb(50, 50, 50);
+  background-color: rgba(191, 161, 107, 0.1);
+}
+* .icon {
+  color: rgb(50, 50, 50);
 }
 
 html {

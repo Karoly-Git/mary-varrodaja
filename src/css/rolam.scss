@@ -1,18 +1,13 @@
 .rolam {
-    //background-color: lightcyan;
-    //background-color: rgba(191, 161, 107, 0.2);
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    //margin: 0 2rem;
-    //border-radius: 2rem;
 
     h1 {
         text-align: center;
         margin: 2rem 0 4rem;
         font-weight: 100;
-        color: rgb(80, 80, 80);
     }
 
     section {
@@ -35,11 +30,6 @@
 
                 h3 {
                     margin-bottom: 0.5rem;
-                    color: rgb(80, 80, 80);
-                }
-
-                p {
-                    color: rgb(60, 60, 60);
                 }
             }
 
