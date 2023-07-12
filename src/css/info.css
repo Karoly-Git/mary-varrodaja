@@ -1,5 +1,5 @@
 .info {
-  background-color: none;
+  background-color: rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: space-between;
   padding: 1rem;

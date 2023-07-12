@@ -22,19 +22,19 @@
             flex-direction: column;
             padding: 1rem;
 
+            h3 {
+                margin-bottom: 2rem;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 100;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
             section {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 3rem;
-
-                h3 {
-                    margin-bottom: 2rem;
-                    text-align: center;
-                    font-size: 1.5rem;
-                    font-weight: 100;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                }
 
                 .text-box {
                     display: flex;

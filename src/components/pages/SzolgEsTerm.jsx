@@ -8,14 +8,14 @@ export default function SzolgEsTerm(props) {
         <div className='services-and-products'>
             {false && <h1>{props.h1}</h1>}
             <section>
-                {props.list.map((element, index) =>
+                {props.data.map((element, index) =>
                     element.isActive && (
                         <Link
                             key={'services-and-products' + index}
                             to={`${element.url}`}
                         >
                             <h2>{element.title}</h2>
-                            <img src={element.img} alt={element.alt} />
+                            <img src={element.images.img_1.src} alt={element.images.img_1.alt} />
                             <p>{element.description}</p>
                         </Link>
                     ))}

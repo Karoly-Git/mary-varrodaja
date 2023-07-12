@@ -47,11 +47,6 @@
 .main-navigation .container .box .secondary-menu li .menu-btn .phone-icon {
   font-size: 1rem;
 }
-.main-navigation .container .box .primary-menu li .menu-btn:hover:not(.secondary-menu .menu-btn),
-.main-navigation .container .box .secondary-menu li .menu-btn:hover:not(.secondary-menu .menu-btn) {
-  background-color: rgba(191, 161, 107, 0.5);
-  color: rgb(50, 50, 50);
-}
 .main-navigation .container .box .primary-menu li:not(li:last-child),
 .main-navigation .container .box .secondary-menu li:not(li:last-child) {
   margin-right: 1.5rem;
@@ -68,9 +63,10 @@
 }
 .main-navigation .container .box .secondary-menu li:last-child {
   display: flex;
+  align-items: center;
 }
 .main-navigation .container .box .secondary-menu li:last-child input {
-  padding: 0 0.5rem;
+  padding: 0.25rem 0.5rem;
   width: 15rem;
 }
 .main-navigation .container .box .secondary-menu li:last-child .shop-btn {

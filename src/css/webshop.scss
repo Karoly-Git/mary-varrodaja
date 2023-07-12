@@ -1,7 +1,9 @@
 .webshop {
     display: flex;
-    width: 100%;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 
     .shop {
         padding: 2rem;
@@ -96,6 +98,17 @@
                     }
                 }
 
+                .filter-section {
+                    input {
+                        width: 100%;
+                    }
+
+                    .min-max {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+
                 .search-section {
 
                     .search-box {
@@ -135,17 +148,25 @@
                     text-decoration: none;
 
                     .box {
-                        background-color: rgba(0, 128, 0, 0.8);
+                        background-color: rgba(255, 255, 255, 0.8);
                         text-align: center;
                         margin-top: -6rem;
                         padding: 0.5rem;
-
-                        * {
-                            color: white;
-                        }
+                        transition: all 150ms ease-in-out;
 
                         h3 {
                             margin-bottom: 0.5rem;
+                        }
+                    }
+
+                }
+
+                .link:hover {
+                    .box {
+                        background-color: rgba(0, 128, 0, 0.8);
+
+                        * {
+                            color: white;
                         }
                     }
                 }
@@ -198,5 +219,93 @@
                 border-radius: 50%;
             }
         }
+    }
+
+    .webshop-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        max-width: 1200px;
+
+        .accepted-payment-list {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 2rem;
+            list-style: none;
+
+            li {
+                .icon {
+                    font-size: 3rem;
+                }
+
+                .google-pay,
+                .apple-pay {
+                    font-size: 3.5rem;
+                }
+
+                .paypal {
+                    font-size: 1.75rem;
+                }
+
+                .visa-pay {
+                    font-size: 2.25rem;
+                }
+
+                .master-card,
+                .visa-card {
+                    font-size: 2.5rem;
+                }
+            }
+
+            li:not(li:last-child) {
+                margin-right: 1rem;
+            }
+        }
+
+        .info-navigation {
+
+            ul {
+                display: flex;
+                width: 100%;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 0 2rem;
+                list-style: none;
+
+                li {
+                    a {
+                        padding: 0.25rem;
+                        text-decoration: none;
+                    }
+                }
+
+                li:not(li:last-child) {
+                    margin-right: 1rem;
+                }
+
+            }
+        }
+    }
+}
+
+.wheel {
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid black;
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 10s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(3600deg);
     }
 }

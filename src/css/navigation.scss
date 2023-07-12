@@ -53,11 +53,6 @@
                             font-size: 1rem;
                         }
                     }
-
-                    .menu-btn:hover:not(.secondary-menu .menu-btn) {
-                        background-color: rgba(191, 161, 107, 0.5);
-                        color: rgba(50, 50, 50, 1);
-                    }
                 }
 
                 li:not(li:last-child) {
@@ -81,9 +76,10 @@
 
                 li:last-child {
                     display: flex;
+                    align-items: center;
 
                     input {
-                        padding: 0 0.5rem;
+                        padding: 0.25rem 0.5rem;
                         width: 15rem;
                     }
 

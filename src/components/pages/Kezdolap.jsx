@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import { szolgaltatasok } from "../../data/data";
+import { szolgaltatasok as services } from "../../data/data";
+
 import { GiLargeDress as Dress } from "react-icons/gi";
 import { ImScissors as Scissors } from "react-icons/im";
 import { BiChild as Children } from "react-icons/bi";
@@ -36,13 +37,13 @@ export default function Kezdolap() {
 
             <div className="services-box">
                 <Link to="/szolgaltatasok">
-                    {szolgaltatasok.map((element, index) =>
-                        <div key={"szolg" + index} className="box">
+                    {services.data.map((service, serviceIndex) =>
+                        <div key={"szolg" + serviceIndex} className="box">
                             <div className="icon-box">
-                                {icons[index]}
+                                {icons[serviceIndex]}
                             </div>
-                            <h3>{element.title}</h3>
-                            <p>{element.short_description}</p>
+                            <h3>{service.title}</h3>
+                            <p>{service.short_description}</p>
                         </div>
                     )}
                 </Link>
@@ -55,12 +56,12 @@ export default function Kezdolap() {
                     <SewingMachine className="icon" />
                 </div>
                 <h2>
-                    Nincs két egyforma!
+                    Kevés az egyforma!
                 </h2>
                 <h3>
-                    Amennyiben kéred, természetesen tudok egyforma darabokat készíteni, amint azt a
+                    Amennyiben kéred, tudok egyforma darabokat készíteni, amint azt a
                     <Link to={"/webshop"}>Webshopban</Link>
-                    is láthatod, azonban termékeim mind egyediek, egyedi dizájnnal és mintával készülnek.
+                    is láthatod, azonban termékeim többsége mind egyedi, egyedi dizájnnal és mintával készül.
                 </h3>
             </div>
 

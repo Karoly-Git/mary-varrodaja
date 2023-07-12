@@ -4,7 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Axios from "axios"
 import config from "./data/config.json"
 
-import { termekek, szolgaltatasok } from "./data/data"
+import {
+  termekek as products,
+  szolgaltatasok as services
+} from "./data/data"
 
 // Website imports
 import ErrorMessage from "./components/ErrorMessage"
@@ -18,8 +21,6 @@ import MainNavigation from "./components/MainNavigation"
 import BottomNavigation from "./components/BottomNavigation"
 import Info from "./components/Info"
 import Reszletek from "./components/pages/sub-pages/Reszletek"
-
-// Webshop imports
 import Webshop from "./components/webshop/Webshop"
 
 // Style import
@@ -68,11 +69,11 @@ export default function App() {
             <Route path="*" element={<h1>Oldal nem található</h1>}></Route>
             <Route path="/" element={<Kezdolap />}></Route>
 
-            <Route path="/szolgaltatasok" element={<SzolgEsTerm list={szolgaltatasok} h1={"Szolgáltatások"} />}></Route>
-            <Route path="/szolgaltatasok/reszletek" element={<Reszletek data={szolgaltatasok} h1={"Üdvözöllek a varróműhelyemben!"} />}></Route>
+            <Route path="/szolgaltatasok" element={<SzolgEsTerm data={services.data} h1={"Szolgáltatások"} />}></Route>
+            <Route path="/szolgaltatasok/reszletek" element={<Reszletek data={services.data} h1={services.h1} />}></Route>
 
-            <Route path="/termekek" element={<SzolgEsTerm list={termekek} h1={"Termékek"} />}></Route>
-            <Route path="/termekek/reszletek" element={<Reszletek data={termekek} h1={"Kézzel készített egyedi termékek egyedi dizájnnal"} />}></Route>
+            <Route path="/termekek" element={<SzolgEsTerm data={products.data} h1={"Termékek"} />}></Route>
+            <Route path="/termekek/reszletek" element={<Reszletek data={products.data} h1={products.h1} />}></Route>
 
             <Route path="/rolam" element={<Rolam />}></Route>
             <Route path="/kapcsolat" element={<Kapcsolat />}></Route>

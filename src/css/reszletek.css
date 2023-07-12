@@ -21,18 +21,18 @@
   flex-direction: column;
   padding: 1rem;
 }
-.reszletek article .container section {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
-}
-.reszletek article .container section h3 {
+.reszletek article .container h3 {
   margin-bottom: 2rem;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.reszletek article .container section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
 }
 .reszletek article .container section .text-box {
   display: flex;

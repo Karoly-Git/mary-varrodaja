@@ -37,7 +37,7 @@
 }
 * a:hover {
   color: rgb(50, 50, 50);
-  background-color: rgba(191, 161, 107, 0.1);
+  background-color: rgba(191, 161, 107, 0.4);
 }
 * .icon {
   color: rgb(50, 50, 50);
@@ -58,4 +58,5 @@ html {
 }
 .App footer {
   background-color: rgb(119, 119, 119);
+  background-color: transparent;
 }/*# sourceMappingURL=App.css.map */

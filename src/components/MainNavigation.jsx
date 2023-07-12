@@ -45,9 +45,9 @@ export default function MainNavigation() {
                             </Link>
                         </li>
                         <li>
-                            <input type="text" />
+                            <input type="text" placeholder="Keresés..." ></input>
                             <div className="shop-btn" to='/gyik'>
-                                <SearchIcon className="icon" />
+                                <SearchIcon className="icon search-icon" />
                             </div>
                             <div className="shop-btn" to='/gyik'>
                                 <CartIcon className="icon" />

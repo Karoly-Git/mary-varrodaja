@@ -1,7 +1,9 @@
 .webshop {
   display: flex;
-  width: 100%;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .webshop .shop {
   padding: 2rem;
@@ -79,6 +81,13 @@
 .webshop .shop .container .filter-box section .product-categories li:not(li:last-child) {
   border-bottom: 1px solid rgba(100, 100, 100, 0.1);
 }
+.webshop .shop .container .filter-box .filter-section input {
+  width: 100%;
+}
+.webshop .shop .container .filter-box .filter-section .min-max {
+  display: flex;
+  justify-content: space-between;
+}
 .webshop .shop .container .filter-box .search-section .search-box {
   display: flex;
 }
@@ -110,16 +119,20 @@
   text-decoration: none;
 }
 .webshop .shop .container .grid .link .box {
-  background-color: rgba(0, 128, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   margin-top: -6rem;
   padding: 0.5rem;
-}
-.webshop .shop .container .grid .link .box * {
-  color: white;
+  transition: all 150ms ease-in-out;
 }
 .webshop .shop .container .grid .link .box h3 {
   margin-bottom: 0.5rem;
+}
+.webshop .shop .container .grid .link:hover .box {
+  background-color: rgba(0, 128, 0, 0.8);
+}
+.webshop .shop .container .grid .link:hover .box * {
+  color: white;
 }
 .webshop .shop .container .grid .link:nth-child(1) {
   background-image: url("../img/categories/thumbnails/taskak2.jpg");
@@ -158,4 +171,82 @@
   margin: 0 0.25rem;
   border: 1px solid black;
   border-radius: 50%;
+}
+.webshop .webshop-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1200px;
+}
+.webshop .webshop-info .accepted-payment-list {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem;
+  list-style: none;
+}
+.webshop .webshop-info .accepted-payment-list li .icon {
+  font-size: 3rem;
+}
+.webshop .webshop-info .accepted-payment-list li .google-pay,
+.webshop .webshop-info .accepted-payment-list li .apple-pay {
+  font-size: 3.5rem;
+}
+.webshop .webshop-info .accepted-payment-list li .paypal {
+  font-size: 1.75rem;
+}
+.webshop .webshop-info .accepted-payment-list li .visa-pay {
+  font-size: 2.25rem;
+}
+.webshop .webshop-info .accepted-payment-list li .master-card,
+.webshop .webshop-info .accepted-payment-list li .visa-card {
+  font-size: 2.5rem;
+}
+.webshop .webshop-info .accepted-payment-list li:not(li:last-child) {
+  margin-right: 1rem;
+}
+.webshop .webshop-info .info-navigation ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem;
+  list-style: none;
+}
+.webshop .webshop-info .info-navigation ul li a {
+  padding: 0.25rem;
+  text-decoration: none;
+}
+.webshop .webshop-info .info-navigation ul li:not(li:last-child) {
+  margin-right: 1rem;
+}
+
+.wheel {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid black;
+  border-top: 3px solid white;
+  border-radius: 50%;
+  -webkit-animation: spin 10s infinite linear;
+          animation: spin 10s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3600deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3600deg);
+  }
 }/*# sourceMappingURL=webshop.css.map */
