@@ -1,5 +1,5 @@
 import React from 'react'
-import { gyik } from '../../data/data'
+import { gyik } from '../../data/pages_data'
 
 export default function Gyik() {
     return (

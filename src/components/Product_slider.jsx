@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { termekek as products } from '../data/data'
+import { termekek as products } from '../data/pages_data'
 import { MdOutlineNavigateNext as NavArrow } from 'react-icons/md';
 import SectionDevider from './SectionDevider';
 
@@ -32,7 +32,7 @@ export default function ProductSlider(props) {
                 <div className="slider-box">
                     {products.data.map((product, productindex) =>
                         product.isActive &&
-                        <Link key={'product' + productindex} to={product.url} className='img-box' style={productindex === 0 ? { marginLeft: `${marginLeft}rem` } : {}}>
+                        <Link key={'product' + productindex} to={'/termekek'} className='img-box' style={productindex === 0 ? { marginLeft: `${marginLeft}rem` } : {}}>
                             <img src={product.images.img_1.src} alt={product.images.img_1.alt} />
                             <h3>{product.title}</h3>
                         </Link>

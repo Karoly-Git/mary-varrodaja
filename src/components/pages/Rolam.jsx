@@ -1,5 +1,5 @@
 import React from 'react'
-import { rolam } from '../../data/data'
+import { rolam } from '../../data/pages_data'
 import portrait from '../../img/rolam/portrait.png'
 
 

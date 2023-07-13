@@ -14,20 +14,20 @@ import oko_termekek_2_img from "../img/categories/thumbnails/oko_termekek2.jpg";
 import taskak_img from "../img/categories/thumbnails/taskak.jpg";
 import taskak_2_img from "../img/categories/thumbnails/taskak2.jpg";
 
-import konyhai_textilek_img from "../img/categories/thumbnails/konyhai-textilek.jpg";
-import konyhai_textilek_2_img from "../img/categories/thumbnails/konyhai-textilek2.jpg";
+import konyhai_textilek_img from "../img/categories/thumbnails/konyhai_textilek.jpg";
+import konyhai_textilek_2_img from "../img/categories/thumbnails/konyhai_textilek2.jpg";
 
-import textil_jatekok_img from "../img/categories/thumbnails/textil-jatekok.jpg";
-import textil_jatekok_2_img from "../img/categories/thumbnails/textil-jatekok2.jpg";
+import textil_jatekok_img from "../img/categories/thumbnails/textil_jatekok.jpg";
+import textil_jatekok_2_img from "../img/categories/thumbnails/textil_jatekok2.jpg";
 
 // Images of Services
-import gyermekruha_keszites_img from "../img/szolgaltatasok/thumbnails/gyermekruha-keszites.jpg"
+import gyermekruha_keszites_img from "../img/szolgaltatasok/thumbnails/gyermekruha_keszites.jpg"
 import gyermekruha_keszites_2_img from "../img/szolgaltatasok/gyermekruha.jpg"
 
-import noi_felsoruha_keszites_img from "../img/szolgaltatasok/thumbnails/noi-felsoruha-keszites.jpg"
+import noi_felsoruha_keszites_img from "../img/szolgaltatasok/thumbnails/noi_felsoruha_keszites.jpg"
 import noi_felsoruha_keszites_2_img from "../img/szolgaltatasok/felsoruha.jpg"
 
-import ruha_javitas_es_atalakitas_img from "../img/szolgaltatasok/thumbnails/ruha-javitas-es-atalakitas.jpg"
+import ruha_javitas_es_atalakitas_img from "../img/szolgaltatasok/thumbnails/ruha_javitas_es_atalakitas.jpg"
 import ruha_javitas_es_atalakitas_2_img from "../img/szolgaltatasok/javitas.jpg"
 
 //const importAll = (requireContext) => requireContext.keys().map(requireContext);
@@ -118,8 +118,8 @@ export const szolgaltatasok = {
                     alt: 'alt-2'
                 },
             },
-            description: "Bébi és gyermekruha készítés. Egyedi dizájn a megrendelő igényei szerint.",
-            short_description: "Bébi és gyermekruha készítés. Egyedi dizájn a megrendelő igényei szerint.",
+            description: "Bébi és gyermekruha készítés. Egyedi dizájn és kialakítás a megrendelő igényei szerint.",
+            short_description: "Bébi és gyermekruha készítés. Egyedi dizájn és kialakítás a megrendelő igényei szerint.",
             details: [
                 "Egyedi gyermekruhákat készítek, hogy tökéletesen illeszkedjenek és divatosak legyenek. Ne aggódj a bolti méretek miatt! Hozd el hozzám a gyermeked méreteit, és varrok neki teljesen új ruhadarabot.",
                 "Nem kell megszabadulnod a túl bő vagy szűk ruháktól sem. Hozd el hozzám, és átalakítom őket, hogy tökéletesen passzoljanak. Figyelembe veszem az egyedi igényeket és stílust a gyermekruha készítése során.",
@@ -135,6 +135,7 @@ export const termekek = {
             termek_id: 1,
             isActive: true,
             title: "Táskák",
+            category: "taskak",
             url: "/termekek/reszletek",
             images: {
                 img_1: {
@@ -158,6 +159,7 @@ export const termekek = {
             termek_id: 2,
             isActive: true,
             title: "Maszkok",
+            category: "maszk",
             url: "/termekek/reszletek",
             images: {
                 img_1: {
@@ -181,6 +183,7 @@ export const termekek = {
             termek_id: 3,
             isActive: true,
             title: "Fehérneműk",
+            category: "fehernemu",
             url: "/termekek/reszletek",
             images: {
                 img_1: {
@@ -204,6 +207,7 @@ export const termekek = {
             termek_id: 4,
             isActive: true,
             title: "Öko termékek",
+            category: "oko_termek",
             url: "/termekek/reszletek",
             images: {
                 img_1: {
@@ -227,6 +231,7 @@ export const termekek = {
             termek_id: 5,
             isActive: true,
             title: "Gyermekruhák",
+            category: "gyermekruha",
             url: "/termekek/reszletek",
             images: {
                 img_1: {
@@ -250,6 +255,7 @@ export const termekek = {
             termek_id: 6,
             isActive: true,
             title: "Konyhai textilek",
+            category: "konyhai_textil",
             url: "/termekek/reszletek",
             images: {
                 img_1: {
@@ -273,6 +279,7 @@ export const termekek = {
             termek_id: 7,
             isActive: true,
             title: "Textil játékok",
+            category: "textil_jatekok",
             url: "/termekek/reszletek",
             images: {
                 img_1: {
@@ -316,6 +323,12 @@ export const rolam = [
 
 export const gyik = [
     {
+        gyik_id: 3,
+        isActive: true,
+        question: "Gyermekruhákat milyen korosztálynak keszíted?",
+        answer: "Leginkább 0 és 6 éves kor közötti gyermekeknek, de ha idősebb, az sem probléma.",
+    },
+    {
         gyik_id: 1,
         isActive: true,
         question: "Tudok bankkártyával fizetni?",
@@ -325,25 +338,19 @@ export const gyik = [
         gyik_id: 2,
         isActive: true,
         question: "Mi a nyitvatartási idő?",
-        answer: "Nincs kimondott nyitvatartás. Hétköznap jellemzően 9 és 16 óra között bármikor tudlak fogadni, de a biztonság kedvéért legyél szíves előzetesen telefonon vagy üzenetben érdeklődni, hogy biztosan otthon legyek amikor jössz.Sürgős esetben hétvégén is tudlak fogadni, kérlek előzetesen telefonon vagy üzenetben egyeztessünk.",
-    },
-    {
-        gyik_id: 3,
-        isActive: true,
-        question: "Gyermekruhákat milyen korosztálynak keszíted?",
-        answer: "Leginkább 0 és 6 éves kor közötti gyermekeknek, de ha idősebb, az sem probléma.",
+        answer: "Nincs kimondott nyitvatartási időm. Hétköznap jellemzően 9 és 16 óra között bármikor tudlak fogadni, de a biztonság kedvéért legyél szíves előzetesen telefonon vagy üzenetben érdeklődni, hogy biztosan otthon legyek amikor jössz. Sürgős esetben hétvégén is tudlak fogadni, kérlek előzetesen telefonon vagy üzenetben egyeztessünk.",
     },
     {
         gyik_id: 4,
         isActive: true,
         question: "Páromnak van néhány nadrágja, ami túl hosszú, elhozhatom felvarratni?",
-        answer: "Természetesen. Ne tévesszen meg, hogy nőiruha keszítés a fő profilom. Javításokat és átalakításokat minden ruhafélére vállalok függetlenül attól, hogy férfi, női vagy gyermekruha.",
+        answer: "Természetesen. Javításokat és átalakításokat minden ruhafélére vállalok függetlenül attól, hogy férfi, női vagy gyermekruha.",
     },
     {
         gyik_id: 5,
         isActive: true,
-        question: "Van boltod ahol meg tudom vásárolni a termékeidet?",
-        answer: "Webshopom van, valamint az Esztergomi Piacon péntekenként és a Szentendrei Piacon szombatonként vagyok megtalálható, illetve ha eljössz hozzám, itt is tudsz vásárolni.",
+        question: "Van boltod ahol meg tudom nézni és vásárolni a termékeidet?",
+        answer: "Kimondott üzlethelyiségem nincsen, de Webshopom van, valamint az Esztergomi Piacon péntekenként és a Szentendrei Piacon szombatonként vagyok megtalálható, illetve ha eljössz hozzám, itt is tudsz vásárolni.",
     },
     {
         gyik_id: 6,
@@ -355,7 +362,7 @@ export const gyik = [
         gyik_id: 7,
         isActive: true,
         question: "Kisfiam bolodul a vonatokért, tudnál vonatos nadrágot keszíteni neki?",
-        answer: "Igen. Egyedi minta és figura nem probléma. Akadály akkor képzelhető el, ha olyan figurát szeretnél, ami le van védve, ilyenek például a Disney figurák többsége, de biztos vagyok benne, hogy találunk olyan figurát amit tudunk használni.",
+        answer: "Igen. Egyedi minta és figura nem probléma. Akadály akkor képzelhető el, ha olyan figurát szeretnél, ami le van védve, ilyenek például a Disney figurák többsége. De biztos vagyok benne, hogy találunk olyan figurát amit tudunk használni.",
     },
 ];
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { reviews } from '../data/data'
+import { reviews } from '../data/pages_data'
 import { MdOutlineNavigateNext as Arrow } from 'react-icons/md'
 import { AiFillStar as Star } from 'react-icons/ai'
 import { RiDoubleQuotesL as Quotes } from 'react-icons/ri'
@@ -27,33 +27,38 @@ export default function ReviewSlider() {
 
     return (
         <div className='review-slider'>
-            <div className="slider-container">
-                <div className="btn-box btn-box-left" onClick={moveToLeft}>
-                    <Arrow className="icon left" />
+            <div className="slider-body">
+                <div className="slider-container">
+                    <div className="btn-box btn-box-left" onClick={moveToLeft}>
+                        <Arrow className="icon left" />
+                    </div>
+                    <div className="slider-box">
+                        {reviews.map((element, index) => (
+                            <div
+                                key={"slide" + index}
+                                className="slide"
+                                style={index === 0 ? { marginLeft: `${marginLeft}%` } : {}}
+                            >
+                                <h3 className='stars'>
+                                    <Star className='icon' />
+                                    <Star className='icon' />
+                                    <Star className='icon' />
+                                    <Star className='icon' />
+                                    <Star className='icon' />
+                                </h3>
+                                <p>
+                                    <Quotes /> {element.comment} <Quotes />
+                                </p>
+                                <h3 className='name'>- {element.name} -</h3>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="btn-box btn-box-right">
+                        <Arrow className="icon" onClick={moveToRight} />
+                    </div>
                 </div>
-                <div className="slider-box">
-                    {reviews.map((element, index) => (
-                        <div
-                            key={"slide" + index}
-                            className="slide"
-                            style={index === 0 ? { marginLeft: `${marginLeft}%` } : {}}
-                        >
-                            <h3 className='stars'>
-                                <Star className='icon' />
-                                <Star className='icon' />
-                                <Star className='icon' />
-                                <Star className='icon' />
-                                <Star className='icon' />
-                            </h3>
-                            <p>
-                                <Quotes /> {element.comment} <Quotes />
-                            </p>
-                            <h3 className='name'>- {element.name} -</h3>
-                        </div>
-                    ))}
-                </div>
-                <div className="btn-box btn-box-right">
-                    <Arrow className="icon" onClick={moveToRight} />
+                <div className='indicator-container'>
+                    {reviews.map(i => <span></span>)}
                 </div>
             </div>
         </div>

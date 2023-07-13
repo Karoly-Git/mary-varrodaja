@@ -7,7 +7,7 @@ import config from "./data/config.json"
 import {
   termekek as products,
   szolgaltatasok as services
-} from "./data/data"
+} from "./data/pages_data"
 
 // Website imports
 import ErrorMessage from "./components/ErrorMessage"
@@ -69,11 +69,11 @@ export default function App() {
             <Route path="*" element={<h1>Oldal nem található</h1>}></Route>
             <Route path="/" element={<Kezdolap />}></Route>
 
-            <Route path="/szolgaltatasok" element={<SzolgEsTerm data={services.data} h1={"Szolgáltatások"} />}></Route>
-            <Route path="/szolgaltatasok/reszletek" element={<Reszletek data={services.data} h1={services.h1} />}></Route>
+            <Route path="/szolgaltatasok/inactive" element={<SzolgEsTerm data={services.data} h1={"Szolgáltatások"} />}></Route>
+            <Route path="/szolgaltatasok" element={<Reszletek data={services.data} h1={services.h1} />}></Route>
 
-            <Route path="/termekek" element={<SzolgEsTerm data={products.data} h1={"Termékek"} />}></Route>
-            <Route path="/termekek/reszletek" element={<Reszletek data={products.data} h1={products.h1} />}></Route>
+            <Route path="/termekek/inactive" element={<SzolgEsTerm data={products.data} h1={"Termékek"} />}></Route>
+            <Route path="/termekek" element={<Reszletek data={products.data} h1={products.h1} />}></Route>
 
             <Route path="/rolam" element={<Rolam />}></Route>
             <Route path="/kapcsolat" element={<Kapcsolat />}></Route>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { Link } from 'react-router-dom'
 
 import { GoSearch as SearchIcon } from "react-icons/go";
-import { BsCart4 as CartIcon } from "react-icons/bs";
 import { MdOutlineNavigateNext as ArrowIcon } from 'react-icons/md'
 
 import { SiContactlesspayment as ContactlessIcon } from 'react-icons/si'
@@ -13,16 +13,27 @@ import { LiaCcVisa as VisaCardIcon } from 'react-icons/lia'
 import { GrVisa as VisaPayIcon } from 'react-icons/gr'
 import { BsPaypal as PayPalIcon } from 'react-icons/bs'
 
-import { termekek as products } from '../../data/data'
+import { termekek as products } from '../../data/pages_data'
+
+import { data as database } from '../../data/products_data';
+
+
 
 export default function Webshop() {
 
-    const [isSorting, setIsSorting] = useState(false);
-
+    const [isMain, setIsMain] = useState(true);
+    const [currentCategory, setCurrentCategory] = useState("taskak");
     const [maxPrice, setMaxPrice] = useState(0);
 
     const handleSliderChange = (e) => {
         setMaxPrice(e.target.value);
+    };
+
+    const handleMainCategoryClick = (category) => {
+        setCurrentCategory(category);
+        setIsMain(false);
+        console.log(category);
+        console.log(isMain);
     };
 
 
@@ -54,10 +65,10 @@ export default function Webshop() {
                             <h3>Kategóriák</h3>
                             <div className='devider'></div>
                             <ul className="product-categories">
-                                {products.data.map((prod, prodIndex) => (
-                                    prod.isActive &&
+                                {products.data.map((product, prodIndex) => (
+                                    product.isActive &&
                                     <li key={prodIndex}>
-                                        <Link to="/webshop">{prod.title}
+                                        <Link to="/webshop">{product.title}
                                             <span className="count">
                                                 ({Math.trunc(Math.random() * 50) + 1})
                                             </span>
@@ -92,21 +103,42 @@ export default function Webshop() {
                             <div className='devider'></div>
                         </section>
                     </div>
-                    <div className="grid">
-                        {products.data.map((prod, prodIndex) => (
-                            prod.isActive &&
+
+                    {isMain && <div className="category-grid">
+                        {products.data.map((product, prodIndex) => (
+                            product.isActive &&
                             <Link
+                                onClick={() => handleMainCategoryClick(product.category)}
                                 className="link"
                                 to="/webshop"
                                 key={prodIndex}
                             >
                                 <div className='box'>
-                                    <h3>{prod.title}</h3>
+                                    <h3>{product.title}</h3>
                                     <h5>{Math.trunc(Math.random() * 50) + 1} termék</h5>
                                 </div>
                             </Link>
                         ))}
-                    </div>
+                    </div>}
+
+                    {!isMain && <div className="product-grid">
+                        {database[`${currentCategory}`].map((product, prodIndex) => (
+                            product.isActive &&
+                            <Link
+                                style={{ backgroundImage: `url(${product.images.img})` }}
+                                className="link"
+                                to="/webshop"
+                                key={prodIndex}
+                            >
+                                <div className='box'>
+                                    <h3>{product.prod_name}</h3>
+                                    <h5>{product.price},-&nbsp;&nbsp;Ft</h5>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>}
+
+
                 </div>
                 {false && <ul className="pagination">
                     {[1, 2, 3, "...", 11, 12, 13].map((item, itemIndex) => (
@@ -115,16 +147,6 @@ export default function Webshop() {
                 </ul>}
             </div>
             <div className='webshop-info'>
-                <ul className='accepted-payment-list'>
-                    <li><ContactlessIcon className="icon contactless" /></li>
-                    <li><ApplePayIcon className="icon apple-pay" /></li>
-                    <li><GooglePayIcon className="icon google-pay" /></li>
-                    <li><PayPalIcon className="icon paypal" /></li>
-                    <li><VisaPayIcon className="icon visa-pay" /></li>
-                    <li><MasterCardIcon className="icon master-card" /></li>
-                    <li><VisaCardIcon className="icon visa-card" /></li>
-                </ul>
-
                 <nav className='info-navigation'>
                     <ul>
                         <li>
@@ -139,7 +161,17 @@ export default function Webshop() {
                     </ul>
                 </nav>
 
+                <ul className='accepted-payment-list'>
+                    <li><ContactlessIcon className="icon contactless" /></li>
+                    <li><ApplePayIcon className="icon apple-pay" /></li>
+                    <li><GooglePayIcon className="icon google-pay" /></li>
+                    <li><PayPalIcon className="icon paypal" /></li>
+                    <li><VisaPayIcon className="icon visa-pay" /></li>
+                    <li><MasterCardIcon className="icon master-card" /></li>
+                    <li><VisaCardIcon className="icon visa-card" /></li>
+                </ul>
             </div>
         </div>
     )
 }
+

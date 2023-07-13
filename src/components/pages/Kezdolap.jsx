@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import { szolgaltatasok as services } from "../../data/data";
+import { szolgaltatasok as services } from "../../data/pages_data";
 
 import { GiLargeDress as Dress } from "react-icons/gi";
 import { ImScissors as Scissors } from "react-icons/im";
@@ -30,8 +30,7 @@ export default function Kezdolap() {
                     Üdvözöllek a Mary Varrodájában!
                 </h2>
                 <h3>
-                    Szolgáltatásaim nemcsak ruhakészítésre terjednek ki,
-                    termékeim között találhatóak konyhai textil termékeket, és textil gyerek játékok is.
+                    Szolgáltatásaim nemcsak ruhakészítésre terjednek ki, hozzám bizalommal fordulhatsz, ha ruha átalakításra vagy javításra van szükséged.
                 </h3>
             </div>
 
@@ -61,7 +60,7 @@ export default function Kezdolap() {
                 <h3>
                     Amennyiben kéred, tudok egyforma darabokat készíteni, amint azt a
                     <Link to={"/webshop"}>Webshopban</Link>
-                    is láthatod, azonban termékeim többsége mind egyedi, egyedi dizájnnal és mintával készül.
+                    is láthatod, azonban termékeim nagy része mind egyedi, egyedi dizájnnal és mintával készül.
                 </h3>
             </div>
 

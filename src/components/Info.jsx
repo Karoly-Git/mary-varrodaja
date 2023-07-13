@@ -1,5 +1,5 @@
 import React from "react"
-import { gyik, reviews, hirek } from "../data/data"
+import { gyik, reviews, hirek } from "../data/pages_data"
 
 import { AiOutlineInfoCircle as InfoIcon } from "react-icons/ai";
 import { GoQuestion as QuestionIcon } from "react-icons/go";
