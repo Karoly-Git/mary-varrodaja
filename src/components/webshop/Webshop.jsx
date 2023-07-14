@@ -14,6 +14,7 @@ import { GrVisa as VisaPayIcon } from 'react-icons/gr'
 import { BsPaypal as PayPalIcon } from 'react-icons/bs'
 
 import { termekek as products } from '../../data/pages_data'
+import { data } from '../../data/products_data';
 
 export default function Webshop(props) {
 

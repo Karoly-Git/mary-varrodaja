@@ -3,6 +3,86 @@ import mvt_0002 from '../img/database/taskak/mvt_0002.jpg'
 import mvt_0003 from '../img/database/taskak/mvt_0003.jpg'
 import mvt_0004 from '../img/database/taskak/mvt_0004.jpg'
 
+import taskak_img from "../img/categories/thumbnails/taskak.jpg";
+import taskak_2_img from "../img/categories/thumbnails/taskak2.jpg";
+
+import maszkok_img from "../img/categories/thumbnails/maszkok.jpg";
+import maszkok_2_img from "../img/categories/thumbnails/maszkok2.jpg";
+
+import fehernemuk_img from "../img/categories/thumbnails/fehernemuk.jpg";
+import fehernemuk_2_img from "../img/categories/thumbnails/fehernemuk2.jpg";
+
+import oko_termekek_img from "../img/categories/thumbnails/oko_termekek.jpg";
+import oko_termekek_2_img from "../img/categories/thumbnails/oko_termekek2.jpg";
+
+import gyermekruhak_img from "../img/categories/thumbnails/gyermekruhak.jpg";
+import gyermekruhak_2_img from "../img/categories/thumbnails/gyermekruhak2.jpg";
+
+import konyhai_textilek_img from "../img/categories/thumbnails/konyhai_textilek.jpg";
+import konyhai_textilek_2_img from "../img/categories/thumbnails/konyhai_textilek2.jpg";
+
+import textil_jatekok_img from "../img/categories/thumbnails/textil_jatekok.jpg";
+import textil_jatekok_2_img from "../img/categories/thumbnails/textil_jatekok2.jpg";
+
+
+export const categories = [
+    {
+        category: 'taskak',
+        category_name: 'Táskák',
+        images: {
+            webshop: '',
+            website: '',
+        },
+    },
+    {
+        category: 'maszkok',
+        category_name: 'Maszkok',
+        images: {
+            webshop: '',
+            website: '',
+        },
+    },
+    {
+        category: 'fehernemuk',
+        category_name: 'Fehérneműk',
+        images: {
+            webshop: '',
+            website: '',
+        },
+    },
+    {
+        category: 'oko_termekek',
+        category_name: 'Öko termékek',
+        images: {
+            webshop: '',
+            website: '',
+        },
+    },
+    {
+        category: 'gyermekruhak',
+        category_name: 'Gyermekruhák',
+        images: {
+            webshop: '',
+            website: '',
+        },
+    },
+    {
+        category: 'konyhai_textilek',
+        category_name: 'Konyhai textilek',
+        images: {
+            webshop: '',
+            website: '',
+        },
+    },
+    {
+        category: 'textil_jatekok',
+        category_name: 'Textíl játékok',
+        images: {
+            webshop: '',
+            website: '',
+        },
+    },
+];
 
 export let data = {
     taskak: [
