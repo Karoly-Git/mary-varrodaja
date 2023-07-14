@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { Link } from 'react-router-dom'
 
 import { GoSearch as SearchIcon } from "react-icons/go";
 import { MdOutlineNavigateNext as ArrowIcon } from 'react-icons/md'
+import { AiOutlineHeart as HeartIcon } from 'react-icons/ai'
 
 import { SiContactlesspayment as ContactlessIcon } from 'react-icons/si'
 import { FaApplePay as ApplePayIcon } from 'react-icons/fa'
@@ -15,11 +15,9 @@ import { BsPaypal as PayPalIcon } from 'react-icons/bs'
 
 import { termekek as products } from '../../data/pages_data'
 
-import { data as database } from '../../data/products_data';
+export default function Webshop(props) {
 
-
-
-export default function Webshop() {
+    console.log(props.category);
 
     const [isMain, setIsMain] = useState(true);
     const [currentCategory, setCurrentCategory] = useState("taskak");
@@ -68,7 +66,7 @@ export default function Webshop() {
                                 {products.data.map((product, prodIndex) => (
                                     product.isActive &&
                                     <li key={prodIndex}>
-                                        <Link to="/webshop">{product.title}
+                                        <Link to={"/webshop/" + product.category}>{product.title}
                                             <span className="count">
                                                 ({Math.trunc(Math.random() * 50) + 1})
                                             </span>
@@ -104,39 +102,27 @@ export default function Webshop() {
                         </section>
                     </div>
 
-                    {isMain && <div className="category-grid">
-                        {products.data.map((product, prodIndex) => (
+                    <div className="category-grid">
+                        {props.category.map((product, prodIndex) => (
                             product.isActive &&
                             <Link
                                 onClick={() => handleMainCategoryClick(product.category)}
                                 className="link"
-                                to="/webshop"
+                                to="#"
                                 key={prodIndex}
                             >
-                                <div className='box'>
-                                    <h3>{product.title}</h3>
-                                    <h5>{Math.trunc(Math.random() * 50) + 1} termék</h5>
+                                <div className='img-box' style={{ backgroundImage: `url(${product.images.img})` }}>
+                                    <HeartIcon className='icon' />
+                                    <h3>Részletek</h3>
                                 </div>
-                            </Link>
-                        ))}
-                    </div>}
-
-                    {!isMain && <div className="product-grid">
-                        {database[`${currentCategory}`].map((product, prodIndex) => (
-                            product.isActive &&
-                            <Link
-                                style={{ backgroundImage: `url(${product.images.img})` }}
-                                className="link"
-                                to="/webshop"
-                                key={prodIndex}
-                            >
-                                <div className='box'>
+                                <div className='data-box'>
                                     <h3>{product.prod_name}</h3>
-                                    <h5>{product.price},-&nbsp;&nbsp;Ft</h5>
+                                    <h5>{product.price},- Ft</h5>
                                 </div>
                             </Link>
                         ))}
-                    </div>}
+                    </div>
+
 
 
                 </div>

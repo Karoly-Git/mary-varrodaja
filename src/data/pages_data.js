@@ -159,7 +159,7 @@ export const termekek = {
             termek_id: 2,
             isActive: true,
             title: "Maszkok",
-            category: "maszk",
+            category: "maszkok",
             url: "/termekek/reszletek",
             images: {
                 img_1: {
@@ -183,7 +183,7 @@ export const termekek = {
             termek_id: 3,
             isActive: true,
             title: "Fehérneműk",
-            category: "fehernemu",
+            category: "fehernemuk",
             url: "/termekek/reszletek",
             images: {
                 img_1: {
@@ -207,7 +207,7 @@ export const termekek = {
             termek_id: 4,
             isActive: true,
             title: "Öko termékek",
-            category: "oko_termek",
+            category: "oko_termekek",
             url: "/termekek/reszletek",
             images: {
                 img_1: {
@@ -231,7 +231,7 @@ export const termekek = {
             termek_id: 5,
             isActive: true,
             title: "Gyermekruhák",
-            category: "gyermekruha",
+            category: "gyermekruhak",
             url: "/termekek/reszletek",
             images: {
                 img_1: {
@@ -255,7 +255,7 @@ export const termekek = {
             termek_id: 6,
             isActive: true,
             title: "Konyhai textilek",
-            category: "konyhai_textil",
+            category: "konyhai_textilek",
             url: "/termekek/reszletek",
             images: {
                 img_1: {

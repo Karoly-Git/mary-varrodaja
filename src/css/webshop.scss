@@ -144,60 +144,86 @@
                     padding-top: calc((1800 / 1280) * 100%);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    //border: 1px solid black;
                     text-decoration: none;
                     max-height: 210px;
+                    display: flex;
+                    flex-direction: column;
 
-                    .box {
-                        background-color: rgba(255, 255, 255, 0.8);
-                        text-align: center;
-                        margin-top: -6rem;
-                        padding: 0.5rem;
+
+                    .img-box {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin-top: calc(-1 * (1800 / 1280) * 100%);
                         transition: all 150ms ease-in-out;
+                        height: calc((1800 / 1280) * 100vw);
+                        overflow: hidden;
+                        background-position: center;
+                        background-size: cover;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+                        .icon {
+                            font-size: 2rem;
+                            border: 2px solid rgb(150, 150, 150);
+                            color: gray;
+                            padding: 0.25rem;
+                            border-radius: 50%;
+                            margin: 0.25rem 0 0 0.25rem;
+                            transition: all 350ms ease-in-out;
+                            opacity: 0;
+                        }
 
                         h3 {
-                            margin-bottom: 0.5rem;
+                            background-color: rgba(0, 128, 0, 0.8);
+                            height: 2rem;
+                            margin-bottom: -2rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            text-transform: uppercase;
+                            font-weight: 100;
+                            transition: all 250ms ease-in-out;
+                        }
+                    }
+
+                    .data-box {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        text-align: center;
+                        padding: 0 0.5rem;
+                        transition: all 250ms ease-in-out;
+
+                        //height: 3.5rem;
+                        h3,
+                        h5 {
+                            text-align: left;
+                            margin-top: 0.5rem;
+                            font-weight: 100;
+                        }
+                    }
+                }
+
+                .link:hover {
+                    .icon {
+                        //margin-left: 0.25rem;
+                        opacity: 1;
+                    }
+
+                    .img-box h3 {
+                        margin-bottom: 0;
+
+                        * {
+                            color: white;
                         }
                     }
 
                 }
 
                 .link:hover {
-                    .box {
-                        background-color: rgba(0, 128, 0, 0.8);
-
-                        * {
-                            color: white;
-                        }
-                    }
-                }
-
-                .link:nth-child(1) {
-                    background-image: url('../img/categories/thumbnails/taskak2.jpg');
-                }
-
-                .link:nth-child(2) {
-                    background-image: url('../img/categories/thumbnails/maszkok2.jpg');
-                }
-
-                .link:nth-child(3) {
-                    background-image: url('../img/categories/thumbnails/fehernemuk2.jpg');
-                }
-
-                .link:nth-child(4) {
-                    background-image: url('../img/categories/thumbnails/oko_termekek2.jpg');
-                }
-
-                .link:nth-child(5) {
-                    background-image: url('../img/categories/thumbnails/gyermekruhak2.jpg');
-                }
-
-                .link:nth-child(6) {
-                    background-image: url('../img/categories/thumbnails/konyhai_textilek2.jpg');
-                }
-
-                .link:nth-child(7) {
-                    background-image: url('../img/categories/thumbnails/textil_jatekok2.jpg');
+                    background-color: unset;
                 }
             }
 
@@ -213,7 +239,7 @@
                     padding-top: calc((1800 / 1280) * 100%);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    border: 1px solid black;
+                    //border: 1px solid black;
                     text-decoration: none;
                     max-height: 210px;
                     display: flex;

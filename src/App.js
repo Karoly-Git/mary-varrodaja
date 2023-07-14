@@ -1,13 +1,11 @@
+import { data as webshopData } from './data/products_data'
+import { termekek as products, szolgaltatasok as services } from "./data/pages_data"
+
 import React, { useState, useEffect } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import Axios from "axios"
 import config from "./data/config.json"
-
-import {
-  termekek as products,
-  szolgaltatasok as services
-} from "./data/pages_data"
 
 // Website imports
 import ErrorMessage from "./components/ErrorMessage"
@@ -27,6 +25,7 @@ import Webshop from "./components/webshop/Webshop"
 import "../src/css/App.css"
 
 export default function App() {
+  //console.log(webshopData);
 
   const url = config.settings.isLocalServer ? config.urls.local : config.urls.heroku;
 
@@ -79,7 +78,10 @@ export default function App() {
             <Route path="/kapcsolat" element={<Kapcsolat />}></Route>
             <Route path="/gyik" element={<Gyik />}></Route>
 
-            <Route path="/webshop" element={<Webshop />}></Route>
+            {Object.keys(webshopData).map((caregory, index) =>
+              <Route key={index} path={"/webshop/" + caregory} element={<Webshop category={webshopData[caregory]} />}></Route>
+            )}
+            {false && <Route path="/webshop" element={<Webshop webshopData={webshopData} />}></Route>}
           </Routes>
         </main>
         <footer>
