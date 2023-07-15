@@ -1,18 +1,11 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import { szolgaltatasok as services } from "../../data/pages_data";
-
-import { GiLargeDress as Dress } from "react-icons/gi";
-import { ImScissors as Scissors } from "react-icons/im";
-import { BiChild as Children } from "react-icons/bi";
 import { GiSewingMachine as SewingMachine } from "react-icons/gi";
 import ProductSlider from "../Product_slider";
 import ReviewSlider from "../Review_slider";
 
-const icons = [<Dress className="icon dress" />, <Scissors className="icon scissors" />, <Children className="icon children" />];
-
-export default function Kezdolap() {
+export default function Kezdolap(props) {
     return (
         <div className="kezdolap">
             <div className="main-box">
@@ -29,17 +22,17 @@ export default function Kezdolap() {
                 <h2>
                     Üdvözöllek a Mary Varrodájában!
                 </h2>
-                <h3>
+                <p>
                     Szolgáltatásaim nemcsak ruhakészítésre terjednek ki, hozzám bizalommal fordulhatsz, ha ruha átalakításra vagy javításra van szükséged.
-                </h3>
+                </p>
             </div>
 
             <div className="services-box">
                 <Link to="/szolgaltatasok">
-                    {services.data.map((service, serviceIndex) =>
-                        <div key={"szolg" + serviceIndex} className="box">
+                    {props.website.szolgaltatasok.data.map((service, serviceIndex) =>
+                        <div key={serviceIndex} className="box">
                             <div className="icon-box">
-                                {icons[serviceIndex]}
+                                {service.icon}
                             </div>
                             <h3>{service.title}</h3>
                             <p>{service.short_description}</p>
@@ -57,14 +50,17 @@ export default function Kezdolap() {
                 <h2>
                     Kevés az egyforma!
                 </h2>
-                <h3>
-                    Amennyiben kéred, tudok egyforma darabokat készíteni, amint azt a
+                <p>
+                    Büszke vagyok rá, hogy termékeim egyediek, egyedi dizájnnal és mintával készülnek.
+                </p>
+                <p>
+                    Egyforma darabokat vagy sorozatot csak kérésre készítek, illetve a
                     <Link to={"/webshop"}>Webshopban</Link>
-                    is láthatod, azonban termékeim nagy része mind egyedi, egyedi dizájnnal és mintával készül.
-                </h3>
+                    rendelhetőek egyforma darabok.
+                </p>
             </div>
 
-            <ProductSlider />
+            <ProductSlider products={props.website.termekek.data} />
         </div >
     )
 }

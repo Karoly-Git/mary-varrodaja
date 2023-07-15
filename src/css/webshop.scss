@@ -132,7 +132,7 @@
                 }
             }
 
-            .category-grid {
+            .product-grid {
                 display: grid;
                 width: 100%;
                 grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -227,7 +227,7 @@
                 }
             }
 
-            .product-grid {
+            .main-category-grid {
                 display: grid;
                 width: 100%;
                 grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));

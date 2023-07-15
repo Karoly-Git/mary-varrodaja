@@ -14,11 +14,10 @@ import { GrVisa as VisaPayIcon } from 'react-icons/gr'
 import { BsPaypal as PayPalIcon } from 'react-icons/bs'
 
 import { termekek as products } from '../../data/pages_data'
-import { data } from '../../data/products_data';
 
 export default function Webshop(props) {
 
-    console.log(props.category);
+    console.log(props.data);
 
     const [isMain, setIsMain] = useState(true);
     const [currentCategory, setCurrentCategory] = useState("taskak");
@@ -64,9 +63,9 @@ export default function Webshop(props) {
                             <h3>Kategóriák</h3>
                             <div className='devider'></div>
                             <ul className="product-categories">
-                                {products.data.map((product, prodIndex) => (
+                                {products.data.map((product, productIndex) => (
                                     product.isActive &&
-                                    <li key={prodIndex}>
+                                    <li key={productIndex}>
                                         <Link to={"/webshop/" + product.category}>{product.title}
                                             <span className="count">
                                                 ({Math.trunc(Math.random() * 50) + 1})
@@ -103,14 +102,14 @@ export default function Webshop(props) {
                         </section>
                     </div>
 
-                    <div className="category-grid">
-                        {props.category.map((product, prodIndex) => (
+                    {<div className="product-grid">
+                        {props.data.map((product, productIndex) => (
                             product.isActive &&
                             <Link
                                 onClick={() => handleMainCategoryClick(product.category)}
                                 className="link"
                                 to="#"
-                                key={prodIndex}
+                                key={productIndex}
                             >
                                 <div className='img-box' style={{ backgroundImage: `url(${product.images.img})` }}>
                                     <HeartIcon className='icon' />
@@ -122,7 +121,28 @@ export default function Webshop(props) {
                                 </div>
                             </Link>
                         ))}
-                    </div>
+                    </div>}
+
+                    {false && <div className="main-category-grid">
+                        {props.data.map((product, productIndex) => (
+                            product.isActive &&
+                            <Link
+                                onClick={() => handleMainCategoryClick(product.category)}
+                                className="link"
+                                to="#"
+                                key={productIndex}
+                            >
+                                <div className='img-box' style={{ backgroundImage: `url(${product.images.img})` }}>
+                                    <HeartIcon className='icon' />
+                                    <h3>Részletek</h3>
+                                </div>
+                                <div className='data-box'>
+                                    <h3>{product.prod_name}</h3>
+                                    <h5>{product.price},- Ft</h5>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>}
 
 
 

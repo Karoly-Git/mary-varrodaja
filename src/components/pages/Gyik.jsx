@@ -1,10 +1,9 @@
 import React from 'react'
-import { gyik } from '../../data/pages_data'
 
-export default function Gyik() {
+export default function Gyik(props) {
     return (
         <div className='gyik'>
-            {gyik.map((question, index) =>
+            {props.gyik.map((question, index) =>
                 <section key={'question' + index}>
                     <h3>{question.question}</h3>
                     <p>{question.answer}</p>

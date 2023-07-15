@@ -16,8 +16,18 @@ export default function MainNavigation() {
                 <div className="box">
                     <ul className="primary-menu">
                         <li>
+                            <Link className="menu-btn" to="/">
+                                Kezdőlap
+                            </Link>
+                        </li>
+                        <li>
                             <Link className="menu-btn" to="/szolgaltatasok">
                                 Szolgáltatásol
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="menu-btn" to="/rolam">
+                                Rólam
                             </Link>
                         </li>
                         <li>
@@ -26,8 +36,8 @@ export default function MainNavigation() {
                             </Link>
                         </li>
                         <li>
-                            <Link className="menu-btn" to="/rolam">
-                                Rólam
+                            <Link className="menu-btn" to="/gyik">
+                                GyIK
                             </Link>
                         </li>
                         <li>
@@ -37,7 +47,7 @@ export default function MainNavigation() {
                         </li>
                     </ul>
 
-                    <ul className="secondary-menu">
+                    {false && <ul className="secondary-menu">
                         <li>
                             <Link className="menu-btn" to="/webshop">
                                 Webshop
@@ -53,7 +63,7 @@ export default function MainNavigation() {
                                 <CartIcon className="icon" />
                             </div>
                         </li>
-                    </ul>
+                    </ul>}
                 </div>
             </div>
         </nav>

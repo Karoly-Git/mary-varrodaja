@@ -67,4 +67,12 @@
     article:nth-child(2n) {
         flex-direction: row-reverse;
     }
+
+    .flipped {
+        flex-direction: row !important;
+    }
+
+    .flipped:nth-child(2n+1) {
+        flex-direction: row-reverse !important;
+    }
 }

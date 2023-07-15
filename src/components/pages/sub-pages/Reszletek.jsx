@@ -5,7 +5,7 @@ export default function Reszletek(props) {
         <div className='reszletek'>
             <h1>{props.h1}</h1>
             {props.data.map((element, index) => (
-                <article key={'article' + index}>
+                <article key={'article' + index} className={props.isRowReverse ? 'flipped' : ''} >
                     <div className='container'>
                         <h3>{element.title}</h3>
                         {props.data[index].details.map((pharagraph, detailIndex) => (
