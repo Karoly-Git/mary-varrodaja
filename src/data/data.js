@@ -1,3 +1,10 @@
+import taskak from '../img/product_slider/taskak.jpg'
+import maszkok from '../img/product_slider/maszkok.jpg'
+import fehernemuk from '../img/product_slider/fehernemuk.jpg'
+import oko_termekek from '../img/product_slider/oko_termekek.jpg'
+import gyermekruhak from '../img/product_slider/gyermekruhak.jpg'
+import konyhai_textilek from '../img/product_slider/konyhai_textilek.jpg'
+import textil_jatekok from '../img/product_slider/textil_jatekok.jpg'
 
 import { GiLargeDress as Dress } from "react-icons/gi";
 import { ImScissors as Scissors } from "react-icons/im";
@@ -596,7 +603,7 @@ export const website = {
                 icon: <Dress className="icon dress" />,
                 images: {
                     img_1: {
-                        src: "src",
+                        src: taskak,
                         alt:
                             "Valaki egy ruhánt készít, aki éppen megtűz egy ruha szélt, valamint egy sárga szabócenti is van a kép jobb szélén."
                     },
@@ -693,7 +700,7 @@ export const website = {
                 url: "/termekek/reszletek",
                 images: {
                     img_1: {
-                        src: "src",
+                        src: taskak,
                         alt: "alt-1"
                     },
                     img_2: {
@@ -719,7 +726,7 @@ export const website = {
                 url: "/termekek/reszletek",
                 images: {
                     img_1: {
-                        src: "src",
+                        src: maszkok,
                         alt: "alt-1"
                     },
                     img_2: {
@@ -744,7 +751,7 @@ export const website = {
                 url: "/termekek/reszletek",
                 images: {
                     img_1: {
-                        src: "src",
+                        src: fehernemuk,
                         alt: "alt-1"
                     },
                     img_2: {
@@ -769,7 +776,7 @@ export const website = {
                 url: "/termekek/reszletek",
                 images: {
                     img_1: {
-                        src: "src",
+                        src: oko_termekek,
                         alt: "alt-1"
                     },
                     img_2: {
@@ -795,7 +802,7 @@ export const website = {
                 url: "/termekek/reszletek",
                 images: {
                     img_1: {
-                        src: "src",
+                        src: gyermekruhak,
                         alt: "alt-1"
                     },
                     img_2: {
@@ -820,7 +827,7 @@ export const website = {
                 url: "/termekek/reszletek",
                 images: {
                     img_1: {
-                        src: "src",
+                        src: konyhai_textilek,
                         alt: "alt-1"
                     },
                     img_2: {
@@ -845,7 +852,7 @@ export const website = {
                 url: "/termekek/reszletek",
                 images: {
                     img_1: {
-                        src: "src",
+                        src: textil_jatekok,
                         alt: "alt-1"
                     },
                     img_2: {

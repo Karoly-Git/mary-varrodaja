@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
 
-import { reviews } from '../data/pages_data'
 import { MdOutlineNavigateNext as Arrow } from 'react-icons/md'
 import { AiFillStar as Star } from 'react-icons/ai'
 import { RiDoubleQuotesL as Quotes } from 'react-icons/ri'
 
-export default function ReviewSlider() {
+export default function ReviewSlider(props) {
     const [marginLeft, setMarginLeft] = useState(0);
 
     const moveToRight = () => {
-        if (marginLeft > -1 * (reviews.length - 1) * 100) {
+        if (marginLeft > -1 * (props.velemenyek.length - 1) * 100) {
             //console.log(marginLeft - 100);
             setMarginLeft(marginLeft - 100);
         } else {
@@ -21,7 +20,7 @@ export default function ReviewSlider() {
             //console.log(marginLeft + 100);
             setMarginLeft(marginLeft + 100);
         } else {
-            setMarginLeft(-1 * (reviews.length - 1) * 100);
+            setMarginLeft(-1 * (props.velemenyek.length - 1) * 100);
         }
     };
 
@@ -33,11 +32,11 @@ export default function ReviewSlider() {
                         <Arrow className="icon left" />
                     </div>
                     <div className="slider-box">
-                        {reviews.map((element, index) => (
+                        {props.velemenyek.map((element, velemenyekIndex) => (
                             <div
-                                key={"slide" + index}
+                                key={velemenyekIndex}
                                 className="slide"
-                                style={index === 0 ? { marginLeft: `${marginLeft}%` } : {}}
+                                style={velemenyekIndex === 0 ? { marginLeft: `${marginLeft}%` } : {}}
                             >
                                 <h3 className='stars'>
                                     <Star className='icon' />
@@ -57,9 +56,9 @@ export default function ReviewSlider() {
                         <Arrow className="icon" onClick={moveToRight} />
                     </div>
                 </div>
-                <div className='indicator-container'>
-                    {reviews.map(i => <span></span>)}
-                </div>
+                {false && <div className='indicator-container'>
+                    {props.velemenyek.map(i => <span key={i}></span>)}
+                </div>}
             </div>
         </div>
     )

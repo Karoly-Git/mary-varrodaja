@@ -22,14 +22,14 @@ export default function ProductSlider(props) {
     };
 
     return (
-        <div className='product-slider' ref={props.scrollRefProducts}>
+        <div className='product-slider'>
 
             <SectionDevider h2={'Termékeim'} />
 
             <div className="slider-container">
                 <div className='btn-box'><NavArrow className='icon left' onClick={clickOnLeft} style={marginLeft === 0 ? { pointerEvents: 'none', opacity: '0' } : {}} /></div>
                 <div className="slider-box">
-                    {props.products.map((product, productindex) =>
+                    {props.termekek.data.map((product, productindex) =>
                         product.isActive &&
                         <Link key={'product' + productindex} to={'/termekek'} className='img-box' style={productindex === 0 ? { marginLeft: `${marginLeft}rem` } : {}}>
                             <img src={product.images.img_1.src} alt={product.images.img_1.alt} />

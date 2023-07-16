@@ -29,7 +29,7 @@ export default function Kezdolap(props) {
 
             <div className="services-box">
                 <Link to="/szolgaltatasok">
-                    {props.website.szolgaltatasok.data.map((service, serviceIndex) =>
+                    {props.szolgaltatasok.data.map((service, serviceIndex) =>
                         <div key={serviceIndex} className="box">
                             <div className="icon-box">
                                 {service.icon}
@@ -41,7 +41,7 @@ export default function Kezdolap(props) {
                 </Link>
             </div>
 
-            <ReviewSlider />
+            <ReviewSlider velemenyek={props.velemenyek} />
 
             <div className="description-box">
                 <div className="icon-box">
@@ -60,7 +60,7 @@ export default function Kezdolap(props) {
                 </p>
             </div>
 
-            <ProductSlider products={props.website.termekek.data} />
+            <ProductSlider termekek={props.termekek} />
         </div >
     )
 }

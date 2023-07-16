@@ -65,7 +65,12 @@ export default function App() {
         <main>
           <Routes>
             <Route path="*" element={<h1>Oldal nem található</h1>}></Route>
-            <Route path="/" element={<Kezdolap website={website} />}></Route>
+            <Route path="/" element={
+              <Kezdolap
+                termekek={website.termekek}
+                szolgaltatasok={website.szolgaltatasok}
+                velemenyek={website.velemenyek} />}>
+            </Route>
             <Route path="/termekek" element={<Reszletek data={website.termekek.data} h1={website.termekek.h1} isRowReverse={false} />}></Route>
             <Route path="/rolam" element={<Rolam rolam={website.rolam} />}></Route>
             <Route path="/szolgaltatasok" element={<Reszletek data={website.szolgaltatasok.data} h1={website.szolgaltatasok.h1} isRowReverse={true} />}></Route>
@@ -90,7 +95,11 @@ export default function App() {
         </main>
         <footer>
           <BottomNavigation />
-          <Info />
+          <Info
+            gyik={website.gyik}
+            velemenyek={website.velemenyek}
+            hirek={website.hirek}
+          />
         </footer>
       </Router>
       {!isLoading && !data && <ErrorMessage errMessage={error.message} errName={error.name} />}
