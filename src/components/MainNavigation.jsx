@@ -21,27 +21,27 @@ export default function MainNavigation() {
                             </Link>
                         </li>
                         <li>
-                            <Link className="menu-btn" to="/szolgaltatasok">
+                            <Link className="menu-btn" to="/#/szolgaltatasok">
                                 Szolgáltatásol
                             </Link>
                         </li>
                         <li>
-                            <Link className="menu-btn" to="/rolam">
+                            <Link className="menu-btn" to="/#/rolam">
                                 Rólam
                             </Link>
                         </li>
                         <li>
-                            <Link className="menu-btn" to="/termekek">
+                            <Link className="menu-btn" to="/#/termekek">
                                 Termékek
                             </Link>
                         </li>
                         <li>
-                            <Link className="menu-btn" to="/gyik">
+                            <Link className="menu-btn" to="/#/gyik">
                                 GyIK
                             </Link>
                         </li>
                         <li>
-                            <Link className="menu-btn" to="/kapcsolat">
+                            <Link className="menu-btn" to="/#/kapcsolat">
                                 Kapcsolat
                             </Link>
                         </li>
