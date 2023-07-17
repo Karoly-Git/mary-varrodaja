@@ -1,7 +1,7 @@
 import { categories, webshop, website } from '../src/data/data';
 
 import React, { useState, useEffect } from "react"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { HashRouter as Router, Routes, Route } from "react-router-dom"
 
 import Axios from "axios"
 import config from "./data/config.json"
@@ -71,7 +71,7 @@ export default function App() {
                 szolgaltatasok={website.szolgaltatasok}
                 velemenyek={website.velemenyek} />}>
             </Route>
-            <Route path="/termekek" element={<Reszletek data={website.termekek.data} h1={website.termekek.h1} isRowReverse={false} />}></Route>
+            <Route path="/#termekek" element={<Reszletek data={website.termekek.data} h1={website.termekek.h1} isRowReverse={false} />}></Route>
             <Route path="/rolam" element={<Rolam rolam={website.rolam} />}></Route>
             <Route path="/szolgaltatasok" element={<Reszletek data={website.szolgaltatasok.data} h1={website.szolgaltatasok.h1} isRowReverse={true} />}></Route>
             <Route path="/gyik" element={<Gyik gyik={website.gyik} />}></Route>
