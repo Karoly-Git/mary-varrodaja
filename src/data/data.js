@@ -820,7 +820,7 @@ export const website = {
                 },
                 description: "Gyermek pizsamák, hálózsákok, polók, nadrágok és megannyi más hasznos ruhadarab.",
                 details: [
-                    "Gyermek pizsamák, hálózsákok, polók, nadrágok és még sok más termék kínálatával szolgálok.",
+                    "Gyermek pizsamák, hálózsákok, polók, nadrágok és még sok más termék.",
                     "A polók és nadrágok mindennapos viseletet jelentenek a gyerekek számára. Könnyű és légáteresztő anyagokból készülnek, amelyek kényelmes viseletet biztosítanak a mozgás szabadságával. Ezek a ruhadarabok sokféle színben és mintában elérhetők, lehetővé téve a gyermekek számára, hogy kifejezzék saját stílusukat.",
                     "Mindegyik termékemmet a gyermekek kényelmét és stílusát szem előtt tartva terveztem és készítem. Fontos számomra a minőségi anyagok használata és a tartósság, hogy a ruhák sokáig szolgálhassanak.",
                     "A gyermekek ruházata és kiegészítői nemcsak a praktikumot szolgálják, hanem lehetőséget adnak a személyiség kifejezésére és a gyermeki kreativitás megjelenítésére. A színes és vidám tervezési elemekkel ellátott ruhadarabok, mintázatok és kedvenc karakterek hozzájárulnak ahhoz, hogy a gyermekek örömmel és magabiztosan viseljék őket.",
@@ -844,11 +844,8 @@ export const website = {
                 description:
                     "Konyharuhák, tároló zsákok és sok más praktikus termékek a mindennapi tevékenységek megkönnyítésére.",
                 details: [
-                    "Konyharuhák, tároló zsákok és még számos más konyhai termék kínálatával szolgálunk, hogy segítsünk a konyhai tevékenységekben és a környezettudatosabb életmód kialakításában.",
-                    "Konyharuhák: A konyharuhák alapvető kiegészítői a konyhának. Kínálatunkban megtalálhatók a tartós és könnyen tisztítható anyagból készült konyharuhák, amelyek ideálisak az edények, serpenyők vagy felületek tisztítására. A minőségi anyagokból készült konyharuhák hatékonyan felszívják a nedvességet, és könnyen használhatók a konyhai munkafolyamatok során.",
-                    "Tároló zsákok: A környezetbarát tároló zsákok kiváló alternatívái az egyszer használatos műanyag tárolóknak. Ezek a textil vagy szilikon alapú tárolók újrahasznosíthatók és hosszú távon használhatók. Többféle méretben és kialakításban érhetők el, így ideálisak az élelmiszerek, például gyümölcsök, zöldségek vagy száraz élelmiszerek tárolására. Továbbá, a tároló zsákok tisztítása és újrafelhasználása egyszerű és kényelmes.",
-                    "Egyéb konyhai termékek: Kínálatunkban megtalálhatók még más praktikus konyhai termékek is, mint például szilikon sütőedények, szivacsok, tisztítókendők és törlőkendők. Ezek a termékek segítenek a hatékony és környezettudatosabb konyhai tevékenységekben. A minőségi anyagokból készült termékek tartósak és könnyen tisztíthatók, így hosszú élettartammal rendelkeznek.",
-                    "Konyhai termékeink tervezése és kivitelezése során fontos szempont számunkra a fenntarthatóság és az egészséges életmód elősegítése. Mindegyik termékünk úgy van tervezve, hogy segítsen a mindennapi konyhai tevékenységekben, miközben minimalizálja a környezeti terhelést. Az egyszerű, praktikus és környezetbarát megoldásaink segítenek abban, hogy a konyhában hatékonyan dolgozhassunk és egészséges módon tárolhassuk az élelmiszereket.",
+                    "A konyharuhák alapvető kiegészítői a konyhának. Kínálatomkban megtalálhatók a tartós és könnyen tisztítható anyagból készült konyharuhák, amelyek ideálisak az edények, serpenyők vagy felületek tisztítására. A minőségi anyagokból készült konyharuhák hatékonyan felszívják a nedvességet, és könnyen használhatók a konyhai munkafolyamatok során.",
+                    "A környezetbarát tároló zsákok kiváló alternatívái az egyszer használatos műanyag tárolóknak. Ezek a textil alapú tárolók hosszú távon használhatók. Többféle méretben és kialakításban érhetők el, így ideálisak az élelmiszerek, például gyümölcsök, zöldségek vagy száraz élelmiszerek tárolására. A tároló zsákok tisztítása egyszerű és kényelmes, mosógépben mosható.",
                 ]
             },
             {
@@ -869,9 +866,7 @@ export const website = {
                 description:
                     "Plüssállatkák és egyéb vidám kiegészítők amik színesítik a mindennapokat gyerekek és felnőttek számára egyaránt.",
                 details: [
-                    "Textilek: A textíliák széles választékát kínáljuk, amelyek ideálisak különféle célra. Kényelmes és puha anyagokból készülnek, amelyek kellemes tapintást biztosítanak. Kínálatunkban megtalálhatók például pamut, lenvászon, selyem és gyapjú termékek, amelyek kiváló minőséget képviselnek és tartósak.",
-                    "Állatkák: Az állatkák a gyerekek legjobb barátai és hűséges társai. Kínálatunkban megtalálhatók különböző méretű és fajtájú plüssállatkák, amelyek tökéletesek a játékra és ölelésre. Az aranyos és puha állatkák biztosítják a gyermek számára a kényelmet és a szórakozást, miközben segítenek a képzelet gazdagításában és a játékban.",
-                    "Egyéb termékek: Kínálatunkban továbbá megtalálhatók még egyéb kiegészítők és termékek, amelyek színesítik a mindennapokat. Ilyenek például dekoratív párnák, takarók, tárolókosarak és textil játékok. Ezek a termékek a személyes stílus kifejezésére és a kényelem megteremtésére szolgálnak otthonunkban és az élet más területein."
+                    "A textíl állatkák a gyerekek legjobb barátai és hűséges társai. Kínálatomban megtalálhatók különböző méretű és fajtájú plüssállatkák, amelyek tökéletesek a játékra és ölelésre. Az aranyos és puha állatkák biztosítják a gyermek számára a kényelmet és a szórakozást, miközben segítenek a képzelet gazdagításában és a játékban.",
                 ]
             }
         ]
@@ -947,39 +942,30 @@ export const website = {
     velemenyek: [
         {
             isActive: true,
-            name: "Eszter",
-            rating: 4.5,
-            comment:
-                "Imádom ezt a varrónő honlapot! Fantasztikus szolgáltatások és csodálatos termékek várnak itt rám. A ruha átalakítás tökéletesen megoldja a ruháim problémáit, és a gyermekruhák készítése egyszerűen elbűvölő. Kiváló minőség és egyedi dizájn jellemzi a munkájukat. Csak ajánlani tudom!",
-            short_comment:
-                "A Mary Varrodaja kivételes weboldal, amely széles választékban kínál magas minőségű termékeket. Nemrégiben vásároltam egy gyönyörű kézzel készített nyakláncot a kollekciójukból, és nagyon elégedett vagyok a...",
-        },
-        {
-            isActive: true,
             name: "Anna",
             rating: 4.8,
             comment:
-                "Egy igazi varrónői mesterremek! A ruhajavítás és átalakítás során mindig precíz és figyelmes munkát végeznek. A női felsőruhák pedig olyan elegánsak és stílusosak, hogy minden alkalomra tökéletesek. A webshop kínálata pedig változatos és inspiráló. Csak dicsérni tudom a szakértelmüket!",
+                "Nagyon hálás vagyok, egy régi ruhámat vittem el, amit már évek óta nem tudtam viselni, de most új életre kelt. A kreativitás és a szakértelm valóban lenyűgöző. Köszönöm a munkát, nagyszerű a ruha!",
             short_comment:
-                "A Mary Varrodajára akadtam, amikor különleges ajándékot kerestem a nővérem születésnapjára. Lenyűgözött a kitűnő kézműves munka és a részletek iránti figyelem, amelyek az áruikban megmutatkoznak...",
+                "Nagyon hálás vagyok, egy régi ruhámat vittem el, amit már évek óta nem tudtam viselni, de most új életre kelt. A kreativitás és a szakértelm valóban lenyűgöző. Köszönöm a munkát, nagyszerű a ruha!",
         },
         {
             isActive: true,
             name: "Zsófia",
             rating: 4.2,
             comment:
-                "Ez a varrónő honlap igazi kincsesbánya! A gyermekruhák olyan aranyosak és egyediek, hogy mindig elolvadok tőlük. A téskák és konyhai textilek pedig remekül kiegészítik otthonom stílusát. A minőség és a részletgazdagság minden egyes termékben érezhető. Nagyszerű választás mindenkinek!",
+                "Imádtam az új ruhát, amit a lányom esküvőjére készíttettem! A minőség kiváló, és nagyon figyelmesen és gondosan dolgozott, hogy minden részlet tökéletes legyen. Ajánlom mindenkinek, aki tökéletes ruhát szeretne!",
             short_comment:
-                "A Mary Varrodaja lett az új kedvenc online áruházam, amikor ékszerekről van szó. Weboldaluk egy olyan gyöngyszemeket tartalmazó kincsesláda, amelyek gyönyörűen tervezettek, és különböző ízléshez és stílushoz illeszkednek..."
+                "Imádtam az új ruhát, amit a lányom esküvőjére készíttettem! A minőség kiváló, és nagyon figyelmesen és gondosan dolgozott, hogy minden részlet tökéletes legyen. Ajánlom mindenkinek, aki tökéletes ruhát szeretne!",
         },
         {
             isActive: true,
             name: "Katalin",
             rating: 4.7,
             comment:
-                "Egy valódi varrónő művészete ez a webshop! A termékek tartósak és strapabíróak, ráadásul csodálatosan néznek ki. A személyre szabott ruhakészítés pedig igazi luxus. A varrónő hihetetlenül tehetséges és elkötelezett. Teljes mértékben elégedett vagyok a szolgáltatásaikkal!",
+                "Nagyon elégedett vagyok a babahálózsákkal, amit rendeltem! A minősége kiváló, és kisfiam nagyon jókat alszik benne. A színek is nagyon szépek, és nagyon könnyű használni. Egyértelműen a legjobb választás volt.",
             short_comment:
-                "Nemrégiben fedeztem fel a Mary Varrodaját, és kellemes meglepetés volt. A weboldaluk lenyűgöző választ..."
+                "Nagyon elégedett vagyok a babahálózsákkal, amit rendeltem! A minősége kiváló, és kisfiam nagyon jókat alszik benne. A színek is nagyon szépek, és nagyon könnyű használni. Egyértelműen a legjobb választás volt.",
         }
     ],
 

@@ -16,7 +16,9 @@ export default function Reszletek(props) {
                             </section>
                         ))}
                     </div>
-                    <img src={element.images.page.src} alt={element.images.page.alt} />
+                    <div className="img-box">
+                        <img src={element.images.page.src} alt={element.images.page.alt} />
+                    </div>
                 </article>
             ))}
         </div>
