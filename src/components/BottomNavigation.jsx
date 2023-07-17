@@ -5,8 +5,8 @@ export default function MainNavigation() {
     return (
         <nav className='bottom-navigation'>
             <ul>
-                <li><Link to='/#/gyik'>GyIK</Link></li>
-                <li><Link to='/#/kapcsolat'>Kapcsolat</Link></li>
+                <li><Link to='/gyik'>GyIK</Link></li>
+                <li><Link to='/kapcsolat'>Kapcsolat</Link></li>
             </ul>
         </nav>
     )
