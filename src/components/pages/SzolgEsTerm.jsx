@@ -15,7 +15,7 @@ export default function SzolgEsTerm(props) {
                             to={`${element.url}`}
                         >
                             <h2>{element.title}</h2>
-                            <img src={element.images.img_1.src} alt={element.images.img_1.alt} />
+                            <img src={element.images.page.src} alt={element.images.page.alt} />
                             <p>{element.description}</p>
                         </Link>
                     ))}

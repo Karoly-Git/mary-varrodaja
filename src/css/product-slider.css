@@ -31,7 +31,6 @@
 }
 .product-slider .slider-container .slider-box {
   display: flex;
-  align-items: center;
   width: 70rem;
   overflow: hidden;
 }
@@ -60,6 +59,13 @@
   font-weight: 100;
   color: white;
   transition: all 150ms ease-in-out;
+}
+.product-slider .slider-container .slider-box a p {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.product-slider .slider-container .slider-box a:hover {
+  background-color: unset;
 }
 .product-slider .slider-container .slider-box a:hover h3 {
   background-color: rgba(191, 161, 107, 0.5);

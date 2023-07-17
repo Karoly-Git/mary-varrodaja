@@ -1,16 +1,29 @@
-import taskak from '../img/product_slider/taskak.jpg'
-import maszkok from '../img/product_slider/maszkok.jpg'
-import fehernemuk from '../img/product_slider/fehernemuk.jpg'
-import oko_termekek from '../img/product_slider/oko_termekek.jpg'
-import gyermekruhak from '../img/product_slider/gyermekruhak.jpg'
-import konyhai_textilek from '../img/product_slider/konyhai_textilek.jpg'
-import textil_jatekok from '../img/product_slider/textil_jatekok.jpg'
+// Product slider images
+import taskak_slider from '../img/product_slider/taskak.jpg'
+import maszkok_slider from '../img/product_slider/maszkok.jpg'
+import fehernemuk_slider from '../img/product_slider/fehernemuk.jpg'
+import oko_termekek_slider from '../img/product_slider/oko_termekek.jpg'
+import gyermekruhak_slider from '../img/product_slider/gyermekruhak.jpg'
+import konyhai_textilek_slider from '../img/product_slider/konyhai_textilek.jpg'
+import textil_jatekok_slider from '../img/product_slider/textil_jatekok.jpg'
+
+// Termékek page images
+import taskak_page from '../img/termekek/taskak.jpg'
+import maszkok_page from '../img/termekek/maszkok.jpg'
+import fehernemuk_page from '../img/termekek/fehernemuk.jpg'
+import oko_termekek_page from '../img/termekek/oko_termekek.jpg'
+import gyermekruhak_page from '../img/termekek/gyermekruhak.jpg'
+import konyhai_textilek_page from '../img/termekek/konyhai_textilek.jpg'
+import textil_jatekok_page from '../img/termekek/textil_jatekok.jpg'
+
+// Szolgáltatások page images
+import noi_felsoruha_keszites_page from '../img/szolgaltatasok/noi_felsoruha_keszites.jpg'
+import ruha_javitas_es_atalakitas_page from '../img/szolgaltatasok/ruha_javitas_es_atalakitas.jpg'
+import gyermekruha_keszites_page from '../img/szolgaltatasok/gyermekruha_keszites.jpg'
 
 import { GiLargeDress as Dress } from "react-icons/gi";
 import { ImScissors as Scissors } from "react-icons/im";
 import { BiChild as Children } from "react-icons/bi";
-
-
 
 export const categories = [
     {
@@ -602,13 +615,13 @@ export const website = {
                 url: "/szolgaltatasok/reszletek",
                 icon: <Dress className="icon dress" />,
                 images: {
-                    img_1: {
-                        src: taskak,
-                        alt:
-                            "Valaki egy ruhánt készít, aki éppen megtűz egy ruha szélt, valamint egy sárga szabócenti is van a kép jobb szélén."
-                    },
-                    img_2: {
+                    product_slider: {
                         src: "src",
+                        alt:
+                            "alt"
+                    },
+                    page: {
+                        src: noi_felsoruha_keszites_page,
                         alt: "alt-2"
                     }
                 },
@@ -623,9 +636,9 @@ export const website = {
                             "Ez azért van, mert a tömeggyártásnál a nagy átlagra jellemző testarányokra készítik a ruhákat, viszont az emberek közel fele nem ebbe a csoportba tartozik, hiszen a testarányok egyénenként változnak. Van akinek hosszabb a felsőteste, van akinek a végtagjai hosszabbak, van akinek a válla vagy a csípője szélesebb, stb.",
                             "Az általam készített ruhák mind egyedileg modellezettek, a levett testméretek alapján készülnek, így biztos, hogy úgy fog mutatni, mint ahogyan a divatlapokban látható.",
                             */
-                    "Boltban vásárolt konfekciós ruhák hátránya, hogy nem egyénre szabottak, így sokaknak nem felelnek meg a méretek. Ruhapróbáláskor gyakran tapasztalható, hogy ráncolódnak ott, ahol nem kellene, szűkek vagy éppen bővek egyes részeiken, valamint hosszban vagy ujjhosszban nem megfelelőek.",
-                    "Zakóknál elállhat vagy bugyrosodhat a hát, nadrágoknál pedig bugyrosodhat vagy túl szűkek lehetnek az ülepük. Ennek oka, hogy a tömeggyártás során a ruhák átlagos testarányokra készülnek, pedig az emberek különböző testalkattal rendelkeznek.",
-                    "Az általam készített ruhák viszont egyedileg modellezettek, a levett testméretek alapján készülnek, így garantált, hogy olyanok lesznek, mint amiket a divatlapokon láthatunk."
+                    "A boltban vásárolt konfekciós ruhák hátránya, hogy nem egyénre szabottak, így sokaknak nem felelnek meg a méretek. Ruhapróbáláskor gyakran tapasztalhatod, hogy ráncolódik ott, ahol nem kellene, egyes rész szűk vagy éppen bő, hosszban vagy ujjhosszban nem megfelelő.",
+                    "Ennek oka, hogy a tömeggyártás során a ruhák átalános testarányokra készülnek, pedig az emberek különböző testarányokkal rendelkeznek, tehát a konfekció nem jó mindenkinek.",
+                    "Az általam készített ruhák egyedileg modellezettek, a levett testméretek alapján készülnek, így garantált, hogy olyanok lesznek, mint amiket a divatlapokban láthatunk."
                 ]
             },
             {
@@ -634,13 +647,13 @@ export const website = {
                 url: "/szolgaltatasok/reszletek",
                 icon: <Scissors className="icon scissors" />,
                 images: {
-                    img_1: {
+                    product_slider: {
                         src: "src",
                         alt:
                             "Ruha javítás és átalakítás kép. Egy szakadt farmernadrág, egy olló, négy különböző színű cérnaspulni, egy varrógyűszű, és egy szabócenti látható."
                     },
-                    img_2: {
-                        src: "src",
+                    page: {
+                        src: ruha_javitas_es_atalakitas_page,
                         alt: "alt-2"
                     }
                 },
@@ -657,9 +670,9 @@ export const website = {
                             "Bosszantó tud lenni, amikor egy tönkrement cipzár miatt ki kell dobni valamit. Ne dobd ki, a cipzárcsere olcsó megoldás, hogy vissza kapd.",
                             "Hasonló bosszúság, amikor az anyag szakad ki. Egy szakadás nagyon gyakran nyom nélkül javítható.",
                             "Ne dobd ki, hozd el hozzám, egy próbát megér.",*/
-                    "Az ismerős érzés, amikor a boltban talált ruhadarab vagy nadrág jó derékban, tetszik, de túl hosszú, ezért inkább nem vesszük meg. Azonban nem kell otthagynod a boltban, hozd el hozzám, levágom és felvarrom a megfelelő méretre.",
-                    "Ugyanez a helyzet a bőséggel is, mely könnyen problémát okozhat súlyváltozás esetén. De miért dobnád el a ruhádat, ha csak kicsit bő vagy szűk? Ha túl bő egy ruhadarab vagy nadrág, általában könnyen javítható.",
-                    "Ha bővíteni kell, szintén találunk megoldást. Hozd el hozzám és megnézem, mit lehet tenni. Bosszantó, amikor egy tönkrement cipzár miatt el kell dobni valamit. Ne dobd ki, a cipzárcsere olcsó megoldás lehet. Hasonló bosszúság, amikor az anyag szakad ki. Egy szakadás nagyon gyakran nyom nélkül javítható. Tehát ne dobd ki, hozd el hozzám, megér egy próbát."
+                    "Ismerős az érzés, amikor a boltban talált nadrág, tetszik, de túl hosszú? Nem kell otthagynod a boltban, hozd el hozzám, levágom és felvarrom a megfelelő méretre!",
+                    "Bosszantó, amikor egy tönkrement cipzár miatt el kell dobni valamit. Ne dobd ki! A cipzárcsere olcsó megoldás lehet.",
+                    "A bőség is módisítható! Miért dobnád el a ruhádat, ha kicsit bő vagy szűk? Ha túl bő egy ruhadarab vagy nadrág, általában könnyen javítható. Ha bővíteni kell, az is többnyire megoldható. Hozd el hozzám és megnézem, mit lehet tenni. "
                 ]
             },
             {
@@ -668,13 +681,13 @@ export const website = {
                 url: "/szolgaltatasok/reszletek",
                 icon: <Children className="icon children" />,
                 images: {
-                    img_1: {
+                    product_slider: {
                         src: "src",
                         alt:
                             "Egy kisfiú és egy kislány látható a képen. A fiú bal oldalon, a lány jobb oldalon van. A fiún zöld kabát és kék farmernadrág, a lányon rózsaszín kabát és fekete nadrág van."
                     },
-                    img_2: {
-                        src: "src",
+                    page: {
+                        src: gyermekruha_keszites_page,
                         alt: "alt-2"
                     }
                 },
@@ -699,24 +712,24 @@ export const website = {
                 category: "taskak",
                 url: "/termekek/reszletek",
                 images: {
-                    img_1: {
-                        src: taskak,
+                    product_slider: {
+                        src: taskak_slider,
                         alt: "alt-1"
                     },
-                    img_2: {
-                        src: "src",
+                    page: {
+                        src: taskak_page,
                         alt: "alt-2"
                     }
                 },
                 description:
-                    "Kézi, háti és oldal táskák egyed kivitelben egyedi színben és dizájnnal.",
+                    "Egyedileg tervezett minőségi és stílusos kézi, háti és oldal táskák. Elérhetők változatos méretben és színben.",
                 details: [
-                    "Termékeink egyedülálló kialakítással és minőségi anyagokból készülnek, hogy megfeleljenek az egyéni stílusnak és igényeknek. Kézi, háti és oldal táskáink változatos méretekben és formákban elérhetőek, így mindenki megtalálhatja a számára leginkább megfelelőt.",
-                    "A kézi táskák elegáns és praktikus kiegészítők, amelyek ideálisak mindennapi használatra vagy különleges alkalmakra. Különböző stílusokban és méretekben kaphatók, lehetővé téve a személyes preferenciákhoz és funkcionális igényekhez való alkalmazkodást. Az anyagválasztékunk széles skálájából választhat, beleértve a tartós bőrt, a könnyű textilt vagy akár a strapabíró műanyagot is.",
-                    "Háti táskáink kényelmes és divatos opciókat nyújtanak mind a mindennapi élethez, mind az utazáshoz. Ergonomikus kialakításuk és párnázott vállpántjaik megkönnyítik a terhelés egyenletes elosztását és csökkentik a vállra és a hátizmokra nehezedő nyomást. Több zsebbel és rekeszekkel rendelkeznek, így szervezett módon tárolhatjuk a szükséges dolgokat, például laptopot, noteszt vagy kulcstartót.",
-                    "Az oldal táskák sokoldalúak és praktikusak, különösen azoknak, akiknek szükségük van könnyű hozzáférésre és mobilitásra. Ezek a táskák könnyen rögzíthetők az oldalsó testrészen, és rendkívül hasznosak lehetnek, amikor valamire gyorsan szükség van, például a telefonra, pénztárcára vagy kulcsokra.",
-                    "Mindegyik termékünk egyedi színválasztékkal és dizájnnal rendelkezik, hogy kifejezze az egyéni stílust és személyiséget. Legyen szó a klasszikus fekete, a merész színek vagy a trendi minták kedvelőiről, mindig található olyan táska, amely illeszkedik az egyéni stílushoz és vágyakhoz.",
-                    "Az egyedileg tervezett és készített kézi, háti és oldal táskáink a minőségi anyagok, a funkcionalitás és a stílus tökéletes kombinációját nyújtják. Bármilyen alkalomra vagy igényre, segítenek a személyes tárgyak biztonságos és stílusos szállításában.",
+                    "Táskáimat egyedülálló kialakítással és minőségi anyagokból készítem, hogy megfeleljenek az egyéni igényeknek.",
+                    // "A kézi táskák elegáns és praktikus kiegészítők, amelyek ideálisak mindennapi használatra vagy különleges alkalmakra. Különböző stílusokban és méretekben kaphatók, lehetővé téve a személyes preferenciákhoz és funkcionális igényekhez való alkalmazkodást. Az anyagválasztékunk széles skálájából választhat, beleértve a tartós bőrt, a könnyű textilt vagy akár a strapabíró műanyagot is.",
+                    // "Háti táskáink kényelmes és divatos opciókat nyújtanak mind a mindennapi élethez, mind az utazáshoz. Ergonomikus kialakításuk és párnázott vállpántjaik megkönnyítik a terhelés egyenletes elosztását és csökkentik a vállra és a hátizmokra nehezedő nyomást. Több zsebbel és rekeszekkel rendelkeznek, így szervezett módon tárolhatjuk a szükséges dolgokat, például laptopot, noteszt vagy kulcstartót.",
+                    // "Az oldal táskák sokoldalúak és praktikusak, különösen azoknak, akiknek szükségük van könnyű hozzáférésre és mobilitásra. Ezek a táskák könnyen rögzíthetők az oldalsó testrészen, és rendkívül hasznosak lehetnek, amikor valamire gyorsan szükség van, például a telefonra, pénztárcára vagy kulcsokra.",
+                    "Mindegyik táska egyedi dizájnnal rendelkezik, hogy kifejezze az egyéni stílust és személyiséget.",
+                    "Az egyedileg tervezett és készített kézi, háti és oldal táskáim a minőségi anyagok, a funkcionalitás és a stílus kombinációját nyújtják.",
                 ]
             },
             {
@@ -725,23 +738,23 @@ export const website = {
                 category: "maszkok",
                 url: "/termekek/reszletek",
                 images: {
-                    img_1: {
-                        src: maszkok,
+                    product_slider: {
+                        src: maszkok_slider,
                         alt: "alt-1"
                     },
-                    img_2: {
-                        src: "src",
+                    page: {
+                        src: maszkok_page,
                         alt: "alt-2"
                     }
                 },
                 description:
-                    "Női, férfi és gyermek maszkok különféle méretben, színben és kivitelben.",
+                    "Női, férfi és gyermek maszkok különféle méretben, színben és dizájnnal.",
+                // Női, férfi és gyermek maszkjaink változatos méretben, színben és kivitelben garantálják a kényelmet és stílust.
                 details: [
-                    "Az egészség és biztonság kiemelt fontosságot kap, és a maszkok elengedhetetlenek lettek a mindennapi életünk részévé. A női, férfi és gyermek maszkok kínálata különféle méretekben, színekben és kivitelekben elérhető, hogy mindenki megtalálja a számára legmegfelelőbbet.",
-                    "Női maszkjaink elegáns és stílusos kiegészítők, amelyek nemcsak védelmet nyújtanak, hanem a divat világába is illeszkednek. Különböző méretekben és formákban kaphatók, hogy megfeleljenek a különböző arcformáknak és kényelmi igényeknek. A nőies színek és minták széles választékával rendelkeznek, lehetővé téve, hogy a maszkok stílusosan illeszkedjenek a megjelenéshez és az egyéni preferenciákhoz.",
-                    "Férfi maszkjaink praktikus és megbízható védelmet nyújtanak a mindennapi használatra. Robusztusabb anyagokból készülnek, és gyakran egyszerűbb, letisztultabb dizájnnal rendelkeznek. A kényelemre és a hatékonyságra összpontosítva tervezték őket, hogy megfeleljenek a férfiak igényeinek és életmódjának. Az egyedi színek és minták lehetőséget adnak arra, hogy kifejezd az egyéniségedet és stílusodat.",
-                    "A gyermek maszkok rendkívül fontosak a kicsik védelmében. Kis méretekben készülnek, hogy tökéletesen illeszkedjenek a gyermekek arcához. Gyakran játékos és vidám mintákkal, kedvenc karakterekkel vagy színekkel díszítve, hogy a gyerekek számára is vonzóvá tegyék a viselésüket. Az ergonomikus kialakítás és a kényelmes anyagok gondoskodnak arról, hogy a gyermek maszkok kényelmesek legyenek a viselésük során.",
-                    "Az egyedi méretek, színek és kivitelek lehetővé teszik, hogy mindenki megtalálja a saját igényeinek és preferenciáinak leginkább megfelelő maszkot. Fontos azonban megjegyezni, hogy a maszkok viselése mellett más egészségügyi óvintézkedések, például a távolságtartás és a megfelelő kézmosás továbbra is fontosak a fertőzés megelőzésében.",
+                    "A női, férfi és gyermek maszkok különféle méretekben és kivitelekben elérhetők, hogy mindenki megtalálja a számára legmegfelelőbbet.",
+                    "Női maszkjaim elegáns és stílusos kiegészítők, amelyek nőies színekkel és mintákkal rendelkeznek, lehetővé téve, hogy a maszkok stílusosan illeszkedjenek a megjelenéshez.",
+                    "Férfi maszkjaim egyszerűbb, letisztultabb dizájnnal rendelkeznek. A kényelemre és a hatékonyságra összpontosítva terveztem őket, hogy megfeleljenek a férfiak igényeinek.",
+                    "A gyermek maszkok kis méretekben készülnek, hogy tökéletesen illeszkedjenek a gyermekek arcához. Gyakran játékos és vidám mintákkal, kedvenc karakterekkel vagy színekkel vannak díszítve, hogy a gyerekek számára is vonzóvá tegyék a viselésüket.",
                 ]
             },
             {
@@ -750,23 +763,21 @@ export const website = {
                 category: "fehernemuk",
                 url: "/termekek/reszletek",
                 images: {
-                    img_1: {
-                        src: fehernemuk,
+                    product_slider: {
+                        src: fehernemuk_slider,
                         alt: "alt-1"
                     },
-                    img_2: {
-                        src: "src",
+                    page: {
+                        src: fehernemuk_page,
                         alt: "alt-2"
                     }
                 },
                 description:
                     "Női fehérneműk nem csak fehér színben, akár egyedi mintával és hímzéssel.",
                 details: [
-                    "A női fehérneműk nemcsak funkcionális darabok, hanem lehetnek stílusos és vonzó kiegészítők is. A fehérneműk kínálata ma már sokkal többet nyújt, mint pusztán a hagyományos fehér szín. Az egyedi mintázatok és hímzések lehetőséget adnak arra, hogy a nők egyedi és kifejező darabokat viseljenek.",
-                    "A női fehérneműk elérhetők számos különböző stílusban és fazonban. A melltartók és bugyik kínálatában megtalálhatók a klasszikus és egyszerű daraboktól kezdve a csipkés vagy hímzett részletekkel díszített változatokig. Ezek a részletek lehetővé teszik, hogy a nők kiemeljék nőiességüket és egyéni stílusukat.",
-                    "Az egyedi mintázatok széles választékát kínálják a női fehérneműk. Lehetnek virágos minták, geometriai formák, állatminták vagy akár színes absztrakt mintázatok is. Ezek a minták élettel töltik meg a fehérneműt, és lehetővé teszik a személyiség kifejezését. Az egyedi mintázatokkal ellátott fehérneműk lehetnek játékosak, romantikusak, merészek vagy akár elegánsak is, így mindenki megtalálhatja a saját stílusához passzolót.",
-                    "A hímzések is népszerűek a női fehérneműk díszítésében. A finom hímzések lehetnek virágok, csipkék, vagy akár különleges minták is, amelyek a fehérneműnek egyedi és exkluzív megjelenést kölcsönöznek. A hímzett részletek finoman kidolgozottak és gyakran kézzel készülnek, hogy különleges érzést és minőséget adjanak a fehérneműnek.",
-                    "Az egyedi mintákkal és hímzésekkel ellátott női fehérneműk lehetővé teszik, hogy a nők személyre szabják és kifejezzék saját stílusukat és egyediségüket. Emellett a minőségi anyagok és a megfelelő kivitelezés gondoskodik a kényelemről és a tartósságról. Ezek a darabok nem csak magabiztosságot adhatnak, hanem örömöt és önbizalmat is inspirálhatnak a viselőjükben.",
+                    "Egyedi mintázatok széles választékát kínálom a női fehérneműkhöz. Lehetnek virágos minták, geometriai formák, állatminták vagy akár színes absztrakt mintázatok is. Az egyedi mintázatokkal ellátott fehérneműk lehetnek játékosak, romantikusak, vagy akár elegánsak is, így mindenki megtalálhatja a saját stílusához passzolót.",
+                    "A hímzések is népszerűek a női fehérneműk díszítésében, melyek lehetnek virágok, csipkék, vagy akár különleges minták is, amelyek a fehérneműnek egyedi és exkluzív megjelenést kölcsönöznek.",
+                    "Az egyedi mintákkal és hímzésekkel ellátott női fehérneműk lehetővé teszik, hogy kifejezd saját stílusodat, emellett a minőségi anyagok és a megfelelő kivitelezés gondoskodik a kényelemről és a tartósságról.",
                 ]
             },
             {
@@ -775,23 +786,20 @@ export const website = {
                 category: "oko_termekek",
                 url: "/termekek/reszletek",
                 images: {
-                    img_1: {
-                        src: oko_termekek,
+                    product_slider: {
+                        src: oko_termekek_slider,
                         alt: "alt-1"
                     },
-                    img_2: {
-                        src: "src",
+                    page: {
+                        src: oko_termekek_page,
                         alt: "alt-2"
                     }
                 },
                 description:
                     "Eldobható termékek újragondolva. Váltsd le a műanyagot mosható textílre és ezzel óvd a környezetet.",
                 details: [
-                    "Az eldobható termékek újragondolása ma fontos szerepet játszik a fenntarthatóság és környezetvédelem terén. Az egyik megoldás a műanyag eldobható termékek helyettesítése mosható textíliákkal, amelyek segítségével csökkenthetjük a hulladéktermelést és óvhatjuk a környezetet.",
-                    "Az eldobható műanyag termékek használata hosszú távon jelentős hatással lehet a környezetre. Az egyszer használatos műanyagok gyakran a hulladéklerakókban vagy a természetben kötnek ki, ahol sokáig nem bomlanak le. Ez a műanyaghulladék károsíthatja az élővilágot, befolyásolhatja a vízi ökoszisztémákat és hozzájárulhat a szennyezéshez.",
-                    "A mosható textíliák használata olyan alternatívát kínál, amely lehetővé teszi a termékek újrahasznosítását és csökkenti a felesleges hulladékot. Az újratölthető textíliák, például mosható pelenkák, mosható papírtörlők vagy mosható bevásárlótáskák, tartósak és többször felhasználhatók. Ezek a termékek kiváló minőségű anyagokból készülnek, amelyek tartósak és ellenállóak, így hosszú élettartammal rendelkeznek.",
-                    "Az átállás a mosható textíliákra hozzájárulhat a műanyaghulladék csökkentéséhez és az erőforrások fenntarthatóbb kihasználásához. A textíliák újrahasznosíthatóak és lehetőséget adnak arra, hogy a termékek hosszabb ideig szolgáljanak bennünket. Emellett a mosható textíliák gyakran kényelmesebbek is lehetnek, mivel puhábbak és kellemesebbek a bőr számára.",
-                    "Fontos azonban megjegyezni, hogy a váltás a mosható textíliákra tudatos választás, és az új termékek fenntartható forrásokból és gyártási folyamatokból származzanak. Továbbá, az eldobható termékek használata még mindig bizonyos helyzetekben szükséges lehet, például egészségügyi vagy higiéniai okokból.",
+                    "Az eldobható termékek újragondolása ma fontos szerepet játszik a fenntarthatóság és környezetvédelem terén. Az egyik megoldás a műanyag eldobható termékek helyettesítése mosható textíliákkal, amelyek segítségével óvhatjuk a környezetet.",
+                    "A mosható textíliák tartósak és többször felhasználhatók. Ezek a termékek kiváló minőségű anyagokból készülnek, amelyek tartósak és ellenállóak, így hosszú élettartammal rendelkeznek.",
                     "Az eldobható termékek újragondolása és a műanyag helyettesítése mosható textíliákkal segít abban, hogy a mindennapi döntéseink által pozitív hatást gyakoroljunk a környezetre. Ez egy lépés a fenntartható jövő felé, ahol csökkenthetjük a hulladék mennyiségét és óvhatjuk a környezetet a jövő generációi számára.",
                 ]
             },
@@ -801,22 +809,20 @@ export const website = {
                 category: "gyermekruhak",
                 url: "/termekek/reszletek",
                 images: {
-                    img_1: {
-                        src: gyermekruhak,
+                    product_slider: {
+                        src: gyermekruhak_slider,
                         alt: "alt-1"
                     },
-                    img_2: {
-                        src: "src",
+                    page: {
+                        src: gyermekruhak_page,
                         alt: "alt-2"
                     }
                 },
-                description: "Gyermek pizsamák, hálózsákok, polók, nadrágok és megannyi más.",
+                description: "Gyermek pizsamák, hálózsákok, polók, nadrágok és megannyi más hasznos ruhadarab.",
                 details: [
-                    "Gyermek pizsamák, hálózsákok, polók, nadrágok és még sok más termék kínálatával szolgálunk. A gyermekek ruházata és kiegészítői számos lehetőséget nyújtanak az egyedi stílus kifejezésére és a kényelmes viseletre.",
-                    "Gyermek pizsamák: A gyermek pizsamák fontos részei a kényelmes és nyugodt éjszakai pihenésnek. Kínálatunkban megtalálhatók a puha pamut pizsamák, amelyek kellemes tapintással rendelkeznek és segítenek a gyermekeknek kényelmesen aludni. Különböző színek, mintázatok és kedvenc karakterek díszítik ezeket a pizsamákat, hogy a gyerekek számára is vonzóvá tegyék őket.",
-                    "Hálózsákok: A hálózsákok ideálisak kempingezéshez, utazáshoz vagy egyszerűen egy vidám pizsamapartihoz. Biztosítják a meleget és kényelmet, miközben a gyermek kényelmesen pihenhet vagy alhat. Hálózsákok különféle méretekben és kivitelekben elérhetők, így minden korosztály megtalálja a számára megfelelőt.",
-                    "Polók és nadrágok: A polók és nadrágok mindennapos viseletet jelentenek a gyerekek számára. Könnyű és légáteresztő anyagokból készülnek, amelyek kényelmes viseletet biztosítanak a mozgás szabadságával. Ezek a ruhadarabok sokféle színben és mintában elérhetők, lehetővé téve a gyermekek számára, hogy kifejezzék saját stílusukat.",
-                    "Továbbá, kínálatunkban megtalálhatók még megannyi más gyermekruházati termék is, mint például pulóverek, kabátok, nadrágok és szoknyák. Mindegyik termékünket a gyermekek kényelme és stílusa szem előtt tartva tervezzük és készítjük. Fontos számunkra a minőségi anyagok és a tartósság, hogy a ruhák a mindennapi életben is sokáig szolgálhassanak.",
+                    "Gyermek pizsamák, hálózsákok, polók, nadrágok és még sok más termék kínálatával szolgálok.",
+                    "A polók és nadrágok mindennapos viseletet jelentenek a gyerekek számára. Könnyű és légáteresztő anyagokból készülnek, amelyek kényelmes viseletet biztosítanak a mozgás szabadságával. Ezek a ruhadarabok sokféle színben és mintában elérhetők, lehetővé téve a gyermekek számára, hogy kifejezzék saját stílusukat.",
+                    "Mindegyik termékemmet a gyermekek kényelmét és stílusát szem előtt tartva terveztem és készítem. Fontos számomra a minőségi anyagok használata és a tartósság, hogy a ruhák sokáig szolgálhassanak.",
                     "A gyermekek ruházata és kiegészítői nemcsak a praktikumot szolgálják, hanem lehetőséget adnak a személyiség kifejezésére és a gyermeki kreativitás megjelenítésére. A színes és vidám tervezési elemekkel ellátott ruhadarabok, mintázatok és kedvenc karakterek hozzájárulnak ahhoz, hogy a gyermekek örömmel és magabiztosan viseljék őket.",
                 ]
             },
@@ -826,17 +832,17 @@ export const website = {
                 category: "konyhai_textilek",
                 url: "/termekek/reszletek",
                 images: {
-                    img_1: {
-                        src: konyhai_textilek,
+                    product_slider: {
+                        src: konyhai_textilek_slider,
                         alt: "alt-1"
                     },
-                    img_2: {
-                        src: "src",
+                    page: {
+                        src: konyhai_textilek_page,
                         alt: "alt-2"
                     }
                 },
                 description:
-                    "Konyharuhák, tárolo zsákok, konyharuhák, tárolo zsákok, stb...",
+                    "Konyharuhák, tároló zsákok és sok más praktikus termékek a mindennapi tevékenységek megkönnyítésére.",
                 details: [
                     "Konyharuhák, tároló zsákok és még számos más konyhai termék kínálatával szolgálunk, hogy segítsünk a konyhai tevékenységekben és a környezettudatosabb életmód kialakításában.",
                     "Konyharuhák: A konyharuhák alapvető kiegészítői a konyhának. Kínálatunkban megtalálhatók a tartós és könnyen tisztítható anyagból készült konyharuhák, amelyek ideálisak az edények, serpenyők vagy felületek tisztítására. A minőségi anyagokból készült konyharuhák hatékonyan felszívják a nedvességet, és könnyen használhatók a konyhai munkafolyamatok során.",
@@ -851,17 +857,17 @@ export const website = {
                 category: "textil_jatekok",
                 url: "/termekek/reszletek",
                 images: {
-                    img_1: {
-                        src: textil_jatekok,
+                    product_slider: {
+                        src: textil_jatekok_slider,
                         alt: "alt-1"
                     },
-                    img_2: {
-                        src: "src",
+                    page: {
+                        src: textil_jatekok_page,
                         alt: "alt-2"
                     }
                 },
                 description:
-                    "Textil állatkák, stb...",
+                    "Plüssállatkák és egyéb vidám kiegészítők amik színesítik a mindennapokat gyerekek és felnőttek számára egyaránt.",
                 details: [
                     "Textilek: A textíliák széles választékát kínáljuk, amelyek ideálisak különféle célra. Kényelmes és puha anyagokból készülnek, amelyek kellemes tapintást biztosítanak. Kínálatunkban megtalálhatók például pamut, lenvászon, selyem és gyapjú termékek, amelyek kiváló minőséget képviselnek és tartósak.",
                     "Állatkák: Az állatkák a gyerekek legjobb barátai és hűséges társai. Kínálatunkban megtalálhatók különböző méretű és fajtájú plüssállatkák, amelyek tökéletesek a játékra és ölelésre. Az aranyos és puha állatkák biztosítják a gyermek számára a kényelmet és a szórakozást, miközben segítenek a képzelet gazdagításában és a játékban.",
@@ -944,28 +950,25 @@ export const website = {
             name: "Eszter",
             rating: 4.5,
             comment:
-                "A Mary Varrodaja kivételes weboldal, amely széles választékban kínál magas minőségű termékeket. Nemrégiben vásároltam egy gyönyörű kézzel készített nyakláncot a kollekciójukból, és nagyon elégedett vagyok a vásárlásommal. A weboldal könnyen kezelhető, és az online fizetési folyamat gördülékenyen ment. A termék gyorsan megérkezett, és gyönyörűen volt becsomagolva. Határozottan ajánlom a Mary Varrodaját mindazoknak, akik egyedi és elegáns ékszereket keresnek.",
-            timestamp: "2023-07-04T09:30:00Z",
+                "Imádom ezt a varrónő honlapot! Fantasztikus szolgáltatások és csodálatos termékek várnak itt rám. A ruha átalakítás tökéletesen megoldja a ruháim problémáit, és a gyermekruhák készítése egyszerűen elbűvölő. Kiváló minőség és egyedi dizájn jellemzi a munkájukat. Csak ajánlani tudom!",
             short_comment:
-                "A Mary Varrodaja kivételes weboldal, amely széles választékban kínál magas minőségű termékeket. Nemrégiben vásároltam egy gyönyörű kézzel készített nyakláncot a kollekciójukból, és nagyon elégedett vagyok a..."
+                "A Mary Varrodaja kivételes weboldal, amely széles választékban kínál magas minőségű termékeket. Nemrégiben vásároltam egy gyönyörű kézzel készített nyakláncot a kollekciójukból, és nagyon elégedett vagyok a...",
         },
         {
             isActive: true,
             name: "Anna",
             rating: 4.8,
             comment:
-                "A Mary Varrodajára akadtam, amikor különleges ajándékot kerestem a nővérem születésnapjára. Lenyűgözött a kitűnő kézműves munka és a részletek iránti figyelem, amelyek az áruikban megmutatkoznak. A weboldal gyönyörű kollekciót mutat be kézzel készített ékszerekből, amelyek igazán kiemelkedőek. A vevőszolgálat kiváló volt, és mindent megtettek, hogy a nővérem időben megkapja az ajándékát. Hálás vagyok a Mary Varrodajának, hogy ennyire kellemessé tették a vásárlási élményt.",
-            timestamp: "2023-07-05T14:45:00Z",
+                "Egy igazi varrónői mesterremek! A ruhajavítás és átalakítás során mindig precíz és figyelmes munkát végeznek. A női felsőruhák pedig olyan elegánsak és stílusosak, hogy minden alkalomra tökéletesek. A webshop kínálata pedig változatos és inspiráló. Csak dicsérni tudom a szakértelmüket!",
             short_comment:
-                "A Mary Varrodajára akadtam, amikor különleges ajándékot kerestem a nővérem születésnapjára. Lenyűgözött a kitűnő kézműves munka és a részletek iránti figyelem, amelyek az áruikban megmutatkoznak..."
+                "A Mary Varrodajára akadtam, amikor különleges ajándékot kerestem a nővérem születésnapjára. Lenyűgözött a kitűnő kézműves munka és a részletek iránti figyelem, amelyek az áruikban megmutatkoznak...",
         },
         {
             isActive: true,
             name: "Zsófia",
             rating: 4.2,
             comment:
-                "A Mary Varrodaja lett az új kedvenc online áruházam, amikor ékszerekről van szó. Weboldaluk egy olyan gyöngyszemeket tartalmazó kincsesláda, amelyek gyönyörűen tervezettek, és különböző ízléshez és stílushoz illeszkednek. Ami igazán kiemelkedővé teszi őket, az az a szenvedély és kreativitás, amely minden egyes darabban megmutatkozik. Legyen szó feltűnő nyakláncról vagy finom fülbevalóról, a Mary Varrodajánál biztosan találsz valami igazán egyedit. A weboldaluk könnyen kezelhető, és az ügyfélszolgálatuk gyors és segítőkész. Határozottan ajánlom őket!",
-            timestamp: "2023-07-05T19:12:00Z",
+                "Ez a varrónő honlap igazi kincsesbánya! A gyermekruhák olyan aranyosak és egyediek, hogy mindig elolvadok tőlük. A téskák és konyhai textilek pedig remekül kiegészítik otthonom stílusát. A minőség és a részletgazdagság minden egyes termékben érezhető. Nagyszerű választás mindenkinek!",
             short_comment:
                 "A Mary Varrodaja lett az új kedvenc online áruházam, amikor ékszerekről van szó. Weboldaluk egy olyan gyöngyszemeket tartalmazó kincsesláda, amelyek gyönyörűen tervezettek, és különböző ízléshez és stílushoz illeszkednek..."
         },
@@ -974,8 +977,7 @@ export const website = {
             name: "Katalin",
             rating: 4.7,
             comment:
-                "Nemrégiben fedeztem fel a Mary Varrodaját, és kellemes meglepetés volt. A weboldaluk lenyűgöző választékkal rendelkezik kézzel készített ékszerekből, amelyek eleganciát és egyediséget sugároznak. Rendeltem egy karkötőt magamnak, és lenyűgözött a minőség és a részletek iránti gondosság. A termék gondosan be volt csomagolva, és nagyra értékeltem a személyes üzenetet tartalmazó kézzel írt üdvözlőlapot is. A Mary Varrodaja valóban egy rejtett kincs az online ékszerboltok világában.",
-            timestamp: "2023-07-06T10:20:00Z",
+                "Egy valódi varrónő művészete ez a webshop! A termékek tartósak és strapabíróak, ráadásul csodálatosan néznek ki. A személyre szabott ruhakészítés pedig igazi luxus. A varrónő hihetetlenül tehetséges és elkötelezett. Teljes mértékben elégedett vagyok a szolgáltatásaikkal!",
             short_comment:
                 "Nemrégiben fedeztem fel a Mary Varrodaját, és kellemes meglepetés volt. A weboldaluk lenyűgöző választ..."
         }

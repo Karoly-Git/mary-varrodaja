@@ -32,7 +32,7 @@ export default function ProductSlider(props) {
                     {props.termekek.data.map((product, productindex) =>
                         product.isActive &&
                         <Link key={'product' + productindex} to={'/termekek'} className='img-box' style={productindex === 0 ? { marginLeft: `${marginLeft}rem` } : {}}>
-                            <img src={product.images.img_1.src} alt={product.images.img_1.alt} />
+                            <img src={product.images.product_slider.src} alt={product.images.product_slider.alt} />
                             <h3>{product.title}</h3>
                             <p>{product.description}</p>
                         </Link>

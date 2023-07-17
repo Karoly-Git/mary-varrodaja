@@ -51,11 +51,12 @@
             display: flex;
             justify-content: center;
             text-decoration: none;
+            //background-color: red;
 
             .box {
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                //justify-content: center;
                 flex-direction: column;
                 padding: 1rem;
                 padding-bottom: 2rem;
@@ -72,16 +73,7 @@
 
                 .icon {
                     font-size: 3.5rem;
-                }
-
-                .dress {
                     padding: 10px;
-                }
-
-                .scissors {
-                    padding: 10px;
-                    position: relative;
-                    left: 2px;
                 }
 
                 h3 {
@@ -90,6 +82,10 @@
                     transition: all 150ms ease-in-out;
                     padding: 0.5rem 1rem;
                     text-transform: uppercase;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
 
                 p {

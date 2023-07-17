@@ -36,7 +36,7 @@
 
         .slider-box {
             display: flex;
-            align-items: center;
+            //align-items: center;
             width: 70rem;
             overflow: hidden;
 
@@ -68,6 +68,15 @@
                     transition: all 150ms ease-in-out;
                 }
 
+                p {
+                    margin-top: 0.5rem;
+                    text-align: center;
+                }
+
+            }
+
+            a:hover {
+                background-color: unset;
             }
 
             a:hover h3 {

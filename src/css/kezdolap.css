@@ -49,7 +49,6 @@
 .kezdolap .services-box a .box {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   padding: 1rem;
   padding-bottom: 2rem;
@@ -65,14 +64,7 @@
 }
 .kezdolap .services-box a .box .icon {
   font-size: 3.5rem;
-}
-.kezdolap .services-box a .box .dress {
   padding: 10px;
-}
-.kezdolap .services-box a .box .scissors {
-  padding: 10px;
-  position: relative;
-  left: 2px;
 }
 .kezdolap .services-box a .box h3 {
   font-weight: 100;
@@ -80,6 +72,10 @@
   transition: all 150ms ease-in-out;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .kezdolap .services-box a .box p {
   text-align: center;
