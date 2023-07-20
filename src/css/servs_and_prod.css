@@ -3,7 +3,6 @@
   flex-direction: column;
 }
 .services-and-products h1 {
-  font-weight: 100;
   text-align: center;
   margin: 2rem 0 0;
 }
@@ -25,7 +24,6 @@
   transition: all 150ms ease-in-out;
 }
 .services-and-products section a h2 {
-  font-weight: 100;
   margin-bottom: 1rem;
 }
 .services-and-products section a img {

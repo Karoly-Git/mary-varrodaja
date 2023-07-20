@@ -153,7 +153,6 @@
   align-items: center;
   color: white;
   text-transform: uppercase;
-  font-weight: 100;
   transition: all 250ms ease-in-out;
 }
 .webshop .shop .container .product-grid .link .data-box {
@@ -168,7 +167,6 @@
 .webshop .shop .container .product-grid .link .data-box h5 {
   text-align: left;
   margin-top: 0.5rem;
-  font-weight: 100;
 }
 .webshop .shop .container .product-grid .link:hover .icon {
   opacity: 1;

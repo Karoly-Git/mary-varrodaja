@@ -115,7 +115,6 @@
 .top-navigation ul li a .icon {
   font-size: 1.5rem;
   color: rgb(191, 161, 107);
-  font-weight: 100;
   transition: all 150ms ease-in-out;
 }
 .top-navigation ul li a:hover {
