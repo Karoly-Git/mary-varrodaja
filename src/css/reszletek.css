@@ -13,17 +13,15 @@
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-  padding: 0 8rem;
 }
 .reszletek article .container {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 .reszletek article .container h3 {
   margin-bottom: 2rem;
   text-align: center;
-  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -49,7 +47,7 @@
 }
 .reszletek article img {
   width: 350px;
-  padding: 1rem;
+  padding: 2rem;
 }
 .reszletek article:nth-child(2n) {
   flex-direction: row-reverse;
