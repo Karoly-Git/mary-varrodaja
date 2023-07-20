@@ -1,5 +1,5 @@
 .gyik {
-    padding: 4rem 0;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,5 +16,23 @@
 
     section:not(section:last-child) {
         margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .gyik {
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .gyik {
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .gyik {
+        padding: 0.75rem;
     }
 }
