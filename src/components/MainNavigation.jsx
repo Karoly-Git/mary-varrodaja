@@ -1,15 +1,40 @@
-import React from "react"
+import React, { useRef, useState } from "react"
 import { Link } from "react-router-dom"
 
 import { GoSearch as SearchIcon } from "react-icons/go";
 import { BsCart4 as CartIcon } from "react-icons/bs";
-import { MdOutlineNavigateNext as Arrow } from 'react-icons/md'
+import { MdOutlineNavigateNext as ArrowIcon } from 'react-icons/md'
 import logo from "../img/logo_brown.png"
 
 export default function MainNavigation() {
+
+    const [scrollY, setScrollY] = useState(0);
+
+    window.onscroll = () => {
+        setScrollY(window.scrollY);
+    }
+
+    const scrollUpRef = useRef(null);
+
+    const scrollUp = () => {
+        scrollUpRef?.current.scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
+
     return (
-        <nav className="main-navigation">
-            <Link className="logo" to="/">
+        <nav ref={scrollUpRef} className="main-navigation">
+            <div
+                onClick={scrollUp}
+                className="scroll-up-btn"
+                style={scrollY > 800 ? { right: '0' } : { right: '-3rem' }}
+            >
+                <ArrowIcon className="icon" />
+            </div>
+            <Link
+                className="logo"
+                to="/"
+            >
                 <img src={logo} alt="Mary Varrodája logo, rajta egy varrótűvel amibe cérna van befűzve." />
             </Link>
             <div className="container">
@@ -51,7 +76,7 @@ export default function MainNavigation() {
                         <li>
                             <Link className="menu-btn" to="/webshop">
                                 Webshop
-                                <Arrow className="icon" />
+                                <ArrowIcon className="icon" />
                             </Link>
                         </li>
                         <li>

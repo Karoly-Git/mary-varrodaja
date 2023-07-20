@@ -19,6 +19,7 @@ import BottomNavigation from "./components/BottomNavigation"
 import Info from "./components/Info"
 import Reszletek from "./components/pages/sub-pages/Reszletek"
 import Webshop from "./components/webshop/Webshop"
+import ScrollToTop from './components/ScrollToTop';
 
 // Style import
 import "../src/css/App.css"
@@ -58,6 +59,7 @@ export default function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <header>
           <MainNavigation />
           <TopNavigation />

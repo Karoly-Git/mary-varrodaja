@@ -1,6 +1,31 @@
 .main-navigation {
     display: flex;
 
+    .scroll-up-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(100, 100, 100, 1);
+        position: fixed;
+        bottom: 5rem;
+        cursor: pointer;
+        padding: 0.5rem 0;
+        z-index: 100;
+        border-radius: 0.75rem 0 0 0.75rem;
+        transition: all 150ms ease-in-out;
+
+        .icon {
+            font-size: 2rem;
+            color: white;
+            transform: rotate(-90deg);
+            transition: all 150ms ease-in-out;
+        }
+    }
+
+    .scroll-up-btn:hover {
+        background-color: rgb(190, 160, 110);
+    }
+
     .logo {
         padding: 0.5rem;
         display: flex;
