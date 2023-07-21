@@ -44,7 +44,7 @@
   text-align: center;
   font-size: 1.15rem;
   line-height: 1.5rem;
-  max-width: 55rem;
+  width: 60%;
   letter-spacing: 1px;
 }
 .review-slider .slider-body .slider-container .slider-box .slide .name {

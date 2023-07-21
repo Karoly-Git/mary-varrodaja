@@ -4,6 +4,8 @@ import { Link } from "react-router-dom"
 import { GoSearch as SearchIcon } from "react-icons/go";
 import { BsCart4 as CartIcon } from "react-icons/bs";
 import { MdOutlineNavigateNext as ArrowIcon } from 'react-icons/md'
+import { RxHamburgerMenu as HamburgerIcon } from 'react-icons/rx'
+import { TfiClose as CloseIcon } from 'react-icons/tfi'
 import logo from "../img/logo_brown.png"
 
 export default function MainNavigation() {
@@ -27,7 +29,7 @@ export default function MainNavigation() {
             <div
                 onClick={scrollUp}
                 className="scroll-up-btn"
-                style={scrollY > 800 ? { right: '0' } : { right: '-3rem' }}
+                style={scrollY > 400 ? { right: '0' } : { right: '-3rem' }}
             >
                 <ArrowIcon className="icon" />
             </div>
@@ -39,6 +41,10 @@ export default function MainNavigation() {
             </Link>
             <div className="container">
                 <div className="box">
+                    <div className="icon-box">
+                        <HamburgerIcon className="icon hamburger-icon" />
+                        <CloseIcon className="icon close-icon" />
+                    </div>
                     <ul className="primary-menu">
                         <li>
                             <Link className="menu-btn" to="/">
