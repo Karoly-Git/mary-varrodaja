@@ -228,7 +228,7 @@
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
     .main-navigation {
 
         .container {
@@ -242,17 +242,6 @@
                 .primary-menu {
                     display: none;
 
-                    li {
-                        // margin-right: 0.5rem !important;
-
-                        .menu-btn {
-                            // padding: 0.25rem;
-                        }
-                    }
-
-                    li:last-child {
-                        // margin-right: 0 !important;
-                    }
                 }
             }
         }

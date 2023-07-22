@@ -5,7 +5,11 @@ import portrait from '../../img/rolam/portrait.png'
 export default function Rolam(props) {
     return (
         <div className='rolam'>
-            <h1>Baltringer Mária vagyok, nőiruha készítő</h1>
+            <h1>
+                Baltringer Mária vagyok
+                <br></br>
+                - nőiruha készítő -
+            </h1>
             <section>
                 <main>
                     {props.rolam.map((element, index) =>

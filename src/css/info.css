@@ -5,7 +5,6 @@
   padding: 1rem;
 }
 .info .box {
-  margin-right: 1rem;
   width: 100%;
   padding: 1rem;
 }
@@ -56,4 +55,23 @@
 }
 .info .reviews ul li .date {
   margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .info .box:nth-child(4) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .info .box:nth-child(3) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .info {
+    flex-direction: column-reverse;
+  }
+  .info .box:nth-child(3) {
+    display: none;
+  }
 }/*# sourceMappingURL=info.css.map */

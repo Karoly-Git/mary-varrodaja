@@ -54,9 +54,7 @@ export default function Kezdolap(props) {
                     Büszke vagyok rá, hogy termékeim egyediek, egyedi dizájnnal és mintával készülnek.
                 </p>
                 <p>
-                    Egyforma darabokat vagy sorozatot csak kérésre készítek, illetve a
-                    <Link to={"/webshop"}>Webshopban</Link>
-                    rendelhetőek egyforma darabok.
+                    Egyforma darabokat vagy sorozatot csak kérésre készítek, illetve a <Link to={"/webshop"}>Webshopban</Link> rendelhetőek egyforma darabok.
                 </p>
             </div>
 

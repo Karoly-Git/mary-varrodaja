@@ -4,7 +4,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 500px;
+        //height: 500px;
         width: 100%;
         padding: 2rem 0;
 
@@ -15,6 +15,7 @@
             background-color: rgba(255, 255, 255, 0.5);
             height: 100%;
             width: 100%;
+            padding: 0 1rem;
 
             h1 {
                 text-align: center;
@@ -40,7 +41,7 @@
     }
 
     .services-box {
-        padding: 4rem 2rem;
+        padding: 2rem;
         display: flex;
         justify-content: center;
         transition: all 150ms ease-in-out;
@@ -56,7 +57,6 @@
                 //justify-content: center;
                 flex-direction: column;
                 padding: 1rem;
-                padding-bottom: 2rem;
 
                 .icon-box {
                     display: flex;
@@ -95,10 +95,9 @@
                 background-color: rgba(100, 100, 100, 0.2);
             }
 
-            div:not(div:last-child) {
+            .box:not(.box:last-child) {
                 border-right: 1px solid rgba(100, 100, 100, 0.2);
             }
-
         }
 
         a:hover {
@@ -111,7 +110,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 4rem 2rem;
+        padding: 2rem;
 
         .icon-box {
             display: flex;
@@ -129,16 +128,15 @@
         h2,
         p {
             padding: 1rem;
-            //text-transform: uppercase;
             letter-spacing: 2px;
             text-align: center;
             padding: 2rem;
-            max-width: 1000px;
+            max-width: 800px;
             font-size: 2rem;
         }
 
         h2 {
-            margin-bottom: 2rem;
+            padding-bottom: 4rem;
         }
 
         p {
@@ -147,14 +145,57 @@
 
             a {
                 padding: 0 0.5rem;
+                //display: inline;
             }
-
         }
 
         p:not(p:last-child) {
-            margin-bottom: 1rem;
+            padding-bottom: 1rem;
         }
+    }
+}
 
+@media only screen and (max-width: 1100px) {
+    .kezdolap {
+        .services-box {
+            padding-top: 0;
 
+            a {
+                flex-direction: column;
+
+                .box {
+                    p {
+                        max-width: 500px;
+                    }
+                }
+
+                .box {
+                    border: none !important;
+                    padding: 2rem;
+                }
+
+                /*
+                .box:not(.box:last-child) {
+                    border-bottom: 1px solid rgba(100, 100, 100, 0.2) !important;
+                }
+                */
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .kezdolap {
+        .main-box {
+            .card {
+                h1 {
+                    font-size: 3rem;
+                }
+
+                h2 {
+                    font-size: 1.75rem;
+                }
+            }
+        }
     }
 }
