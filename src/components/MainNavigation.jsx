@@ -8,7 +8,7 @@ import { RxHamburgerMenu as HamburgerIcon } from 'react-icons/rx'
 import { TfiClose as CloseIcon } from 'react-icons/tfi'
 import logo from "../img/logo_brown.png"
 
-export default function MainNavigation() {
+export default function MainNavigation(props) {
 
     const [scrollY, setScrollY] = useState(0);
 
@@ -34,6 +34,7 @@ export default function MainNavigation() {
                 <ArrowIcon className="icon" />
             </div>
             <Link
+                onClick={props.isMobileMenuOpen ? props.toggleMenu : false}
                 className="logo"
                 to="/"
             >
@@ -41,9 +42,9 @@ export default function MainNavigation() {
             </Link>
             <div className="container">
                 <div className="box">
-                    <div className="icon-box">
-                        <HamburgerIcon className="icon hamburger-icon" />
-                        <CloseIcon className="icon close-icon" />
+                    <div className="icon-box" onClick={props.toggleMenu}>
+                        {!props.isMobileMenuOpen && <HamburgerIcon className="icon hamburger-icon" />}
+                        {props.isMobileMenuOpen && <CloseIcon className="icon close-icon" />}
                     </div>
                     <ul className="primary-menu">
                         <li>
@@ -78,23 +79,24 @@ export default function MainNavigation() {
                         </li>
                     </ul>
 
-                    {false && <ul className="secondary-menu">
-                        <li>
-                            <Link className="menu-btn" to="/webshop">
-                                Webshop
-                                <ArrowIcon className="icon" />
-                            </Link>
-                        </li>
-                        <li>
-                            <input type="text" placeholder="Keresés..." ></input>
-                            <div className="shop-btn" to='/gyik'>
-                                <SearchIcon className="icon search-icon" />
-                            </div>
-                            <div className="shop-btn" to='/gyik'>
-                                <CartIcon className="icon" />
-                            </div>
-                        </li>
-                    </ul>}
+                    {false &&
+                        <ul className="secondary-menu">
+                            <li>
+                                <Link className="menu-btn" to="/webshop">
+                                    Webshop
+                                    <ArrowIcon className="icon" />
+                                </Link>
+                            </li>
+                            <li>
+                                <input type="text" placeholder="Keresés..." ></input>
+                                <div className="shop-btn" to='/gyik'>
+                                    <SearchIcon className="icon search-icon" />
+                                </div>
+                                <div className="shop-btn" to='/gyik'>
+                                    <CartIcon className="icon" />
+                                </div>
+                            </li>
+                        </ul>}
                 </div>
             </div>
         </nav>

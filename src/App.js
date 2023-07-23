@@ -23,6 +23,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 // Style import
 import "../src/css/App.css"
+import MobileNavigation from './components/MobileNavigation';
 
 export default function App() {
   //console.log(webshopData);
@@ -56,12 +57,22 @@ export default function App() {
     fetchData();
   }, [])
 
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [marginTop, setMarginTop] = useState('-300px');
+
+  const toggleMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setMarginTop(isMobileMenuOpen ? '-300px' : '0px');
+  };
+
+
   return (
     <div className="App">
       <Router>
         <ScrollToTop />
         <header>
-          <MainNavigation />
+          <MainNavigation toggleMenu={toggleMenu} isMobileMenuOpen={isMobileMenuOpen} />
+          {<MobileNavigation toggleMenu={toggleMenu} marginTop={marginTop} />}
           <TopNavigation />
         </header>
         <main>

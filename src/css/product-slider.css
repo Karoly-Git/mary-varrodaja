@@ -38,6 +38,7 @@
 }
 .product-slider .slider-container .slider-box .wrapper {
   min-width: 25%;
+  padding: 1rem;
   transition: all 350ms ease-in-out;
 }
 .product-slider .slider-container .slider-box .wrapper a {
