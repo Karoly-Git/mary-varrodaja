@@ -13,6 +13,7 @@
 .product-slider .slider-container .btn-box {
   display: flex;
   align-items: center;
+  border: 1px solid black;
 }
 .product-slider .slider-container .btn-box .icon {
   font-size: 2.5rem;
@@ -36,23 +37,26 @@
   width: 80%;
   overflow: hidden;
 }
-.product-slider .slider-container .slider-box a {
+.product-slider .slider-container .slider-box .wrapper {
+  min-width: 25%;
+  border: 1px solid black;
+  padding: 1rem;
+  transition: all 350ms ease-in-out;
+}
+.product-slider .slider-container .slider-box .wrapper a {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
   text-decoration: none;
-  transition: all 350ms ease-in-out;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  min-width: 33.3333333333%;
-  padding: 0.5rem;
 }
-.product-slider .slider-container .slider-box a img {
+.product-slider .slider-container .slider-box .wrapper a img {
   max-width: 100%;
 }
-.product-slider .slider-container .slider-box a h3 {
+.product-slider .slider-container .slider-box .wrapper a h3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,27 +69,31 @@
   color: white;
   transition: all 150ms ease-in-out;
 }
-.product-slider .slider-container .slider-box a p {
+.product-slider .slider-container .slider-box .wrapper a p {
   margin-top: 0.5rem;
   text-align: center;
   padding: 0 1rem;
 }
-.product-slider .slider-container .slider-box a:hover {
+.product-slider .slider-container .slider-box .wrapper a:hover {
   background-color: unset;
 }
-.product-slider .slider-container .slider-box a:hover h3 {
+.product-slider .slider-container .slider-box .wrapper a:hover h3 {
   background-color: rgba(191, 161, 107, 0.8);
   color: rgb(50, 50, 50);
 }
 
+@media only screen and (max-width: 1200px) {
+  .product-slider .slider-container .slider-box .wrapper {
+    min-width: 33.3333%;
+  }
+}
 @media only screen and (max-width: 1000px) {
-  .product-slider .slider-container .slider-box a {
+  .product-slider .slider-container .slider-box .wrapper {
     min-width: 50%;
   }
 }
 @media only screen and (max-width: 650px) {
-  .product-slider .slider-container .slider-box a {
+  .product-slider .slider-container .slider-box .wrapper {
     min-width: 100%;
-    padding: 0;
   }
 }/*# sourceMappingURL=product-slider.css.map */

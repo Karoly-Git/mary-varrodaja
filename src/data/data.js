@@ -722,7 +722,7 @@ export const website = {
                     }
                 },
                 description:
-                    "Egyedileg tervezett minőségi és stílusos kézi, háti és oldal táskák. Elérhetők változatos méretben és színben.",
+                    "Egyedileg tervezett, minőségi és stílusos kézi, háti és oldal táskák. Elérhetők változatos méretben és színben.",
                 details: [
                     "Táskáimat egyedülálló kialakítással és minőségi anyagokból készítem, hogy megfeleljenek az egyéni igényeknek.",
                     // "A kézi táskák elegáns és praktikus kiegészítők, amelyek ideálisak mindennapi használatra vagy különleges alkalmakra. Különböző stílusokban és méretekben kaphatók, lehetővé téve a személyes preferenciákhoz és funkcionális igényekhez való alkalmazkodást. Az anyagválasztékunk széles skálájából választhat, beleértve a tartós bőrt, a könnyű textilt vagy akár a strapabíró műanyagot is.",
