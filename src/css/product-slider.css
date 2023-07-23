@@ -34,8 +34,6 @@
 .product-slider .slider-container .slider-box {
   display: flex;
   width: 80%;
-  border-left: 0.5px solid gray;
-  border-right: 0.5px solid gray;
   overflow: hidden;
 }
 .product-slider .slider-container .slider-box .wrapper {

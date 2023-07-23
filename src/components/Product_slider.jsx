@@ -20,7 +20,7 @@ export default function ProductSlider(props) {
     });
 
     const clickOnRight = () => {
-        if (clicks >= -3) {
+        if (clicks > -3) {
             let firstWrapper = document.querySelector(".slider-box .wrapper:first-child");
             let width = parseFloat(getComputedStyle(firstWrapper).width);
             setMarginLeft(width * (clicks - 1));
@@ -41,7 +41,7 @@ export default function ProductSlider(props) {
             <SectionDevider h2={'Termékeim'} />
 
             <div className="slider-container">
-                <div className='btn-box'><NavArrow className='icon left' onClick={clickOnLeft} style={clicks === 0 ? { pointerEvents: 'none', opacity: '0' } : {}} /></div>
+                <div className='btn-box'><NavArrow className='icon left' onClick={clickOnLeft} style={clicks >= 0 ? { pointerEvents: 'none', opacity: '0' } : {}} /></div>
 
                 <div className="slider-box">
                     {props.termekek.data.map((product, productIndex) =>
@@ -60,7 +60,7 @@ export default function ProductSlider(props) {
                     )}
                 </div>
 
-                <div className='btn-box'><NavArrow className='icon' onClick={clickOnRight} style={clicks === -4 ? { pointerEvents: 'none', opacity: '0' } : {}} /></div>
+                <div className='btn-box'><NavArrow className='icon' onClick={clickOnRight} style={clicks <= -3 ? { pointerEvents: 'none', opacity: '0' } : {}} /></div>
             </div>
 
         </div>
