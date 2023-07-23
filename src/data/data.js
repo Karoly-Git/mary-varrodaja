@@ -972,21 +972,21 @@ export const website = {
     hirek: [
         {
             isActive: !true,
-            title: "Esztergom - Piac - 2023.07.07",
+            title: "Esztergom - Piac - 2023.07.29",
             text:
-                "2023.07.07-én pénteken, 8 órától az esztergomi piacon leszek megtalálható. Mindenkit szeretettel várok."
+                "Pénteken, 8 órától az esztergomi piacon leszek megtalálható. Mindenkit szeretettel várok."
         },
         {
             isActive: true,
             title: "Esztergom - Piac - 2023.07.14",
             text:
-                "2023.07.15-én pénteken, 8 órától az esztergomi piacon leszek megtalálható. Mindenkit szeretettel várok."
+                "Pénteken 8 órától az esztergomi piacon leszek megtalálható. Mindenkit szeretettel várok."
         },
         {
             isActive: true,
-            title: "Szentendre - Piac - 2023.07.16",
+            title: "Szentendre - Piac - 2023.07.30",
             text:
-                "2023.07.16-án 7 órától várom kedves vásárlóimat a szentendrei piacon. Sok új textil játékkal készültem!"
+                "Szombaton 7 órától várom vásárlóimat a szentendrei piacon. Sok új textil játékkal készültem!"
         }
     ]
 };
