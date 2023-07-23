@@ -17,7 +17,7 @@
 }
 .kezdolap .main-box .card h1 {
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 5rem;
   font-size: 4.25rem;
 }
 .kezdolap .main-box .card h2 {
@@ -26,6 +26,7 @@
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 15px 45px rgba(255, 255, 255, 0.3);
   text-shadow: 0 0 1px lightblue;
+  margin-bottom: 1rem;
 }
 .kezdolap .main-box .card .devider {
   background-color: rgb(191, 161, 107);

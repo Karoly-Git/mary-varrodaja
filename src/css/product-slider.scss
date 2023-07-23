@@ -3,15 +3,19 @@
     flex-direction: column;
     padding: 4rem 2rem;
     align-items: center;
-    display: none;
 
     .slider-container {
         display: flex;
+        justify-content: center;
+        width: 100%;
         margin-top: 4rem;
+        //border: 2px solid black;
 
         .btn-box {
             display: flex;
             align-items: center;
+            //border-top: 20px solid black;
+            //border-bottom: 20px solid black;
 
             .icon {
                 font-size: 2.5rem;
@@ -37,8 +41,9 @@
 
         .slider-box {
             display: flex;
-            //align-items: center;
-            width: 70rem;
+            width: 80%;
+            //border-top: 4px solid blue;
+            //border-bottom: 4px solid blue;
             overflow: hidden;
 
 
@@ -46,30 +51,42 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                position: relative;
-                left: 0;
+                //position: relative;
+                //left: 0;
                 //height: 16rem;
                 text-decoration: none;
                 transition: all 350ms ease-in-out;
                 user-select: none;
+                min-width: calc(30% + 10/3 * 1%);
+                padding: 0.5rem;
+                //border-top: 5px solid yellow;
+                //border-bottom: 5px solid green;
 
                 img {
-                    width: 16rem;
+                    max-width: 100%;
+                    //display: none;
                 }
 
                 h3 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 100%;
-                    text-align: center;
-                    background-color: rgba(50, 50, 50, 0.5);
+                    height: 4rem;
+                    margin-top: -4rem;
+                    background-color: rgba(50, 50, 50, 0.8);
                     padding: 0.5rem 0;
                     text-transform: uppercase;
                     color: white;
                     transition: all 150ms ease-in-out;
+                    //display: none;
                 }
 
                 p {
                     margin-top: 0.5rem;
                     text-align: center;
+                    padding: 0 1rem;
+                    //display: none;
                 }
 
             }
@@ -79,12 +96,8 @@
             }
 
             a:hover h3 {
-                background-color: rgba(191, 161, 107, 0.5);
+                background-color: rgba(191, 161, 107, 0.8);
                 color: rgba(50, 50, 50, 1);
-            }
-
-            .img-box:not(img:last-child) {
-                margin-right: 2rem;
             }
         }
     }

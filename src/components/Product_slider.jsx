@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import { MdOutlineNavigateNext as NavArrow } from 'react-icons/md';
@@ -6,19 +6,37 @@ import SectionDevider from './SectionDevider';
 
 export default function ProductSlider(props) {
 
+    const [clicks, setClicks] = useState(0);
+
     const [marginLeft, setMarginLeft] = useState(0);
 
+    window.addEventListener('resize', () => {
+        let firstChild = document.querySelector(".slider-box a:first-child");
+        let width = parseFloat(getComputedStyle(firstChild).width);
+        let offset = width;
+        setMarginLeft(offset * clicks);
+    });
+
     const clickOnRight = () => {
-        if (marginLeft > -3 * 18) {
-            setMarginLeft(marginLeft - 18);
-            //console.log(marginLeft - 18);
+        if (clicks >= -3) {
+            let firstChild = document.querySelector(".slider-box a:first-child");
+            let width = parseFloat(getComputedStyle(firstChild).width);
+            let marginRight = parseFloat(getComputedStyle(firstChild).marginRight);
+            let offset = width + marginRight;
+            console.log(width, marginRight, offset);
+            setMarginLeft(offset * (clicks - 1));
+            setClicks(clicks - 1);
         }
     };
+
     const clickOnLeft = () => {
-        if (marginLeft < 0) {
-            setMarginLeft(marginLeft + 18);
-            //console.log(marginLeft + 18);
-        }
+        let firstChild = document.querySelector(".slider-box a:first-child");
+        let width = parseFloat(getComputedStyle(firstChild).width);
+        let marginRight = parseFloat(getComputedStyle(firstChild).marginRight);
+        let offset = width + marginRight;
+        console.log(width, marginRight, offset);
+        setMarginLeft(offset * (clicks + 1));
+        setClicks(clicks + 1);
     };
 
     return (
@@ -27,18 +45,20 @@ export default function ProductSlider(props) {
             <SectionDevider h2={'Termékeim'} />
 
             <div className="slider-container">
-                <div className='btn-box'><NavArrow className='icon left' onClick={clickOnLeft} style={marginLeft === 0 ? { pointerEvents: 'none', opacity: '0' } : {}} /></div>
+                <div className='btn-box'><NavArrow className='icon left' onClick={clickOnLeft} style={clicks === 0 ? { pointerEvents: 'none', opacity: '0' } : {}} /></div>
+
                 <div className="slider-box">
-                    {props.termekek.data.map((product, productindex) =>
+                    {props.termekek.data.map((product, productIndex) =>
                         product.isActive &&
-                        <Link key={'product' + productindex} to={'/termekek'} className='img-box' style={productindex === 0 ? { marginLeft: `${marginLeft}rem` } : {}}>
+                        <Link key={productIndex} to={'/termekek'} style={productIndex === 0 ? { marginLeft: `${marginLeft}px` } : {}}>
                             <img src={product.images.product_slider.src} alt={product.images.product_slider.alt} />
                             <h3>{product.title}</h3>
                             <p>{product.description}</p>
                         </Link>
                     )}
                 </div>
-                <div className='btn-box'><NavArrow className='icon' onClick={clickOnRight} style={marginLeft === -3 * 18 ? { pointerEvents: 'none', opacity: '0' } : {}} /></div>
+
+                <div className='btn-box'><NavArrow className='icon' onClick={clickOnRight} style={clicks === -4 ? { pointerEvents: 'none', opacity: '0' } : {}} /></div>
             </div>
 
         </div>
