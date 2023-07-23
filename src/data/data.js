@@ -971,16 +971,10 @@ export const website = {
 
     hirek: [
         {
-            isActive: !true,
+            isActive: true,
             title: "Esztergom - Piac - 2023.07.29",
             text:
                 "Pénteken, 8 órától az esztergomi piacon leszek megtalálható. Mindenkit szeretettel várok."
-        },
-        {
-            isActive: true,
-            title: "Esztergom - Piac - 2023.07.14",
-            text:
-                "Pénteken 8 órától az esztergomi piacon leszek megtalálható. Mindenkit szeretettel várok."
         },
         {
             isActive: true,
