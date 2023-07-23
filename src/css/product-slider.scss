@@ -102,3 +102,28 @@
         }
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .product-slider {
+        .slider-container {
+            .slider-box {
+                a {
+                    min-width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .product-slider {
+        .slider-container {
+            .slider-box {
+                a {
+                    min-width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
