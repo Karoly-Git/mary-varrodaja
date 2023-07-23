@@ -13,7 +13,6 @@
 .product-slider .slider-container .btn-box {
   display: flex;
   align-items: center;
-  border: 1px solid black;
 }
 .product-slider .slider-container .btn-box .icon {
   font-size: 2.5rem;
@@ -35,11 +34,12 @@
 .product-slider .slider-container .slider-box {
   display: flex;
   width: 80%;
+  border-left: 0.5px solid gray;
+  border-right: 0.5px solid gray;
   overflow: hidden;
 }
 .product-slider .slider-container .slider-box .wrapper {
   min-width: 25%;
-  border: 1px solid black;
   padding: 1rem;
   transition: all 350ms ease-in-out;
 }

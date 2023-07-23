@@ -14,7 +14,7 @@
         .btn-box {
             display: flex;
             align-items: center;
-            border: 1px solid black;
+            //border: 1px solid black;
             //border-top: 20px solid black;
             //border-bottom: 20px solid black;
 
@@ -43,13 +43,14 @@
         .slider-box {
             display: flex;
             width: 80%;
-            //border-top: 4px solid blue;
+            border-left: 0.5px solid gray;
+            border-right: 0.5px solid gray;
             //border-bottom: 4px solid blue;
             overflow: hidden;
 
             .wrapper {
                 min-width: 25%;
-                border: 1px solid black;
+                //border: 1px solid black;
                 padding: 1rem;
                 transition: all 350ms ease-in-out;
 
