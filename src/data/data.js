@@ -974,10 +974,10 @@ export const website = {
             isActive: true,
             title: "Esztergom - Piac - 2023.07.29",
             text:
-                "Pénteken, 8 órától az esztergomi piacon leszek megtalálható. Mindenkit szeretettel várok."
+                "Pénteken, 7 órától az esztergomi piacon leszek megtalálható. Mindenkit szeretettel várok."
         },
         {
-            isActive: true,
+            isActive: false,
             title: "Szentendre - Piac - 2023.07.30",
             text:
                 "Szombaton 7 órától várom vásárlóimat a szentendrei piacon. Sok új textil játékkal készültem!"
@@ -988,3 +988,4 @@ export const website = {
   // console.log("Caregoties:\n", categories);
   // console.log("Webshop:\n", webshop);
   // console.log("Website:\n", website);
+
