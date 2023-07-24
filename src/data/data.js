@@ -985,7 +985,4 @@ export const website = {
     ]
 };
 
-  // console.log("Caregoties:\n", categories);
-  // console.log("Webshop:\n", webshop);
-  // console.log("Website:\n", website);
 
