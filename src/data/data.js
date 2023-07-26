@@ -21,9 +21,15 @@ import noi_felsoruha_keszites_page from '../img/szolgaltatasok/noi_felsoruha_kes
 import ruha_javitas_es_atalakitas_page from '../img/szolgaltatasok/ruha_javitas_es_atalakitas.jpg'
 import gyermekruha_keszites_page from '../img/szolgaltatasok/gyermekruha_keszites.jpg'
 
-import { GiLargeDress as Dress } from "react-icons/gi";
-import { ImScissors as Scissors } from "react-icons/im";
-import { BiChild as Children } from "react-icons/bi";
+import { GiLargeDress as DressIcon } from "react-icons/gi";
+import { ImScissors as ScissorsIcon } from "react-icons/im";
+import { BiChild as ChildIcon } from "react-icons/bi";
+import { GiGymBag as TaskaIcon } from "react-icons/gi";
+import { PiFaceMaskFill as MaszkIcon } from "react-icons/pi";
+import { GiSkirt as FehernemuIcon } from "react-icons/gi";
+import { GiEcology as OkoTermekIcon } from "react-icons/gi";
+import { GiTowel as KonyhaiTextilIcon } from "react-icons/gi";
+import { RiBearSmileFill as TextilJatekIcon } from "react-icons/ri";
 
 export const categories = [
     {
@@ -607,13 +613,13 @@ export let webshop = {
 
 export const website = {
     szolgaltatasok: {
-        h1: "Üdvözöllek a varróműhelyemben!",
+        h1: "Üdvözöllek a varróműhelyben!",
         data: [
             {
                 isActive: true,
                 title: "Női felsőruha készítés",
                 url: "/szolgaltatasok/reszletek",
-                icon: <Dress className="icon dress" />,
+                icon: <DressIcon className="icon dress" />,
                 images: {
                     product_slider: {
                         src: "src",
@@ -645,7 +651,7 @@ export const website = {
                 isActive: true,
                 title: "Ruha javítás és átalakítás",
                 url: "/szolgaltatasok/reszletek",
-                icon: <Scissors className="icon scissors" />,
+                icon: <ScissorsIcon className="icon scissors" />,
                 images: {
                     product_slider: {
                         src: "src",
@@ -679,7 +685,7 @@ export const website = {
                 isActive: true,
                 title: "Gyermekruha készítés",
                 url: "/szolgaltatasok/reszletek",
-                icon: <Children className="icon children" />,
+                icon: <ChildIcon className="icon children" />,
                 images: {
                     product_slider: {
                         src: "src",
@@ -711,6 +717,7 @@ export const website = {
                 title: "Táskák",
                 category: "taskak",
                 url: "/termekek/reszletek",
+                icon: <TaskaIcon className="icon taska" />,
                 images: {
                     product_slider: {
                         src: taskak_slider,
@@ -737,6 +744,7 @@ export const website = {
                 title: "Maszkok",
                 category: "maszkok",
                 url: "/termekek/reszletek",
+                icon: <MaszkIcon className="icon maszk" />,
                 images: {
                     product_slider: {
                         src: maszkok_slider,
@@ -762,6 +770,7 @@ export const website = {
                 title: "Fehérneműk",
                 category: "fehernemuk",
                 url: "/termekek/reszletek",
+                icon: <FehernemuIcon className="icon fehernemu" />,
                 images: {
                     product_slider: {
                         src: fehernemuk_slider,
@@ -785,6 +794,7 @@ export const website = {
                 title: "Öko termékek",
                 category: "oko_termekek",
                 url: "/termekek/reszletek",
+                icon: <OkoTermekIcon className="icon oko-termek" />,
                 images: {
                     product_slider: {
                         src: oko_termekek_slider,
@@ -808,6 +818,7 @@ export const website = {
                 title: "Gyermekruhák",
                 category: "gyermekruhak",
                 url: "/termekek/reszletek",
+                icon: <ChildIcon className="icon children" />,
                 images: {
                     product_slider: {
                         src: gyermekruhak_slider,
@@ -831,6 +842,7 @@ export const website = {
                 title: "Konyhai textilek",
                 category: "konyhai_textilek",
                 url: "/termekek/reszletek",
+                icon: <KonyhaiTextilIcon className="icon kinyhai-textil" />,
                 images: {
                     product_slider: {
                         src: konyhai_textilek_slider,
@@ -853,6 +865,7 @@ export const website = {
                 title: "Textil játékok",
                 category: "textil_jatekok",
                 url: "/termekek/reszletek",
+                icon: <TextilJatekIcon className="icon textil-jatek" />,
                 images: {
                     product_slider: {
                         src: textil_jatekok_slider,

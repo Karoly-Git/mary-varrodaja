@@ -1,5 +1,5 @@
 import React from 'react'
-import portrait from '../../img/rolam/portrait.png'
+import photo from '../../img/rolam/photo.png'
 
 
 export default function Rolam(props) {
@@ -20,7 +20,7 @@ export default function Rolam(props) {
                     )}
                 </main>
                 <aside>
-                    <img className='portrait' src={portrait} alt="" />
+                    <img className='photo' src={photo} alt="" />
                 </aside>
             </section>
         </div>

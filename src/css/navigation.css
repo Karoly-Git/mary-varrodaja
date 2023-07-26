@@ -60,6 +60,9 @@
   font-size: 2rem;
   cursor: pointer;
 }
+.main-navigation .container .box .icon-box .close-icon {
+  font-size: 1.8rem;
+}
 .main-navigation .container .box .primary-menu,
 .main-navigation .container .box .secondary-menu {
   display: flex;
@@ -221,5 +224,10 @@
   }
   .mobile-navigation {
     display: flex;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .top-navigation ul li:not(li:last-child) {
+    margin-right: 1rem;
   }
 }/*# sourceMappingURL=navigation.css.map */
