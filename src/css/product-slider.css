@@ -69,13 +69,12 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .slick-slider .wrapper {
+  .product-slider .wrapper {
     padding: 0.5rem;
   }
 }
-@media only screen and (max-width: 400px) {
-  .slick-slider .previous-button .icon,
-.slick-slider .next-button .icon {
-    scale: 0.7;
+@media only screen and (max-width: 480px) {
+  .product-slider {
+    width: 80%;
   }
 }/*# sourceMappingURL=product-slider.css.map */

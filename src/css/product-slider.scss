@@ -87,7 +87,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .slick-slider {
+    .product-slider {
         //width: 85%;
 
         .wrapper {
@@ -96,14 +96,9 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
-    .slick-slider {
-
-        .previous-button,
-        .next-button {
-            .icon {
-                scale: 0.7;
-            }
-        }
+@media only screen and (max-width: 480px) {
+    .product-slider {
+        //margin: 3rem;
+        width: 80%;
     }
 }
