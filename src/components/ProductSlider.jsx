@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css'
 
 
 const ownStile = {
-    backgroundColor: 'red',
+    backgroundColor: 'gray',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
