@@ -4,22 +4,39 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
+import { MdOutlineNavigateNext as Arrow } from 'react-icons/md'
 
 const ownStile = {
-    backgroundColor: 'gray',
+    //backgroundColor: 'gray',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    width: '40px',
+    height: '40px',
+    //borderRadius: '50%'
+    //display: 'none'
 }
 
-function Arrow(props) {
+function PreviousArrow(props) {
+    const { onClick } = props;
+    return (
+        <div
+            className="previous-button"
+            onClick={onClick}
+        >
+            <Arrow className="icon" />
+        </div>
+    );
+}
+function NextArrow(props) {
     const { className, style, onClick } = props;
     return (
         <div
-            className={className}
-            style={{ ...style, ...ownStile }}
+            className="next-button"
             onClick={onClick}
-        />
+        >
+            <Arrow className="icon" />
+        </div>
     );
 }
 
@@ -32,8 +49,8 @@ export default function ProductSlide(props) {
         slidesToScroll: 4,
         initialSlide: 0,
 
-        nextArrow: <Arrow />,
-        prevArrow: <Arrow />,
+        nextArrow: <NextArrow />,
+        prevArrow: <PreviousArrow />,
 
         responsive: [
             {
