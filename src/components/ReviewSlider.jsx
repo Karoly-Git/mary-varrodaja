@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 import { MdOutlineNavigateNext as Arrow } from 'react-icons/md'
+import { AiFillStar as Star } from 'react-icons/ai'
+import { RiDoubleQuotesL as Quotes } from 'react-icons/ri'
 
 function PreviousArrow(props) {
     const { className, style, onClick } = props;
@@ -29,13 +30,13 @@ function NextArrow(props) {
     );
 }
 
-export default function ProductSlider(props) {
+export default function ReviewSlider(props) {
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         initialSlide: 0,
 
         nextArrow: <NextArrow />,
@@ -45,8 +46,8 @@ export default function ProductSlider(props) {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 }
@@ -54,9 +55,9 @@ export default function ProductSlider(props) {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
                 }
             },
             {
@@ -69,17 +70,27 @@ export default function ProductSlider(props) {
         ]
     };
     return (
-        <Slider {...settings} className="product-slider">
-            {props.termekek.data.map((product, productIndex) =>
-                product.isActive &&
-                <div key={productIndex} className='wrapper'>
-                    <Link to={'/termekek'}>
-                        <img src={product.images.product_slider.src} alt={product.images.product_slider.alt} />
-                        <h3>{product.title}</h3>
-                        <p>{product.description}</p>
-                    </Link>
+        <Slider {...settings} className='review-slider'>
+            {props.velemenyek.map((element, velemenyekIndex) => (
+                <div
+                    key={velemenyekIndex}
+                    className="wrapper"
+                >
+                    <h3 className='stars'>
+                        <Star className='icon' />
+                        <Star className='icon' />
+                        <Star className='icon' />
+                        <Star className='icon' />
+                        <Star className='icon' />
+                    </h3>
+                    <p>
+                        <Quotes /> {element.comment} <Quotes />
+                    </p>
+                    <h3 className='name'>- {element.name} -</h3>
                 </div>
-            )}
+            ))}
         </Slider>
     );
 }
+
+

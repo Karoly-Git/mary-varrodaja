@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 import { GiSewingMachine as SewingMachine } from "react-icons/gi";
 
-import ReviewSlider from "../Review_slider";
+import ReviewSlider from "../ReviewSlider";
 
 import ProductSlider from "../ProductSlider";
 

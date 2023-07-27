@@ -1,9 +1,9 @@
-.slick-slider {
-    width: 95%;
+.product-slider {
+    //width: 100%;
     margin: 2rem auto;
     //border: 2px solid black;
     //padding: 1rem;
-    display: flex !important;
+    //display: flex !important;
 
     .previous-button,
     .next-button {
@@ -19,12 +19,6 @@
             //opacity: 0;
             transition: all 250ms ease-in-out;
             //margin-right: 2rem;
-        }
-
-        .left {
-            transform: rotate(180deg);
-            //margin-right: 0;
-            //margin-left: 2rem;
         }
 
         .icon:hover {

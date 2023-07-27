@@ -979,7 +979,34 @@ export const website = {
                 "Nagyon elégedett vagyok a babahálózsákkal, amit rendeltem! A minősége kiváló, és kisfiam nagyon jókat alszik benne. A színek is nagyon szépek, és nagyon könnyű használni. Egyértelműen a legjobb választás volt.",
             short_comment:
                 "Nagyon elégedett vagyok a babahálózsákkal, amit rendeltem! A minősége kiváló, és kisfiam nagyon jókat alszik benne. A színek is nagyon szépek, és nagyon könnyű használni. Egyértelműen a legjobb választás volt.",
-        }
+        },
+        {
+            isActive: true,
+            name: "Anna",
+            rating: 4.8,
+            comment:
+                "Nagyon hálás vagyok, egy régi ruhámat vittem el, amit már évek óta nem tudtam viselni, de most új életre kelt. A kreativitás és a szakértelm valóban lenyűgöző. Köszönöm a munkát, nagyszerű a ruha!",
+            short_comment:
+                "Nagyon hálás vagyok, egy régi ruhámat vittem el, amit már évek óta nem tudtam viselni, de most új életre kelt. A kreativitás és a szakértelm valóban lenyűgöző. Köszönöm a munkát, nagyszerű a ruha!",
+        },
+        {
+            isActive: true,
+            name: "Zsófia",
+            rating: 4.2,
+            comment:
+                "Imádtam az új ruhát, amit a lányom esküvőjére készíttettem! A minőség kiváló, és nagyon figyelmesen és gondosan dolgozott, hogy minden részlet tökéletes legyen. Ajánlom mindenkinek, aki tökéletes ruhát szeretne!",
+            short_comment:
+                "Imádtam az új ruhát, amit a lányom esküvőjére készíttettem! A minőség kiváló, és nagyon figyelmesen és gondosan dolgozott, hogy minden részlet tökéletes legyen. Ajánlom mindenkinek, aki tökéletes ruhát szeretne!",
+        },
+        {
+            isActive: true,
+            name: "Katalin",
+            rating: 4.7,
+            comment:
+                "Nagyon elégedett vagyok a babahálózsákkal, amit rendeltem! A minősége kiváló, és kisfiam nagyon jókat alszik benne. A színek is nagyon szépek, és nagyon könnyű használni. Egyértelműen a legjobb választás volt.",
+            short_comment:
+                "Nagyon elégedett vagyok a babahálózsákkal, amit rendeltem! A minősége kiváló, és kisfiam nagyon jókat alszik benne. A színek is nagyon szépek, és nagyon könnyű használni. Egyértelműen a legjobb választás volt.",
+        },
     ],
 
     hirek: [
