@@ -3,6 +3,7 @@
   background-color: rgba(191, 161, 107, 0.3);
   display: flex;
   padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 .review-slider .previous-button,
 .review-slider .next-button {
