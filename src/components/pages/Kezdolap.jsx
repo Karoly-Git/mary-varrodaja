@@ -2,9 +2,10 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 import { GiSewingMachine as SewingMachine } from "react-icons/gi";
-import ProductSlider from "../Product_slider";
+
 import ReviewSlider from "../Review_slider";
-import ReactSlider from "../ReactSlider";
+
+import ProductSlider from "../ProductSlider";
 
 export default function Kezdolap(props) {
     return (
@@ -43,8 +44,6 @@ export default function Kezdolap(props) {
             </div>
 
             <ReviewSlider velemenyek={props.velemenyek} />
-
-            <ReactSlider />
 
             <div className="description-box">
                 <div className="icon-box">

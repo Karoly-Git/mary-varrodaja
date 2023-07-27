@@ -1,47 +1,13 @@
-.product-slider {
-  display: flex;
-  flex-direction: column;
-  padding: 4rem 2rem;
-  align-items: center;
+.slick-slider {
+  width: 90%;
+  margin: 2rem auto;
 }
-.product-slider .slider-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 4rem;
-}
-.product-slider .slider-container .btn-box {
-  display: flex;
-  align-items: center;
-}
-.product-slider .slider-container .btn-box .icon {
-  font-size: 2.5rem;
-  border: 2px solid rgb(180, 180, 180);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 250ms ease-in-out;
-  margin-left: 1rem;
-}
-.product-slider .slider-container .btn-box .left {
-  transform: rotate(180deg);
-  margin-left: unset;
-  margin-right: 1rem;
-}
-.product-slider .slider-container .btn-box .icon:hover {
-  background-color: rgb(120, 120, 120);
-  color: white;
-}
-.product-slider .slider-container .slider-box {
-  display: flex;
-  width: 80%;
-  overflow: hidden;
-}
-.product-slider .slider-container .slider-box .wrapper {
+.slick-slider .wrapper {
   min-width: 25%;
   padding: 1rem;
   transition: all 350ms ease-in-out;
 }
-.product-slider .slider-container .slider-box .wrapper a {
+.slick-slider .wrapper a {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -51,10 +17,10 @@
       -ms-user-select: none;
           user-select: none;
 }
-.product-slider .slider-container .slider-box .wrapper a img {
+.slick-slider .wrapper a img {
   max-width: 100%;
 }
-.product-slider .slider-container .slider-box .wrapper a h3 {
+.slick-slider .wrapper a h3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,31 +33,29 @@
   color: white;
   transition: all 150ms ease-in-out;
 }
-.product-slider .slider-container .slider-box .wrapper a p {
+.slick-slider .wrapper a p {
   margin-top: 0.5rem;
   text-align: center;
   padding: 0 1rem;
 }
-.product-slider .slider-container .slider-box .wrapper a:hover {
+.slick-slider .wrapper a:hover {
   background-color: unset;
 }
-.product-slider .slider-container .slider-box .wrapper a:hover h3 {
+.slick-slider .wrapper a:hover h3 {
   background-color: rgba(191, 161, 107, 0.8);
   color: rgb(50, 50, 50);
 }
 
-@media only screen and (max-width: 1200px) {
-  .product-slider .slider-container .slider-box .wrapper {
-    min-width: 33.3333%;
-  }
-}
 @media only screen and (max-width: 1000px) {
-  .product-slider .slider-container .slider-box .wrapper {
-    min-width: 50%;
+  .slick-slider {
+    width: 85%;
+  }
+  .slick-slider .wrapper {
+    padding: 0.5rem;
   }
 }
-@media only screen and (max-width: 650px) {
-  .product-slider .slider-container .slider-box .wrapper {
-    min-width: 100%;
+@media only screen and (max-width: 480px) {
+  .slick-slider {
+    width: 70%;
   }
 }/*# sourceMappingURL=product-slider.css.map */
