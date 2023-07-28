@@ -1,5 +1,7 @@
 .product-slider {
   margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex !important;
 }
 .product-slider .previous-button,
 .product-slider .next-button {
@@ -57,8 +59,7 @@
 }
 .product-slider .wrapper a p {
   margin-top: 0.5rem;
-  text-align: center;
-  padding: 0 1rem;
+  font-size: 1.15rem;
 }
 .product-slider .wrapper a:hover {
   background-color: unset;
@@ -71,10 +72,5 @@
 @media only screen and (max-width: 1024px) {
   .product-slider .wrapper {
     padding: 0.5rem;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .product-slider {
-    width: 80%;
   }
 }/*# sourceMappingURL=product-slider.css.map */

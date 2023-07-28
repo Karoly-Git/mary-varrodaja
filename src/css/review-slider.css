@@ -40,6 +40,9 @@
   margin: 0 auto;
   padding: 0.5rem 0;
 }
+.review-slider .wrapper p {
+  font-size: 1.15rem;
+}
 .review-slider .wrapper .stars .icon {
   color: gray;
 }/*# sourceMappingURL=review-slider.css.map */
