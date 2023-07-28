@@ -7,8 +7,7 @@ export default function Kapcsolat() {
             <div className="email-form-box">
                 <h1>Miben tudok segíteni?</h1>
                 <p>
-                    Szolgáltatásokkal és termékekkel kapcsolatos bármilyen kérdésed esetén állok szíves rendelkezésedre a
-                    lent látható elérhetőségeim bármelyikén.
+                    Szolgáltatásokkal, termékekkel és egyéb kérdésekkel kapcsolatban állok szíves rendelkezésedre elérhetőségeim bármelyikén.
                 </p>
                 <form method="POST" action="/sendemail">
                     <input className="input" type="text" placeholder="Név*" name="sender_name" required />

@@ -8,7 +8,7 @@ export default function Reszletek(props) {
                 <article key={'article' + index} className={props.isRowReverse ? 'flipped' : ''} >
                     <div className='container'>
                         {element.icon && <div className='icon-box'>{element.icon}</div>}
-                        <h3>{element.title}</h3>
+                        <h2>{element.title}</h2>
                         {props.data[index].details.map((pharagraph, detailIndex) => (
                             <section key={detailIndex}>
                                 <div className='text-box'>
