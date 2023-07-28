@@ -1,48 +1,52 @@
-.review-slider {
+.review-container {
+  display: flex;
+  justify-content: center;
   width: 100%;
   background-color: rgba(191, 161, 107, 0.3);
+}
+.review-container .review-slider {
+  width: 97%;
   display: flex;
-  padding: 2rem 0;
   margin-bottom: 2rem;
 }
-.review-slider .previous-button,
-.review-slider .next-button {
+.review-container .review-slider .previous-button,
+.review-container .review-slider .next-button {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 1rem;
 }
-.review-slider .previous-button .icon,
-.review-slider .next-button .icon {
+.review-container .review-slider .previous-button .icon,
+.review-container .review-slider .next-button .icon {
   font-size: 2.5rem;
   border: 2px solid rgb(180, 180, 180);
   border-radius: 50%;
   cursor: pointer;
   transition: all 250ms ease-in-out;
 }
-.review-slider .previous-button .icon:hover,
-.review-slider .next-button .icon:hover {
+.review-container .review-slider .previous-button .icon:hover,
+.review-container .review-slider .next-button .icon:hover {
   background-color: rgb(120, 120, 120);
   color: white;
 }
-.review-slider .previous-button .icon {
+.review-container .review-slider .previous-button .icon {
   transform: rotate(180deg);
 }
-.review-slider .wrapper {
+.review-container .review-slider .wrapper {
   display: flex;
   justify-content: center;
   margin: 1rem 0;
 }
-.review-slider .wrapper h3,
-.review-slider .wrapper p {
+.review-container .review-slider .wrapper h3,
+.review-container .review-slider .wrapper p {
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
   padding: 0.5rem 0;
 }
-.review-slider .wrapper p {
+.review-container .review-slider .wrapper p {
   font-size: 1.15rem;
 }
-.review-slider .wrapper .stars .icon {
+.review-container .review-slider .wrapper .stars .icon {
   color: gray;
 }/*# sourceMappingURL=review-slider.css.map */

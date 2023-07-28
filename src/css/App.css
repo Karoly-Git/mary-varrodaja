@@ -53,6 +53,7 @@
 
 .App {
   flex-direction: column;
+  min-width: 380px;
 }
 .App header {
   background-color: transparent;

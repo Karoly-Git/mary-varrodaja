@@ -70,26 +70,28 @@ export default function ReviewSlider(props) {
         ]
     };
     return (
-        <Slider {...settings} className='review-slider'>
-            {props.velemenyek.map((element, velemenyekIndex) => (
-                <div
-                    key={velemenyekIndex}
-                    className="wrapper"
-                >
-                    <h3 className='stars'>
-                        <Star className='icon' />
-                        <Star className='icon' />
-                        <Star className='icon' />
-                        <Star className='icon' />
-                        <Star className='icon' />
-                    </h3>
-                    <p>
-                        <Quotes /> {element.comment} <Quotes />
-                    </p>
-                    <h3 className='name'>- {element.name} -</h3>
-                </div>
-            ))}
-        </Slider>
+        <section className="review-container">
+            <Slider {...settings} className='review-slider'>
+                {props.velemenyek.map((element, velemenyekIndex) => (
+                    <div
+                        key={velemenyekIndex}
+                        className="wrapper"
+                    >
+                        <h3 className='stars'>
+                            <Star className='icon' />
+                            <Star className='icon' />
+                            <Star className='icon' />
+                            <Star className='icon' />
+                            <Star className='icon' />
+                        </h3>
+                        <p>
+                            <Quotes /> {element.comment} <Quotes />
+                        </p>
+                        <h3 className='name'>- {element.name} -</h3>
+                    </div>
+                ))}
+            </Slider>
+        </section>
     );
 }
 

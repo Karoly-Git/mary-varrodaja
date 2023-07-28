@@ -52,7 +52,7 @@ export default function ProductSlider(props) {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 750,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -60,7 +60,7 @@ export default function ProductSlider(props) {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 450,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -69,17 +69,19 @@ export default function ProductSlider(props) {
         ]
     };
     return (
-        <Slider {...settings} className="product-slider">
-            {props.termekek.data.map((product, productIndex) =>
-                product.isActive &&
-                <div key={productIndex} className='wrapper'>
-                    <Link to={'/termekek'}>
-                        <img src={product.images.product_slider.src} alt={product.images.product_slider.alt} />
-                        <h3>{product.title}</h3>
-                        <p>{product.description}</p>
-                    </Link>
-                </div>
-            )}
-        </Slider>
+        <section className="product-container">
+            <Slider {...settings} className="product-slider">
+                {props.termekek.data.map((product, productIndex) =>
+                    product.isActive &&
+                    <div key={productIndex} className='wrapper'>
+                        <Link to={'/termekek'}>
+                            <img src={product.images.product_slider.src} alt={product.images.product_slider.alt} />
+                            <h3>{product.title}</h3>
+                            <p>{product.description}</p>
+                        </Link>
+                    </div>
+                )}
+            </Slider>
+        </section>
     );
 }

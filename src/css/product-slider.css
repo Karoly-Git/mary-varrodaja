@@ -1,36 +1,41 @@
-.product-slider {
+.product-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.product-container .product-slider {
+  width: 97%;
   margin: 2rem auto;
-  padding: 0 1rem;
   display: flex !important;
 }
-.product-slider .previous-button,
-.product-slider .next-button {
+.product-container .product-slider .previous-button,
+.product-container .product-slider .next-button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.product-slider .previous-button .icon,
-.product-slider .next-button .icon {
+.product-container .product-slider .previous-button .icon,
+.product-container .product-slider .next-button .icon {
   font-size: 2.5rem;
   border: 2px solid rgb(180, 180, 180);
   border-radius: 50%;
   cursor: pointer;
   transition: all 250ms ease-in-out;
 }
-.product-slider .previous-button .icon:hover,
-.product-slider .next-button .icon:hover {
+.product-container .product-slider .previous-button .icon:hover,
+.product-container .product-slider .next-button .icon:hover {
   background-color: rgb(120, 120, 120);
   color: white;
 }
-.product-slider .previous-button .icon {
+.product-container .product-slider .previous-button .icon {
   transform: rotate(180deg);
 }
-.product-slider .wrapper {
+.product-container .product-slider .wrapper {
   min-width: 25%;
   padding: 1rem;
   transition: all 350ms ease-in-out;
 }
-.product-slider .wrapper a {
+.product-container .product-slider .wrapper a {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -40,10 +45,10 @@
       -ms-user-select: none;
           user-select: none;
 }
-.product-slider .wrapper a img {
+.product-container .product-slider .wrapper a img {
   max-width: 100%;
 }
-.product-slider .wrapper a h3 {
+.product-container .product-slider .wrapper a h3 {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -57,20 +62,19 @@
   color: white;
   transition: all 150ms ease-in-out;
 }
-.product-slider .wrapper a p {
+.product-container .product-slider .wrapper a p {
   margin-top: 0.5rem;
   font-size: 1.15rem;
 }
-.product-slider .wrapper a:hover {
+.product-container .product-slider .wrapper a:hover {
   background-color: unset;
 }
-.product-slider .wrapper a:hover h3 {
+.product-container .product-slider .wrapper a:hover h3 {
   background-color: rgba(191, 161, 107, 0.8);
   color: rgb(50, 50, 50);
 }
-
 @media only screen and (max-width: 1024px) {
-  .product-slider .wrapper {
+  .product-container .product-slider .wrapper {
     padding: 0.5rem;
   }
 }/*# sourceMappingURL=product-slider.css.map */
