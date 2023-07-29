@@ -1011,7 +1011,7 @@ export const website = {
 
     hirek: [
         {
-            isActive: true,
+            isActive: false,
             title: "Esztergom - Piac - 2023.07.28",
             text:
                 "Pénteken, 7 órától az esztergomi piacon leszek megtalálható. Mindenkit szeretettel várok."
@@ -1021,7 +1021,13 @@ export const website = {
             title: "Szentendre - Piac - 2023.07.30",
             text:
                 "Szombaton 7 órától várom vásárlóimat a szentendrei piacon. Sok új textil játékkal készültem!"
-        }
+        },
+        {
+            isActive: true,
+            title: "Nyári szümet",
+            text:
+                "2023.08.07-től 2023.08.14-ig szabadságon leszek. Ebben az időszakban csak üzenetben leszek elérhet"
+        },
     ]
 };
 
