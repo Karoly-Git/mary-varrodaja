@@ -1012,7 +1012,7 @@ export const website = {
     hirek: [
         {
             isActive: true,
-            title: "Esztergom - Piac - 2023.07.29",
+            title: "Esztergom - Piac - 2023.07.28",
             text:
                 "Pénteken, 7 órától az esztergomi piacon leszek megtalálható. Mindenkit szeretettel várok."
         },
