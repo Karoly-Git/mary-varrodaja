@@ -1,0 +1,33 @@
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(50, 50, 50);
+
+    span {
+        margin-bottom: 0.5rem;
+        color: white;
+    }
+
+    a {
+        color: rgb(170, 170, 170);
+        text-decoration: none;
+
+        span {
+            color: rgb(170, 170, 170);
+            text-decoration: underline;
+        }
+
+    }
+
+    a:hover {
+        background-color: unset;
+        color: rgb(170, 170, 170);
+
+        span {
+            text-decoration: underline;
+            color: white;
+        }
+    }
+}

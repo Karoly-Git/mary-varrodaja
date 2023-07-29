@@ -20,10 +20,11 @@ import Info from "./components/Info"
 import Reszletek from "./components/pages/sub-pages/Reszletek"
 import Webshop from "./components/webshop/Webshop"
 import ScrollToTop from './components/ScrollToTop';
+import MobileNavigation from './components/MobileNavigation';
+import Copyright from './components/Copyright';
 
 // Style import
 import "../src/css/App.css"
-import MobileNavigation from './components/MobileNavigation';
 
 export default function App() {
   //console.log(webshopData);
@@ -116,6 +117,7 @@ export default function App() {
         </footer>
       </Router>
       {!isLoading && !data && <ErrorMessage errMessage={error.message} errName={error.name} />}
+      <Copyright />
     </div>
   )
 }

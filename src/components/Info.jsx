@@ -8,6 +8,8 @@ import Contacts from "./Contacts";
 
 export default function Info(props) {
 
+    let toBeDisplayed = props.hirek.filter(hir => hir.isActive).length > 0;
+
     function indexes(num, data) {
         const length = data.length;
         let indexList = [];
@@ -22,7 +24,7 @@ export default function Info(props) {
 
     return (
         <div className="info">
-            <div className=" box contact">
+            <div className="box contact-box">
                 <ContactIcon className="icon" />
                 <h3 className="box-title">Elérhetőségek</h3>
                 <div className="devider"></div>
@@ -30,22 +32,22 @@ export default function Info(props) {
                 <Contacts />
             </div>
 
-            <div className="box">
+            {toBeDisplayed && <div className="box hirek-box">
                 <InfoIcon className="icon" />
                 <h3 className="box-title">Hírek</h3>
                 <div className="devider"></div>
                 <ul>
                     {props.hirek.map((hir, hirIndex) =>
                         hir.isActive &&
-                        <li key={"hir" + hirIndex}>
+                        <li key={hirIndex}>
                             <h4>{hir.title}</h4>
                             <p>{hir.text}</p>
                         </li>
                     )}
                 </ul>
-            </div>
+            </div>}
 
-            <div className="box">
+            <div className="box gyik-box">
                 <QuestionIcon className="icon" />
                 <h3 className="box-title">Gyakori kérdések</h3>
                 <div className="devider"></div>
@@ -59,13 +61,13 @@ export default function Info(props) {
                 </ul>
             </div>
 
-            <div className="box reviews">
+            <div className="box review-box">
                 <CommentIcon className="icon" />
                 <h3 className="box-title">Vélemények</h3>
                 <div className="devider"></div>
                 <ul>
-                    {indexes(2, props.velemenyek).map((element, index) =>
-                        <li key={"reviews" + index}>
+                    {indexes(2, props.velemenyek).map((element, reviewIndex) =>
+                        <li key={reviewIndex}>
                             <h4>{props.velemenyek[element].name}</h4>
                             <p>" {props.velemenyek[element].short_comment} "</p>
                             {false && <p className="date">{props.velemenyek[element].timestamp.split("T")[0]}</p>}
