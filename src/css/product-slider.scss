@@ -6,7 +6,6 @@
     .product-slider {
         width: 97%;
         margin: 2rem auto;
-        //border: 2px solid black;
         display: flex !important;
 
         .previous-button,
@@ -20,7 +19,6 @@
                 border: 2px solid rgb(180, 180, 180);
                 border-radius: 50%;
                 cursor: pointer;
-                //opacity: 0;
                 transition: all 250ms ease-in-out;
                 //margin-right: 2rem;
             }
@@ -39,7 +37,6 @@
 
         .wrapper {
             min-width: 25%;
-            //border: 1px solid black;
             padding: 1rem;
             transition: all 350ms ease-in-out;
 
