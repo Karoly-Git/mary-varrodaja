@@ -1024,9 +1024,9 @@ export const website = {
         },
         {
             isActive: true,
-            title: "Nyári szümet",
+            title: "Nyári szünet",
             text:
-                "2023.08.07-től 2023.08.14-ig szabadságon leszek. Ebben az időszakban csak üzenetben leszek elérhet"
+                "2023.08.07-től 2023.08.14-ig szabadságon leszek. Ebben az időszakban csak üzenetben leszek elérhető."
         },
     ]
 };
