@@ -77,13 +77,13 @@ export default function ReviewSlider(props) {
                         key={velemenyekIndex}
                         className="wrapper"
                     >
-                        <h3 className='stars'>
+                        <p className='stars'>
                             <Star className='icon' />
                             <Star className='icon' />
                             <Star className='icon' />
                             <Star className='icon' />
                             <Star className='icon' />
-                        </h3>
+                        </p>
                         <p>
                             <Quotes /> {element.comment} <Quotes />
                         </p>

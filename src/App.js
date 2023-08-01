@@ -9,7 +9,6 @@ import config from "./data/config.json"
 // Website imports
 import ErrorMessage from "./components/ErrorMessage"
 import Kezdolap from "./components/pages/Kezdolap"
-import SzolgEsTerm from "./components/pages/SzolgEsTerm"
 import Rolam from "./components/pages/Rolam"
 import Kapcsolat from "./components/pages/Kapcsolat"
 import Gyik from "./components/pages/Gyik"
@@ -91,15 +90,17 @@ export default function App() {
             <Route path="/gyik" element={<Gyik gyik={website.gyik} />}></Route>
             <Route path="/kapcsolat" element={<Kapcsolat />}></Route>
 
+
+            <Route path="/success" element={<h2>Happy days!</h2>}></Route>
+            <Route path="/error" element={<h2>Error!</h2>}></Route>
+
+
             <Route path="/webshop" element={
               <div style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <h1>A Webshop feltöltés alatt áll!</h1>
                 <h3 style={{ marginTop: '2rem' }}>Kérlek látogass vissza később.</h3>
               </div>
             }></Route>
-
-            {false && <Route path="/szolgaltatasok/inactive" element={<SzolgEsTerm data={website.szolgaltatasok.data} h1={"Szolgáltatások"} />}></Route>}
-            {false && <Route path="/termekek/inactive" element={<SzolgEsTerm data={website.termekek.data} h1={"Termékek"} />}></Route>}
 
             {false && Object.keys(webshop).map((caregory, index) =>
               <Route key={index} path={"/webshop/" + caregory} element={<Webshop data={webshop[caregory]} />}></Route>
