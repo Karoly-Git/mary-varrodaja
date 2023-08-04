@@ -4,7 +4,13 @@ import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import Contacts from '../Contacts';
 
+import { useNavigate } from 'react-router-dom'
+
 export default function Kapcsolat() {
+
+    const navigate = useNavigate();
+
+
     const schema = yup.object().shape({
         senderName: yup.string().required("Add meg a nevet!"),
         senderPhone: yup.number(),
@@ -16,17 +22,26 @@ export default function Kapcsolat() {
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema),
     });
-
     const onSubmit = async (data) => {
-        const result = await fetch('http://localhost:8000/message', {
-            method: 'POST',
-            mode: 'cors',
-            headers: {
-                'Content-type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
+        const result = await fetch('http://localhost:8000/message',
+            {
+                method: 'POST',
+                mode: 'cors',
+                headers: {
+                    'Content-type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            }
+        );
+
+        if (result.ok) {
+            console.error('Message sent successfully');
+            //navigate('/success'); // Replace '/success' with the actual URL of your success page
+        } else {
+            console.error('Error sending message:', result.status, result.statusText);
+        }
     };
+
     return (
         <div className='kapcsolat'>
             <div className="email-form-box">
