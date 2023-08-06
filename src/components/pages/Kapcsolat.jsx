@@ -30,7 +30,7 @@ export default function Kapcsolat() {
             const result = await fetch('https://mary-varrodaja-17fc45017885.herokuapp.com/message',
                 {
                     method: 'POST',
-                    mode: 'cors',
+                    mode: 'no-cors',
                     headers: {
                         'Content-type': 'application/json',
                     },
