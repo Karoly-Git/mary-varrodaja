@@ -6,7 +6,11 @@ import { yupResolver } from '@hookform/resolvers/yup'
 
 import Contacts from '../Contacts';
 
+import config from "../../data/config.json"
+
 export default function Kapcsolat() {
+
+    const url = config.settings.isLocalServer ? config.urls.local : config.urls.heroku;
 
     const navigate = useNavigate();
 
@@ -26,11 +30,10 @@ export default function Kapcsolat() {
         event.preventDefault();
         try {
             console.log('clicked before fetch');
-            //const result = await fetch('http://localhost:8000/message',
-            const result = await fetch('https://mary-varrodaja-17fc45017885.herokuapp.com/message',
+            const result = await fetch(url,
                 {
                     method: 'POST',
-                    mode: 'no-cors',
+                    mode: 'cors',
                     headers: {
                         'Content-type': 'application/json',
                     },
