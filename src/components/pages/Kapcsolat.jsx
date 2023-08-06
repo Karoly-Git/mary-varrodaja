@@ -16,9 +16,9 @@ export default function Kapcsolat() {
 
     const schema = yup.object().shape({
         senderName: yup.string().required("Add meg a nevet!"),
-        senderPhone: yup.number(),
+        senderPhone: yup.string(),
         subject: yup.string(),
-        senderEmail: yup.string().email("It doesn't seem to be a valid email address!"),
+        senderEmail: yup.string().email("Nem tűnik érvényes email címnek!"),
         text: yup.string().required("Írj üzenetet!"),
     })
 
@@ -29,7 +29,6 @@ export default function Kapcsolat() {
     const onSubmit = async (data, event) => {
         event.preventDefault();
         try {
-            console.log('clicked before fetch');
             const result = await fetch(url,
                 {
                     method: 'POST',
@@ -44,7 +43,8 @@ export default function Kapcsolat() {
             //console.log(result);
 
             if (result.ok) {
-                navigate('/success');
+                //navigate('/success');
+                console.log('email sent');
             } else {
                 navigate('/error');
             }
@@ -67,10 +67,12 @@ export default function Kapcsolat() {
                     {errors.senderName && <span><p className='error'>{errors.senderName?.message}</p></span>}
                     <input placeholder="Név*" {...register('senderName')}></input>
 
+                    {errors.senderPhone && <span><p className='error'>{errors.senderPhone?.message}</p></span>}
                     <input placeholder="Telefon" {...register('senderPhone')}></input>
 
                     <input placeholder="Tárgy" {...register('subject')}></input>
 
+                    {errors.senderEmail && <span><p className='error'>{errors.senderEmail?.message}</p></span>}
                     <input placeholder="Email" {...register('senderEmail')}></input>
 
                     {errors.text && <span><p className='error'>{errors.text?.message}</p></span>}
