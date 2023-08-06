@@ -26,7 +26,8 @@ export default function Kapcsolat() {
         event.preventDefault();
         try {
             console.log('clicked before fetch');
-            const result = await fetch('http://localhost:8000/message',
+            //const result = await fetch('http://localhost:8000/message',
+            const result = await fetch('https://mary-varrodaja-17fc45017885.herokuapp.com/message',
                 {
                     method: 'POST',
                     mode: 'cors',
