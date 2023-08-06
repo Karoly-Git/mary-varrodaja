@@ -5,6 +5,8 @@
     },
     "urls": {
         "local": "http://localhost:8000/data",
-        "heroku": "https://mary-varrodaja-17fc45017885.herokuapp.com/data"
+        "local_message": "http://localhost:8000/message",
+        "heroku": "https://mary-varrodaja-17fc45017885.herokuapp.com/data",
+        "heroku_message": "https://mary-varrodaja-17fc45017885.herokuapp.com/message"
     }
 }

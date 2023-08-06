@@ -10,7 +10,7 @@ import config from "../../data/config.json"
 
 export default function Kapcsolat() {
 
-    const url = config.settings.isLocalServer ? config.urls.local : config.urls.heroku;
+    const url = config.settings.isLocalServer ? config.urls.local_message : config.urls.heroku_message;
 
     const navigate = useNavigate();
 
