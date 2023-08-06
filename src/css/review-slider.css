@@ -42,9 +42,10 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 0.5rem 0;
-}
-.review-container .review-slider .wrapper p {
   font-size: 1.15rem;
+}
+.review-container .review-slider .wrapper h3 {
+  text-align: center;
 }
 .review-container .review-slider .wrapper .stars .icon {
   color: gray;

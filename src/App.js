@@ -1,7 +1,7 @@
 import { categories, webshop, website } from '../src/data/data';
 
 import React, { useState, useEffect } from "react"
-import { HashRouter as Router, Routes, Route } from "react-router-dom"
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 
 import Axios from "axios"
 import config from "./data/config.json"
@@ -90,10 +90,43 @@ export default function App() {
             <Route path="/gyik" element={<Gyik gyik={website.gyik} />}></Route>
             <Route path="/kapcsolat" element={<Kapcsolat />}></Route>
 
+            <Route path="/success" element={
+              <>
+                <br></br>
+                <br></br>
+                <h1 style={{ width: '100 %', textAlign: 'center' }}>
+                  Üzenet sikeresen elküldve!
+                </h1>
+                <br></br>
+                <br></br>
+                <h2 style={{ width: '100 %', textAlign: 'center' }}>
+                  Köszönöm az üzenetet!
+                </h2>
+                <br></br>
+                <br></br>
+                <h3 style={{ width: '100 %', textAlign: 'center' }}>Hamarosan válszolok!</h3>
+              </>
+            }></Route>
 
-            <Route path="/success" element={<h2>Happy days!</h2>}></Route>
-            <Route path="/error" element={<h2>Error!</h2>}></Route>
+            <Route path="/error" element={
+              <>
+                <br></br>
+                <br></br>
+                <h1 style={{ width: '100 %', textAlign: 'center' }}>
+                  Hoppá...
+                </h1>
+                <br></br>
+                <br></br>
+                <h2 style={{ width: '100 %', textAlign: 'center' }}>
+                  Üzenet küldése sikertelen!
+                </h2>
+                <br></br>
+                <br></br>
+                <h3 style={{ width: '100 %', textAlign: 'center' }}>Probáld újra később!</h3>
+              </>
+            }></Route>
 
+            <Route path="/redirect" element={<Navigate to="/success" />}></Route>
 
             <Route path="/webshop" element={
               <div style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
