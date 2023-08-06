@@ -43,8 +43,8 @@ export default function Kapcsolat() {
             //console.log(result);
 
             if (result.ok) {
-                //navigate('/success');
-                console.log('email sent');
+                navigate('/success');
+                //console.log('email sent');
             } else {
                 navigate('/error');
             }
