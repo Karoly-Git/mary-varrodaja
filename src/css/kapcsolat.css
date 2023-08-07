@@ -25,6 +25,12 @@
   font-weight: 600;
   letter-spacing: 1px;
 }
+.kapcsolat .email-form-box .over-break-point {
+  display: inline-flex;
+}
+.kapcsolat .email-form-box .under-break-point {
+  display: none;
+}
 .kapcsolat .email-form-box form {
   display: flex;
   flex-direction: column;
@@ -96,6 +102,12 @@
 @media only screen and (max-width: 600px) {
   .kapcsolat {
     padding: 2rem;
+  }
+  .kapcsolat .email-form-box form .under-break-point {
+    display: inline-flex;
+  }
+  .kapcsolat .email-form-box form .over-break-point {
+    display: none;
   }
   .kapcsolat .email-form-box form .wrapper {
     flex-direction: column;

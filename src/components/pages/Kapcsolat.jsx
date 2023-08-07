@@ -73,10 +73,12 @@ export default function Kapcsolat() {
                         <input placeholder="Telefon" {...register('senderPhone')}></input>
                     </div>
 
+                    {errors.senderEmail && <span><p className='error over-break-point'>{errors.senderEmail?.message}</p></span>}
+
                     <div className='wrapper'>
                         <input placeholder="Tárgy" {...register('subject')}></input>
 
-                        {errors.senderEmail && <span><p className='error'>{errors.senderEmail?.message}</p></span>}
+                        {errors.senderEmail && <span><p className='error under-break-point'>{errors.senderEmail?.message}</p></span>}
                         <input placeholder="Email" {...register('senderEmail')}></input>
                     </div>
 

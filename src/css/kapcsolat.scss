@@ -29,6 +29,14 @@
             letter-spacing: 1px;
         }
 
+        .over-break-point {
+            display: inline-flex;
+        }
+
+        .under-break-point {
+            display: none;
+        }
+
         form {
             display: flex;
             flex-direction: column;
@@ -115,6 +123,14 @@
 
         .email-form-box {
             form {
+                .under-break-point {
+                    display: inline-flex;
+                }
+
+                .over-break-point {
+                    display: none;
+                }
+
                 .wrapper {
                     flex-direction: column;
 
