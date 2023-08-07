@@ -15,11 +15,11 @@ export default function Kapcsolat() {
     const navigate = useNavigate();
 
     const schema = yup.object().shape({
-        senderName: yup.string().required("Add meg a nevet!"),
+        senderName: yup.string().required("Név megadása szükséges!"),
         senderPhone: yup.string(),
         subject: yup.string(),
         senderEmail: yup.string().email("Nem tűnik érvényes email címnek!"),
-        text: yup.string().required("Írj üzenetet!"),
+        text: yup.string().required("Elfelejtettél üzenetetet írni!"),
     })
 
     const { register, handleSubmit, formState: { errors } } = useForm({
@@ -65,15 +65,20 @@ export default function Kapcsolat() {
 
                 <form method="POST" action="/message" onSubmit={handleSubmit(onSubmit)}>
                     {errors.senderName && <span><p className='error'>{errors.senderName?.message}</p></span>}
-                    <input placeholder="Név*" {...register('senderName')}></input>
 
-                    {errors.senderPhone && <span><p className='error'>{errors.senderPhone?.message}</p></span>}
-                    <input placeholder="Telefon" {...register('senderPhone')}></input>
+                    <div className='wrapper'>
+                        <input placeholder="Név*" {...register('senderName')}></input>
 
-                    <input placeholder="Tárgy" {...register('subject')}></input>
+                        {errors.senderPhone && <span><p className='error'>{errors.senderPhone?.message}</p></span>}
+                        <input placeholder="Telefon" {...register('senderPhone')}></input>
+                    </div>
 
-                    {errors.senderEmail && <span><p className='error'>{errors.senderEmail?.message}</p></span>}
-                    <input placeholder="Email" {...register('senderEmail')}></input>
+                    <div className='wrapper'>
+                        <input placeholder="Tárgy" {...register('subject')}></input>
+
+                        {errors.senderEmail && <span><p className='error'>{errors.senderEmail?.message}</p></span>}
+                        <input placeholder="Email" {...register('senderEmail')}></input>
+                    </div>
 
                     {errors.text && <span><p className='error'>{errors.text?.message}</p></span>}
                     <textarea placeholder="Ide írhatod az üzenetet*" {...register('text')}></textarea>
