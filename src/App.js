@@ -7,7 +7,7 @@ import Axios from "axios"
 import config from "./data/config.json"
 
 // Website imports
-import ErrorMessage from "./components/ErrorMessage"
+import LocalServerNotRunning from "./components/LocalServerNotRunning"
 import Kezdolap from "./components/pages/Kezdolap"
 import Rolam from "./components/pages/Rolam"
 import Kapcsolat from "./components/pages/Kapcsolat"
@@ -21,6 +21,8 @@ import Webshop from "./components/webshop/Webshop"
 import ScrollToTop from './components/ScrollToTop';
 import MobileNavigation from './components/MobileNavigation';
 import Copyright from './components/Copyright';
+import MessageError from './components/MessageError';
+import MessageSuccess from './components/MessageSuccess';
 
 // Style import
 import "../src/css/App.css"
@@ -90,41 +92,9 @@ export default function App() {
             <Route path="/gyik" element={<Gyik gyik={website.gyik} />}></Route>
             <Route path="/kapcsolat" element={<Kapcsolat />}></Route>
 
-            <Route path="/success" element={
-              <>
-                <br></br>
-                <br></br>
-                <h1 style={{ width: '100 %', textAlign: 'center' }}>
-                  Üzenet sikeresen elküldve!
-                </h1>
-                <br></br>
-                <br></br>
-                <h2 style={{ width: '100 %', textAlign: 'center' }}>
-                  Köszönöm az üzenetet!
-                </h2>
-                <br></br>
-                <br></br>
-                <h3 style={{ width: '100 %', textAlign: 'center' }}>Hamarosan válszolok!</h3>
-              </>
-            }></Route>
+            <Route path="/success" element={<MessageSuccess />}></Route>
 
-            <Route path="/error" element={
-              <>
-                <br></br>
-                <br></br>
-                <h1 style={{ width: '100 %', textAlign: 'center' }}>
-                  Hoppá...
-                </h1>
-                <br></br>
-                <br></br>
-                <h2 style={{ width: '100 %', textAlign: 'center' }}>
-                  Üzenet küldése sikertelen!
-                </h2>
-                <br></br>
-                <br></br>
-                <h3 style={{ width: '100 %', textAlign: 'center' }}>Probáld újra később!</h3>
-              </>
-            }></Route>
+            <Route path="/error" element={<MessageError />}></Route>
 
             <Route path="/redirect" element={<Navigate to="/success" />}></Route>
 
@@ -150,7 +120,7 @@ export default function App() {
           />
         </footer>
       </Router>
-      {!isLoading && !data && <ErrorMessage errMessage={error.message} errName={error.name} />}
+      {!isLoading && !data && <LocalServerNotRunning errMessage={error.message} errName={error.name} />}
       <Copyright />
     </div>
   )
