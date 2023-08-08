@@ -73,6 +73,7 @@ export default function ReviewSlider(props) {
         <section className="review-container">
             <Slider {...settings} className='review-slider'>
                 {props.velemenyek.map((element, velemenyekIndex) => (
+                    element.isActive &&
                     <div
                         key={velemenyekIndex}
                         className="wrapper"

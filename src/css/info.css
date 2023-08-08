@@ -18,10 +18,11 @@
 }
 .info .box ul li h4 {
   margin-bottom: 0.5rem;
-  color: rgb(240, 240, 240);
+  color: white;
 }
 .info .box ul li p {
   color: rgb(200, 200, 200);
+  font-size: 1rem;
 }
 .info .box ul li:not(li:last-child) {
   margin-bottom: 1.5rem;

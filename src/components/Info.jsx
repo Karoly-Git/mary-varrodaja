@@ -8,17 +8,24 @@ import Contacts from "./Contacts";
 
 export default function Info(props) {
 
-    let toBeDisplayed = props.hirek.filter(hir => hir.isActive).length > 0;
+    let hirToBeDisplayed = props.hirek.filter(hir => hir.isActive).length > 0;
+    let allActiveGyik = props.gyik.filter(gyik => gyik.isActive);
+    let allActiveVelemenyek = props.velemenyek.filter(velemeny => velemeny.isActive);
 
-    function indexes(num, data) {
+    function chooseRandomElement(num, data) {
         const length = data.length;
+        isNaN(num) || num < 1 ? num = 1 : num = num;
+        length < num ? num = length : num = num;
+
         let indexList = [];
+
         while (indexList.length < num) {
             let randIndex = Math.trunc(Math.random() * length);
             if (!indexList.includes(randIndex)) {
                 indexList.push(randIndex)
             }
         }
+
         return indexList;
     }
 
@@ -32,7 +39,7 @@ export default function Info(props) {
                 <Contacts />
             </div>
 
-            {toBeDisplayed && <div className="box hirek-box">
+            {hirToBeDisplayed && <div className="box hirek-box">
                 <InfoIcon className="icon" />
                 <h3 className="box-title">Hírek</h3>
                 <div className="devider"></div>
@@ -52,10 +59,10 @@ export default function Info(props) {
                 <h3 className="box-title">Gyakori kérdések</h3>
                 <div className="devider"></div>
                 <ul>
-                    {indexes(2, props.gyik).map((element, gyikIndex) =>
+                    {chooseRandomElement(2, allActiveGyik).map((element, gyikIndex) =>
                         <li key={gyikIndex}>
-                            <h4>{props.gyik[element].question}</h4>
-                            <p>{props.gyik[element].answer}</p>
+                            <h4>{allActiveGyik[element].question}</h4>
+                            <p>{allActiveGyik[element].answer}</p>
                         </li>
                     )}
                 </ul>
@@ -66,11 +73,11 @@ export default function Info(props) {
                 <h3 className="box-title">Vélemények</h3>
                 <div className="devider"></div>
                 <ul>
-                    {indexes(2, props.velemenyek).map((element, reviewIndex) =>
+                    {chooseRandomElement(2, allActiveVelemenyek).map((element, reviewIndex) =>
                         <li key={reviewIndex}>
-                            <h4>{props.velemenyek[element].name}</h4>
-                            <p>" {props.velemenyek[element].short_comment} "</p>
-                            {false && <p className="date">{props.velemenyek[element].timestamp.split("T")[0]}</p>}
+                            <h4>{allActiveVelemenyek[element].name}</h4>
+                            <p>" {allActiveVelemenyek[element].comment} "</p>
+                            {false && <p className="date">{allActiveVelemenyek[element].timestamp.split("T")[0]}</p>}
                         </li>
                     )}
                 </ul>

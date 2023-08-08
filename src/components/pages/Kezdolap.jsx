@@ -31,7 +31,8 @@ export default function Kezdolap(props) {
 
             <div className="services-box">
                 <Link to="/szolgaltatasok">
-                    {props.szolgaltatasok.data.map((service, serviceIndex) =>
+                    {props.szolgaltatasok.data.map((service, serviceIndex) => (
+                        service.isActive &&
                         <div key={serviceIndex} className="box">
                             <div className="icon-box">
                                 {service.icon}
@@ -39,7 +40,7 @@ export default function Kezdolap(props) {
                             <h3>{service.title}</h3>
                             <p>{service.short_description}</p>
                         </div>
-                    )}
+                    ))}
                 </Link>
             </div>
 

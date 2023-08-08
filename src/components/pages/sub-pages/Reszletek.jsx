@@ -5,6 +5,7 @@ export default function Reszletek(props) {
         <div className='reszletek'>
             <h1>{props.h1}</h1>
             {props.data.map((element, index) => (
+                element.isActive &&
                 <article key={'article' + index} className={props.isRowReverse ? 'flipped' : ''} >
                     <div className='container'>
                         {element.icon && <div className='icon-box'>{element.icon}</div>}

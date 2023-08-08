@@ -1,29 +1,32 @@
 // Product slider images
-import taskak_slider from '../img/product_slider/taskak.jpg'
-import maszkok_slider from '../img/product_slider/maszkok.jpg'
-import fehernemuk_slider from '../img/product_slider/fehernemuk.jpg'
-import oko_termekek_slider from '../img/product_slider/oko_termekek.jpg'
-import gyermekruhak_slider from '../img/product_slider/gyermekruhak.jpg'
-import konyhai_textilek_slider from '../img/product_slider/konyhai_textilek.jpg'
-import textil_jatekok_slider from '../img/product_slider/textil_jatekok.jpg'
+import taskak_slider_img from '../img/product_slider/taskak.jpg'
+import maszkok_slider_img from '../img/product_slider/maszkok.jpg'
+import fehernemuk_slider_img from '../img/product_slider/fehernemuk.jpg'
+import oko_termekek_slider_img from '../img/product_slider/oko_termekek.jpg'
+import gyermekruhak_slider_img from '../img/product_slider/gyermekruhak.jpg'
+import konyhai_textilek_slider_img from '../img/product_slider/konyhai_textilek.jpg'
+import textil_jatekok_slider_img from '../img/product_slider/textil_jatekok.jpg'
 
 // Termékek page images
-import taskak_page from '../img/termekek/taskak.jpg'
-import maszkok_page from '../img/termekek/maszkok.jpg'
-import fehernemuk_page from '../img/termekek/fehernemuk.jpg'
-import oko_termekek_page from '../img/termekek/oko_termekek.jpg'
-import gyermekruhak_page from '../img/termekek/gyermekruhak.jpg'
-import konyhai_textilek_page from '../img/termekek/konyhai_textilek.jpg'
-import textil_jatekok_page from '../img/termekek/textil_jatekok.jpg'
+import taskak_img from '../img/termekek/taskak.jpg'
+import maszkok_img from '../img/termekek/maszkok.jpg'
+import fehernemuk_img from '../img/termekek/fehernemuk.jpg'
+import oko_termekek_img from '../img/termekek/oko_termekek.jpg'
+import gyermekruhak_img from '../img/termekek/gyermekruhak.jpg'
+import konyhai_textilek_img from '../img/termekek/konyhai_textilek.jpg'
+import textil_jatekok_img from '../img/termekek/textil_jatekok.jpg'
 
 // Szolgáltatások page images
-import noi_felsoruha_keszites_page from '../img/szolgaltatasok/noi_felsoruha_keszites.jpg'
-import ruha_javitas_es_atalakitas_page from '../img/szolgaltatasok/ruha_javitas_es_atalakitas.jpg'
-import gyermekruha_keszites_page from '../img/szolgaltatasok/gyermekruha_keszites.jpg'
+import noi_felsoruha_keszites_img from '../img/szolgaltatasok/noi_felsoruha_keszites.jpg'
+import ruha_javitas_es_atalakitas_img from '../img/szolgaltatasok/ruha_javitas_es_atalakitas.jpg'
+import gyermekruha_keszites_img from '../img/szolgaltatasok/gyermekruha_keszites.jpg'
 
+// Szolgáltatások page icons
 import { GiLargeDress as DressIcon } from "react-icons/gi";
 import { ImScissors as ScissorsIcon } from "react-icons/im";
 import { BiChild as ChildIcon } from "react-icons/bi";
+
+// Termékek icons
 import { GiGymBag as TaskaIcon } from "react-icons/gi";
 import { PiFaceMaskFill as MaszkIcon } from "react-icons/pi";
 import { GiSkirt as FehernemuIcon } from "react-icons/gi";
@@ -617,94 +620,56 @@ export const website = {
         data: [
             {
                 isActive: true,
-                title: "Női felsőruha készítés",
-                url: "/szolgaltatasok/reszletek",
                 icon: <DressIcon className="icon dress" />,
-                images: {
-                    product_slider: {
-                        src: "src",
-                        alt:
-                            "alt"
-                    },
-                    page: {
-                        src: noi_felsoruha_keszites_page,
-                        alt: "alt-2"
-                    }
-                },
-                description:
-                    "Személyre szabott ruhák, blúzok, szoknyák, nadrágok és sokminden más.",
+                title: "Női felsőruha készítés",
                 short_description:
                     "Személyre szabott ruhák, blúzok, szoknyák, nadrágok és sokminden más.",
                 details: [
-                    /*
-                            "Boltban vásárolt ruhák egyik hátránya, hogy a méret nem egyénre szabott, az úgynevezett konfekció méret nagyon sokaknak nem felel meg.",
-                            "Biztosan veled is megtörtént már, hogy amikor felpróbáltál egy ruhadarabot, az többé kevésbé jó volt, de: ráncolódott ott ahol nem kellett volna; szűk volt az egyik helyen a másikon pedig bő; póló vagy ing hossza jó volt, de az ujjahossza túl rövid; a zakó háta elállt vagy bugyrosodott; a nadrág ülepe bugyrosodott vagy túl szoros volt.",
-                            "Ez azért van, mert a tömeggyártásnál a nagy átlagra jellemző testarányokra készítik a ruhákat, viszont az emberek közel fele nem ebbe a csoportba tartozik, hiszen a testarányok egyénenként változnak. Van akinek hosszabb a felsőteste, van akinek a végtagjai hosszabbak, van akinek a válla vagy a csípője szélesebb, stb.",
-                            "Az általam készített ruhák mind egyedileg modellezettek, a levett testméretek alapján készülnek, így biztos, hogy úgy fog mutatni, mint ahogyan a divatlapokban látható.",
-                            */
                     "A boltban vásárolt konfekciós ruhák hátránya, hogy nem egyénre szabottak, így sokaknak nem felelnek meg a méretek. Ruhapróbáláskor gyakran tapasztalhatod, hogy ráncolódik ott, ahol nem kellene, egyes rész szűk vagy éppen bő, hosszban vagy ujjhosszban nem megfelelő.",
                     "Ennek oka, hogy a tömeggyártás során a ruhák átalános testarányokra készülnek, pedig az emberek különböző testarányokkal rendelkeznek, tehát a konfekció nem jó mindenkinek.",
                     "Az általam készített ruhák egyedileg modellezettek, a levett testméretek alapján készülnek, így garantált, hogy olyanok lesznek, mint amiket a divatlapokban láthatunk."
-                ]
+                ],
+                images: {
+                    page: {
+                        src: noi_felsoruha_keszites_img,
+                        alt: "Egy varrónő felsőruha méretet vesz egy modelről."
+                    }
+                },
             },
             {
                 isActive: true,
-                title: "Ruha javítás és átalakítás",
-                url: "/szolgaltatasok/reszletek",
                 icon: <ScissorsIcon className="icon scissors" />,
-                images: {
-                    product_slider: {
-                        src: "src",
-                        alt:
-                            "Ruha javítás és átalakítás kép. Egy szakadt farmernadrág, egy olló, négy különböző színű cérnaspulni, egy varrógyűszű, és egy szabócenti látható."
-                    },
-                    page: {
-                        src: ruha_javitas_es_atalakitas_page,
-                        alt: "alt-2"
-                    }
-                },
-                description:
-                    "Ha túl hosszú, túl bő, szakadt vagy ha bővíteni kell. Tönkrement a cipzár a kedvenc darabon? Minden ami alakítás, javítás.",
+                title: "Ruha javítás és átalakítás",
                 short_description:
                     "Ha túl hosszú, túl bő, szakadt vagy ha bővíteni kell. Minden ami alakítás, javítás.",
                 details: [
-                    /*"Ki ne ismerné az érzést, amikor a boltban megvásárolni kívánt nadrág vagy ruha derékban jó, nagyon tetszik, csak túl hosszú és ezért inkább nem vesszük meg.",
-                            "Nem kell otthagynod a boltban, hozd el hozzám, én levágom és felvarrom a megfelelő méretre.",
-                            "Az előbb említetthez hasonlóan lehet probléma a bőséggel is. Súlyváltozás esetén ez könnyen bekövetkezhet. De miért dobnád el a ruhádat, ha egy kicsit bő vagy szűk?",
-                            "Ha túl bő egy nadrág vagy ruha, az általában gyorsan javítható. Ha bővíteni kell, arra is van megoldás.",
-                            "Hozd el hozzám és megnézem mit lehet tenni.",
-                            "Bosszantó tud lenni, amikor egy tönkrement cipzár miatt ki kell dobni valamit. Ne dobd ki, a cipzárcsere olcsó megoldás, hogy vissza kapd.",
-                            "Hasonló bosszúság, amikor az anyag szakad ki. Egy szakadás nagyon gyakran nyom nélkül javítható.",
-                            "Ne dobd ki, hozd el hozzám, egy próbát megér.",*/
                     "Ismerős az érzés, amikor a boltban talált nadrág, tetszik, de túl hosszú? Nem kell otthagynod a boltban, hozd el hozzám, levágom és felvarrom a megfelelő méretre!",
                     "Bosszantó, amikor egy tönkrement cipzár miatt el kell dobni valamit. Ne dobd ki! A cipzárcsere olcsó megoldás lehet.",
                     "A bőség is módisítható! Miért dobnád el a ruhádat, ha kicsit bő vagy szűk? Ha túl bő egy ruhadarab vagy nadrág, általában könnyen javítható. Ha bővíteni kell, az is többnyire megoldható. Hozd el hozzám és megnézem, mit lehet tenni. "
-                ]
+                ],
+                images: {
+                    page: {
+                        src: ruha_javitas_es_atalakitas_img,
+                        alt: "Egy varrónő cipzárt cserél egy nadrágon."
+                    }
+                },
             },
             {
                 isActive: true,
-                title: "Gyermekruha készítés",
-                url: "/szolgaltatasok/reszletek",
                 icon: <ChildIcon className="icon children" />,
-                images: {
-                    product_slider: {
-                        src: "src",
-                        alt:
-                            "Egy kisfiú és egy kislány látható a képen. A fiú bal oldalon, a lány jobb oldalon van. A fiún zöld kabát és kék farmernadrág, a lányon rózsaszín kabát és fekete nadrág van."
-                    },
-                    page: {
-                        src: gyermekruha_keszites_page,
-                        alt: "alt-2"
-                    }
-                },
-                description:
-                    "Bébi és gyermekruha készítés. Egyedi dizájn és kialakítás a megrendelő igényei szerint.",
+                title: "Gyermekruha készítés",
                 short_description:
                     "Bébi és gyermekruha készítés. Egyedi dizájn és kialakítás a megrendelő igényei szerint.",
                 details: [
                     "Egyedi gyermekruhákat készítek, hogy tökéletesen illeszkedjenek és divatosak legyenek. Ne aggódj a bolti méretek miatt! Hozd el hozzám a gyermeked méreteit, és varrok neki teljesen új ruhadarabot.",
                     "Nem kell megszabadulnod a túl bő vagy szűk ruháktól sem. Hozd el hozzám, és átalakítom őket, hogy tökéletesen passzoljanak. Figyelembe veszem az egyedi igényeket és stílust a gyermekruha készítése során."
-                ]
+                ],
+                images: {
+                    page: {
+                        src: gyermekruha_keszites_img,
+                        alt: "Egy kislány fogason lógó ruhákat nézeget."
+                    }
+                },
             }
         ]
     },
@@ -716,25 +681,21 @@ export const website = {
                 isActive: true,
                 title: "Táskák",
                 category: "taskak",
-                url: "/termekek/reszletek",
                 icon: <TaskaIcon className="icon taska" />,
                 images: {
                     product_slider: {
-                        src: taskak_slider,
-                        alt: "alt-1"
+                        src: taskak_slider_img,
+                        alt: "Virágmintás textil táska."
                     },
                     page: {
-                        src: taskak_page,
-                        alt: "alt-2"
+                        src: taskak_img,
+                        alt: "Levél mintás hátizsák."
                     }
                 },
                 description:
                     "Egyedileg tervezett, minőségi és stílusos kézi, háti és oldal táskák. Elérhetők változatos méretben és színben.",
                 details: [
                     "Táskáimat egyedülálló kialakítással és minőségi anyagokból készítem, hogy megfeleljenek az egyéni igényeknek.",
-                    // "A kézi táskák elegáns és praktikus kiegészítők, amelyek ideálisak mindennapi használatra vagy különleges alkalmakra. Különböző stílusokban és méretekben kaphatók, lehetővé téve a személyes preferenciákhoz és funkcionális igényekhez való alkalmazkodást. Az anyagválasztékunk széles skálájából választhat, beleértve a tartós bőrt, a könnyű textilt vagy akár a strapabíró műanyagot is.",
-                    // "Háti táskáink kényelmes és divatos opciókat nyújtanak mind a mindennapi élethez, mind az utazáshoz. Ergonomikus kialakításuk és párnázott vállpántjaik megkönnyítik a terhelés egyenletes elosztását és csökkentik a vállra és a hátizmokra nehezedő nyomást. Több zsebbel és rekeszekkel rendelkeznek, így szervezett módon tárolhatjuk a szükséges dolgokat, például laptopot, noteszt vagy kulcstartót.",
-                    // "Az oldal táskák sokoldalúak és praktikusak, különösen azoknak, akiknek szükségük van könnyű hozzáférésre és mobilitásra. Ezek a táskák könnyen rögzíthetők az oldalsó testrészen, és rendkívül hasznosak lehetnek, amikor valamire gyorsan szükség van, például a telefonra, pénztárcára vagy kulcsokra.",
                     "Mindegyik táska egyedi dizájnnal rendelkezik, hogy kifejezze az egyéni stílust és személyiséget.",
                     "Az egyedileg tervezett és készített kézi, háti és oldal táskáim a minőségi anyagok, a funkcionalitás és a stílus kombinációját nyújtják.",
                 ]
@@ -743,21 +704,19 @@ export const website = {
                 isActive: true,
                 title: "Maszkok",
                 category: "maszkok",
-                url: "/termekek/reszletek",
                 icon: <MaszkIcon className="icon maszk" />,
                 images: {
                     product_slider: {
-                        src: maszkok_slider,
-                        alt: "alt-1"
+                        src: maszkok_slider_img,
+                        alt: "Anyuka maszkot ad kislányára."
                     },
                     page: {
-                        src: maszkok_page,
-                        alt: "alt-2"
+                        src: maszkok_img,
+                        alt: "Anyuka maszkot ad kisfiára."
                     }
                 },
                 description:
                     "Női, férfi és gyermek maszkok különféle méretben, színben és dizájnnal.",
-                // Női, férfi és gyermek maszkjaink változatos méretben, színben és kivitelben garantálják a kényelmet és stílust.
                 details: [
                     "A női, férfi és gyermek maszkok különféle méretekben és kivitelekben elérhetők, hogy mindenki megtalálja a számára legmegfelelőbbet.",
                     "Női maszkjaim elegáns és stílusos kiegészítők, amelyek nőies színekkel és mintákkal rendelkeznek, lehetővé téve, hogy a maszkok stílusosan illeszkedjenek a megjelenéshez.",
@@ -769,16 +728,15 @@ export const website = {
                 isActive: true,
                 title: "Fehérneműk",
                 category: "fehernemuk",
-                url: "/termekek/reszletek",
                 icon: <FehernemuIcon className="icon fehernemu" />,
                 images: {
                     product_slider: {
-                        src: fehernemuk_slider,
-                        alt: "alt-1"
+                        src: fehernemuk_slider_img,
+                        alt: "Három női fehérnemű."
                     },
                     page: {
-                        src: fehernemuk_page,
-                        alt: "alt-2"
+                        src: fehernemuk_img,
+                        alt: "Három női fehérnemű."
                     }
                 },
                 description:
@@ -793,16 +751,15 @@ export const website = {
                 isActive: true,
                 title: "Öko termékek",
                 category: "oko_termekek",
-                url: "/termekek/reszletek",
                 icon: <OkoTermekIcon className="icon oko-termek" />,
                 images: {
                     product_slider: {
-                        src: oko_termekek_slider,
-                        alt: "alt-1"
+                        src: oko_termekek_slider_img,
+                        alt: "Textil tároló zsákok."
                     },
                     page: {
-                        src: oko_termekek_page,
-                        alt: "alt-2"
+                        src: oko_termekek_img,
+                        alt: "Textil tároló zsákok."
                     }
                 },
                 description:
@@ -817,16 +774,15 @@ export const website = {
                 isActive: true,
                 title: "Gyermekruhák",
                 category: "gyermekruhak",
-                url: "/termekek/reszletek",
                 icon: <ChildIcon className="icon children" />,
                 images: {
                     product_slider: {
-                        src: gyermekruhak_slider,
-                        alt: "alt-1"
+                        src: gyermekruhak_slider_img,
+                        alt: "Két kisgyermek, egy fiú és egy lány."
                     },
                     page: {
-                        src: gyermekruhak_page,
-                        alt: "alt-2"
+                        src: gyermekruhak_img,
+                        alt: "Két gyermek, egy fiú és egy lány."
                     }
                 },
                 description: "Gyermek pizsamák, hálózsákok, polók, nadrágok és megannyi más hasznos ruhadarab.",
@@ -841,16 +797,15 @@ export const website = {
                 isActive: true,
                 title: "Konyhai textilek",
                 category: "konyhai_textilek",
-                url: "/termekek/reszletek",
                 icon: <KonyhaiTextilIcon className="icon kinyhai-textil" />,
                 images: {
                     product_slider: {
-                        src: konyhai_textilek_slider,
-                        alt: "alt-1"
+                        src: konyhai_textilek_slider_img,
+                        alt: "Három konyharuha."
                     },
                     page: {
-                        src: konyhai_textilek_page,
-                        alt: "alt-2"
+                        src: konyhai_textilek_img,
+                        alt: "Konyharuha."
                     }
                 },
                 description:
@@ -864,16 +819,15 @@ export const website = {
                 isActive: true,
                 title: "Textil játékok",
                 category: "textil_jatekok",
-                url: "/termekek/reszletek",
                 icon: <TextilJatekIcon className="icon textil-jatek" />,
                 images: {
                     product_slider: {
-                        src: textil_jatekok_slider,
-                        alt: "alt-1"
+                        src: textil_jatekok_slider_img,
+                        alt: "Textil cica."
                     },
                     page: {
-                        src: textil_jatekok_page,
-                        alt: "alt-2"
+                        src: textil_jatekok_img,
+                        alt: "Anyuka és kislánya egy-egy textil játékot tart kézben."
                     }
                 },
                 description:
@@ -959,52 +913,19 @@ export const website = {
             rating: 4.8,
             comment:
                 "Nagyon hálás vagyok, egy régi ruhámat vittem el, amit már évek óta nem tudtam viselni, de most új életre kelt. A kreativitás és a szakértelm valóban lenyűgöző. Köszönöm a munkát, nagyszerű a ruha!",
-            short_comment:
-                "Nagyon hálás vagyok, egy régi ruhámat vittem el, amit már évek óta nem tudtam viselni, de most új életre kelt. A kreativitás és a szakértelm valóban lenyűgöző. Köszönöm a munkát, nagyszerű a ruha!",
         },
         {
             isActive: true,
             name: "Zsófia",
             rating: 4.2,
             comment:
-                "Imádtam az új ruhát, amit a lányom esküvőjére készíttettem! A minőség kiváló, és nagyon figyelmesen és gondosan dolgozott, hogy minden részlet tökéletes legyen. Ajánlom mindenkinek, aki tökéletes ruhát szeretne!",
-            short_comment:
-                "Imádtam az új ruhát, amit a lányom esküvőjére készíttettem! A minőség kiváló, és nagyon figyelmesen és gondosan dolgozott, hogy minden részlet tökéletes legyen. Ajánlom mindenkinek, aki tökéletes ruhát szeretne!",
+                "Imádtam az új ruhámat, amit a lányom esküvőjére készíttettem! A minőség kiváló, és nagyon figyelmesen és gondosan dolgozott, hogy minden részlet tökéletes legyen. Ajánlom mindenkinek, aki tökéletes ruhát szeretne!",
         },
         {
             isActive: true,
             name: "Katalin",
             rating: 4.7,
             comment:
-                "Nagyon elégedett vagyok a babahálózsákkal, amit rendeltem! A minősége kiváló, és kisfiam nagyon jókat alszik benne. A színek is nagyon szépek, és nagyon könnyű használni. Egyértelműen a legjobb választás volt.",
-            short_comment:
-                "Nagyon elégedett vagyok a babahálózsákkal, amit rendeltem! A minősége kiváló, és kisfiam nagyon jókat alszik benne. A színek is nagyon szépek, és nagyon könnyű használni. Egyértelműen a legjobb választás volt.",
-        },
-        {
-            isActive: true,
-            name: "Anna",
-            rating: 4.8,
-            comment:
-                "Nagyon hálás vagyok, egy régi ruhámat vittem el, amit már évek óta nem tudtam viselni, de most új életre kelt. A kreativitás és a szakértelm valóban lenyűgöző. Köszönöm a munkát, nagyszerű a ruha!",
-            short_comment:
-                "Nagyon hálás vagyok, egy régi ruhámat vittem el, amit már évek óta nem tudtam viselni, de most új életre kelt. A kreativitás és a szakértelm valóban lenyűgöző. Köszönöm a munkát, nagyszerű a ruha!",
-        },
-        {
-            isActive: true,
-            name: "Zsófia",
-            rating: 4.2,
-            comment:
-                "Imádtam az új ruhát, amit a lányom esküvőjére készíttettem! A minőség kiváló, és nagyon figyelmesen és gondosan dolgozott, hogy minden részlet tökéletes legyen. Ajánlom mindenkinek, aki tökéletes ruhát szeretne!",
-            short_comment:
-                "Imádtam az új ruhát, amit a lányom esküvőjére készíttettem! A minőség kiváló, és nagyon figyelmesen és gondosan dolgozott, hogy minden részlet tökéletes legyen. Ajánlom mindenkinek, aki tökéletes ruhát szeretne!",
-        },
-        {
-            isActive: true,
-            name: "Katalin",
-            rating: 4.7,
-            comment:
-                "Nagyon elégedett vagyok a babahálózsákkal, amit rendeltem! A minősége kiváló, és kisfiam nagyon jókat alszik benne. A színek is nagyon szépek, és nagyon könnyű használni. Egyértelműen a legjobb választás volt.",
-            short_comment:
                 "Nagyon elégedett vagyok a babahálózsákkal, amit rendeltem! A minősége kiváló, és kisfiam nagyon jókat alszik benne. A színek is nagyon szépek, és nagyon könnyű használni. Egyértelműen a legjobb választás volt.",
         },
     ],
