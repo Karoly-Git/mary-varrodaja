@@ -12,7 +12,7 @@ export default function MobileNavigation(props) {
                 </li>
                 <li>
                     <Link onClick={props.toggleMenu} className="menu-btn" to="/szolgaltatasok">
-                        Szolgáltatásol
+                        Szolgáltatások
                     </Link>
                 </li>
                 <li>
