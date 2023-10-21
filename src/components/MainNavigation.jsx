@@ -54,7 +54,7 @@ export default function MainNavigation(props) {
                         </li>
                         <li>
                             <Link className="menu-btn" to="/szolgaltatasok">
-                                Szolgáltatásol
+                                Szolgáltatások
                             </Link>
                         </li>
                         <li>

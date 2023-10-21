@@ -25,7 +25,7 @@ export default function Kezdolap(props) {
                     Üdvözöllek a Mary Varrodájában!
                 </h2>
                 <p>
-                    Szolgáltatásaim nemcsak ruhakészítésre terjednek ki, hozzám bizalommal fordulhatsz, ha ruha átalakításra vagy javításra van szükséged.
+                    Szolgáltatásaim nem csak ruhakészítésre terjednek ki, hozzám bizalommal fordulhatsz, ha ruha átalakításra vagy javításra van szükséged.
                 </p>
             </div>
 
