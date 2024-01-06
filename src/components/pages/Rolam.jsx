@@ -5,6 +5,7 @@ import photo from '../../img/rolam/photo_no_bg.png'
 export default function Rolam(props) {
     return (
         <div className='rolam'>
+            
             <h2>
                 Baltringer Mária vagyok
             </h2>
