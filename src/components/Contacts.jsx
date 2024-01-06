@@ -8,6 +8,7 @@ import { AiOutlineMail as Email } from 'react-icons/ai';
 
 export default function Contacts() {
     return (
+
         <ul className='contacts'>
             <li>
                 <ul>
