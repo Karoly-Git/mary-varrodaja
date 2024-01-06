@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f3832b12.css",
+    "main.js": "/static/js/main.3df56f1a.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/textil_jatekok.jpg": "/static/media/textil_jatekok.34928633bf913d3746cd.jpg",
+    "static/media/taskak.jpg": "/static/media/taskak.ad1008a87d5d3abc17d9.jpg",
+    "static/media/oko_termekek.jpg": "/static/media/oko_termekek.bb8737073ee15f556e41.jpg",
+    "static/media/gyermekruhak.jpg": "/static/media/gyermekruhak.f4ea2ec54364990a1f8e.jpg",
+    "static/media/maszkok.jpg": "/static/media/maszkok.c3f6f1048fcea97b004c.jpg",
+    "static/media/photo_no_bg.png": "/static/media/photo_no_bg.fdd0e0992c3420669b82.png",
+    "static/media/maszkok.png": "/static/media/maszkok.d014088a73fa915666cb.png",
+    "static/media/bg.png": "/static/media/bg.55578299f7df5c79ca01.png",
+    "static/media/fehernemuk.png": "/static/media/fehernemuk.c009f6a0a14f147fb712.png",
+    "static/media/oko_termekek.png": "/static/media/oko_termekek.192fc7415f84ea0c6ef6.png",
+    "static/media/noi_felsoruha_keszites.png": "/static/media/noi_felsoruha_keszites.09f30cbce10a931a7cea.png",
+    "static/media/konyhai_textilek.png": "/static/media/konyhai_textilek.d985e57aebadb159a921.png",
+    "static/media/gyermekruhak.png": "/static/media/gyermekruhak.ac0f53a5e162e1295491.png",
+    "static/media/ruha_javitas_es_atalakitas.png": "/static/media/ruha_javitas_es_atalakitas.ea45f0ddade84819e681.png",
+    "static/media/taskak.png": "/static/media/taskak.7506351c4503851c6575.png",
+    "static/media/textil_jatekok.png": "/static/media/textil_jatekok.62cdf3a51feaf9f8c241.png",
+    "static/media/gyermekruha_keszites.png": "/static/media/gyermekruha_keszites.6e9882e06a7d3229d6bb.png",
+    "static/media/main.jpg": "/static/media/main.7fedec31754098de5daa.jpg",
+    "static/media/fehernemuk.jpg": "/static/media/fehernemuk.8881c9845aef04d465aa.jpg",
+    "static/media/konyhai_textilek.jpg": "/static/media/konyhai_textilek.c55c5a18eaa9adf8a6f6.jpg",
+    "static/media/logo_brown.png": "/static/media/logo_brown.678f1e03666f44d88bc8.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.f3832b12.css.map": "/static/css/main.f3832b12.css.map",
+    "main.3df56f1a.js.map": "/static/js/main.3df56f1a.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3832b12.css",
+    "static/js/main.3df56f1a.js"
+  ]
+}
