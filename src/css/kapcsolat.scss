@@ -2,6 +2,10 @@
     display: flex;
     padding: 4rem;
     justify-content: center;
+    background-image: url('../img/kapcsolat/bg.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 
     h1,
     h2 {
@@ -56,9 +60,10 @@
                     margin-bottom: 1rem;
                     width: calc(50% - 0.5rem);
                     height: 3rem;
+                    background-color: transparent;
                 }
             }
-
+            
             textarea {
                 border: 1px solid gray;
                 font-size: 1.2rem;
@@ -69,6 +74,7 @@
                 height: 8rem;
                 min-height: 3rem;
                 resize: vertical;
+                background-color: transparent;
             }
 
             .send-btn {

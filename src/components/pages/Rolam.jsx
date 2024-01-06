@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from '../../img/rolam/photo.png'
+import photo from '../../img/rolam/photo_no_bg.png'
 
 
 export default function Rolam(props) {
@@ -21,9 +21,9 @@ export default function Rolam(props) {
                         </section>
                     ))}
                 </main>
-                <aside>
+                <figure>
                     <img className='photo' src={photo} alt="" />
-                </aside>
+                </figure>
             </section>
         </div>
     )

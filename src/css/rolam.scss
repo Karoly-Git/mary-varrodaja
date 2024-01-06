@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     padding: 0 1rem 1rem;
+    background-image: url('../img/rolam/bg.png');
+    background-size: cover;
 
     h1 {
         text-align: center;
@@ -47,7 +49,7 @@
             }
         }
 
-        aside {
+        figure {
             .photo {
                 width: 450px;
                 margin: 1rem;
@@ -59,7 +61,7 @@
 
 @media only screen and (max-width: 900px) {
     .rolam {
-        aside {
+        figure {
             display: none;
         }
     }

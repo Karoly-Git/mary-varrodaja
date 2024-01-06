@@ -8,18 +8,18 @@ import konyhai_textilek_slider_img from '../img/product_slider/konyhai_textilek.
 import textil_jatekok_slider_img from '../img/product_slider/textil_jatekok.jpg'
 
 // Termékek page images
-import taskak_img from '../img/termekek/taskak.jpg'
-import maszkok_img from '../img/termekek/maszkok.jpg'
-import fehernemuk_img from '../img/termekek/fehernemuk.jpg'
-import oko_termekek_img from '../img/termekek/oko_termekek.jpg'
-import gyermekruhak_img from '../img/termekek/gyermekruhak.jpg'
-import konyhai_textilek_img from '../img/termekek/konyhai_textilek.jpg'
-import textil_jatekok_img from '../img/termekek/textil_jatekok.jpg'
+import taskak_img from '../img/termekek/taskak.png'
+import maszkok_img from '../img/termekek/maszkok.png'
+import fehernemuk_img from '../img/termekek/fehernemuk.png'
+import oko_termekek_img from '../img/termekek/oko_termekek.png'
+import gyermekruhak_img from '../img/termekek/gyermekruhak.png'
+import konyhai_textilek_img from '../img/termekek/konyhai_textilek.png'
+import textil_jatekok_img from '../img/termekek/textil_jatekok.png'
 
 // Szolgáltatások page images
-import noi_felsoruha_keszites_img from '../img/szolgaltatasok/noi_felsoruha_keszites.jpg'
-import ruha_javitas_es_atalakitas_img from '../img/szolgaltatasok/ruha_javitas_es_atalakitas.jpg'
-import gyermekruha_keszites_img from '../img/szolgaltatasok/gyermekruha_keszites.jpg'
+import noi_felsoruha_keszites_img from '../img/szolgaltatasok/noi_felsoruha_keszites.png'
+import ruha_javitas_es_atalakitas_img from '../img/szolgaltatasok/ruha_javitas_es_atalakitas.png'
+import gyermekruha_keszites_img from '../img/szolgaltatasok/gyermekruha_keszites.png'
 
 // Szolgáltatások page icons
 import { GiLargeDress as DressIcon } from "react-icons/gi";

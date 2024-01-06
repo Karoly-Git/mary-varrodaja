@@ -290,17 +290,7 @@
   border: 3px solid black;
   border-top: 3px solid white;
   border-radius: 50%;
-  -webkit-animation: spin 10s infinite linear;
-          animation: spin 10s infinite linear;
-}
-
-@-webkit-keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(3600deg);
-  }
+  animation: spin 10s infinite linear;
 }
 
 @keyframes spin {
