@@ -7,7 +7,7 @@ export default function Copyright() {
                 © {new Date().getFullYear()} Mary Varrodája
             </span>
             <a href="https://webdevme.co.uk/" target="_blank" rel="noopener noreferrer">
-                Powered by <span>webdevme.co.uk</span>
+                Powered by <span>WebDevMe</span>
             </a>
         </div>
     )
