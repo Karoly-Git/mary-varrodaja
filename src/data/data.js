@@ -945,9 +945,9 @@ export const website = {
         },
         {
             isActive: true,
-            title: "Nyári szünet",
+            title: "Nyitva 2024-ben is!",
             text:
-                "2023.08.07-től 2023.09.05-ig szabadságon leszek. Ebben az időszakban csak üzenetben leszek elérhető."
+                "Boldog Új Évet Mindenkinek!"
         },
     ]
 };
