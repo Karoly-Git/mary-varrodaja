@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 2rem 0;
   background-color: rgba(191, 161, 107, 0.3);
 }
 .review-container .review-slider {
