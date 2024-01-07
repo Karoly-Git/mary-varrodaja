@@ -58,13 +58,13 @@ export default function MainNavigation(props) {
                             </Link>
                         </li>
                         <li>
-                            <Link className="menu-btn" to="/rolam">
-                                Rólam
+                            <Link className="menu-btn" to="/termekek">
+                                Termékek
                             </Link>
                         </li>
                         <li>
-                            <Link className="menu-btn" to="/termekek">
-                                Termékek
+                            <Link className="menu-btn" to="/rolam">
+                                Rólam
                             </Link>
                         </li>
                         <li>
