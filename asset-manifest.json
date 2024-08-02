@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.23ea44ed.css",
-    "main.js": "/static/js/main.0a5b6a43.js",
+    "main.js": "/static/js/main.d9570fd5.js",
     "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
     "static/media/textil_jatekok.jpg": "/static/media/textil_jatekok.34928633bf913d3746cd.jpg",
     "static/media/taskak.jpg": "/static/media/taskak.ad1008a87d5d3abc17d9.jpg",
@@ -30,11 +30,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.23ea44ed.css.map": "/static/css/main.23ea44ed.css.map",
-    "main.0a5b6a43.js.map": "/static/js/main.0a5b6a43.js.map",
+    "main.d9570fd5.js.map": "/static/js/main.d9570fd5.js.map",
     "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23ea44ed.css",
-    "static/js/main.0a5b6a43.js"
+    "static/js/main.d9570fd5.js"
   ]
 }
